@@ -1,0 +1,1995 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Trilogía del Reloj - D&D 5e</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: #2c2c2c;
+            background: linear-gradient(to bottom, #f5e6d3 0%, #e8d4b8 100%);
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 50px 60px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            border: 1px solid #d4b896;
+        }
+
+        h1 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 2.8em;
+            color: #8b0000;
+            text-align: center;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-bottom: 3px solid #8b0000;
+            padding-bottom: 15px;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-style: italic;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+
+        .stat-block {
+            background: linear-gradient(to right, #f9f3e8 0%, #fefbf5 50%, #f9f3e8 100%);
+            border: 2px solid #8b0000;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 3px;
+        }
+
+        .stat-block p {
+            margin: 5px 0;
+            font-size: 0.95em;
+        }
+
+        .stat-block strong {
+            color: #8b0000;
+            font-weight: 600;
+        }
+
+        h2 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 1.8em;
+            color: #8b0000;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #d4b896;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 1.3em;
+            color: #c41e3a;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        h4 {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.1em;
+            color: #2c2c2c;
+            margin-top: 18px;
+            margin-bottom: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        p {
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+
+        ul {
+            margin: 15px 0 15px 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            background: #8b0000;
+            color: white;
+            border-radius: 3px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-right: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .badge.rare {
+            background: #0066cc;
+        }
+
+        .badge.legendary {
+            background: #ff6600;
+        }
+
+        .ability-box {
+            background: #fefbf5;
+            border-left: 4px solid #c41e3a;
+            padding: 15px 20px;
+            margin: 15px 0;
+        }
+
+        .ability-box h4 {
+            margin-top: 0;
+            color: #c41e3a;
+        }
+
+        .ability-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .table-container {
+            margin: 20px 0;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            background: white;
+        }
+
+        table th {
+            background: #8b0000;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            border: 1px solid #6b0000;
+        }
+
+        table td {
+            padding: 10px 12px;
+            border: 1px solid #d4b896;
+        }
+
+        table tr:nth-child(even) {
+            background: #f9f3e8;
+        }
+
+        .divider {
+            border: 0;
+            height: 2px;
+            background: linear-gradient(to right, transparent, #d4b896, transparent);
+            margin: 30px 0;
+        }
+
+        .note-box {
+            background: #fff9e6;
+            border: 2px dashed #d4b896;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .note-box h4 {
+            color: #8b0000;
+            margin-top: 0;
+        }
+
+        strong {
+            font-weight: 600;
+            color: #2c2c2c;
+        }
+
+        em {
+            font-style: italic;
+            color: #555;
+        }
+
+        /* Modo Oscuro */
+        body.dark-mode {
+            background: linear-gradient(to bottom, #1a1a1a 0%, #2d2d2d 100%);
+            color: #e0e0e0;
+        }
+
+        body.dark-mode .container {
+            background: #1e1e1e;
+            border: 1px solid #444;
+        }
+
+        body.dark-mode h1 {
+            color: #ff6b6b;
+            border-bottom-color: #ff6b6b;
+        }
+
+        body.dark-mode .subtitle {
+            color: #aaa;
+        }
+
+        body.dark-mode h2 {
+            color: #ff6b6b;
+            border-bottom-color: #555;
+        }
+
+        body.dark-mode h3 {
+            color: #ff8c8c;
+        }
+
+        body.dark-mode h4 {
+            color: #e0e0e0;
+        }
+
+        body.dark-mode .stat-block {
+            background: linear-gradient(to right, #2a2a2a 0%, #323232 50%, #2a2a2a 100%);
+            border-color: #ff6b6b;
+        }
+
+        body.dark-mode .stat-block strong {
+            color: #ff8c8c;
+        }
+
+        body.dark-mode .badge {
+            background: #c41e3a;
+        }
+
+        body.dark-mode .badge.rare {
+            background: #0080ff;
+        }
+
+        body.dark-mode .badge.legendary {
+            background: #ff8533;
+        }
+
+        body.dark-mode .ability-box {
+            background: #252525;
+            border-left-color: #ff6b6b;
+        }
+
+        body.dark-mode .ability-box h4 {
+            color: #ff8c8c;
+        }
+
+        body.dark-mode table {
+            background: #1e1e1e;
+        }
+
+        body.dark-mode table th {
+            background: #c41e3a;
+            border-color: #8b0000;
+        }
+
+        body.dark-mode table td {
+            border-color: #444;
+            color: #e0e0e0;
+        }
+
+        body.dark-mode table tr:nth-child(even) {
+            background: #252525;
+        }
+
+        body.dark-mode .divider {
+            background: linear-gradient(to right, transparent, #555, transparent);
+        }
+
+        body.dark-mode .note-box {
+            background: #2a2a2a;
+            border-color: #555;
+        }
+
+        body.dark-mode .note-box h4 {
+            color: #ff6b6b;
+        }
+
+        body.dark-mode .weapon-name {
+            color: #ff6b6b;
+        }
+
+        body.dark-mode .cost-restriction {
+            color: #999;
+        }
+
+        body.dark-mode strong {
+            color: #e0e0e0;
+        }
+
+        body.dark-mode em {
+            color: #bbb;
+        }
+
+        /* Estilos para imágenes */
+        .sword-image {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border: 1px solid #d4b896;
+            border-radius: 3px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        body.dark-mode .sword-image {
+            border-color: #444;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .image-caption {
+            font-style: italic;
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+
+        body.dark-mode .image-caption {
+            color: #999;
+        }
+
+        /* Layout de dos columnas estilo libro D&D */
+        .two-column-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 25px 0;
+            align-items: start;
+        }
+
+        .two-column-section .text-column {
+            padding-right: 15px;
+        }
+
+        .two-column-section .image-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .two-column-section .image-column img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #d4b896;
+            border-radius: 5px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        }
+
+        body.dark-mode .two-column-section .image-column img {
+            border-color: #555;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+        }
+
+        .vortex-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            .two-column-section {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .two-column-section .text-column {
+                padding-right: 0;
+            }
+        }
+
+        @media print {
+            .two-column-section {
+                display: block;
+            }
+            
+            .two-column-section .image-column {
+                margin-top: 20px;
+                page-break-inside: avoid;
+            }
+        }
+
+        /* Estilos para hoja de tracking en modo oscuro - con colores de entropía */
+        body.dark-mode .tracking-sheet {
+            background: #2a2a2a !important;
+            border-color: #ff8c8c !important;
+        }
+
+        body.dark-mode .tracking-sheet h3 {
+            color: #ff8c8c !important;
+        }
+
+        body.dark-mode .tracking-sheet p,
+        body.dark-mode .tracking-sheet span,
+        body.dark-mode .tracking-sheet em {
+            color: #e0e0e0 !important;
+        }
+
+        /* Cajas de cargas - con código de colores por nivel de entropía */
+        /* Normal (0-4) - gris */
+        body.dark-mode .tracking-charge-box:nth-child(-n+5) {
+            background: #2a2a2a !important;
+            border-color: #666 !important;
+            color: #e0e0e0 !important;
+        }
+
+        /* Sobrecarga (5-7) - azul oscuro */
+        body.dark-mode .tracking-charge-box:nth-child(6),
+        body.dark-mode .tracking-charge-box:nth-child(7),
+        body.dark-mode .tracking-charge-box:nth-child(8) {
+            background: #1a3a52 !important;
+            border-color: #5bb3ff !important;
+            color: #8fc5ff !important;
+        }
+
+        /* Forzado (8-9) - naranja oscuro */
+        body.dark-mode .tracking-charge-box:nth-child(9),
+        body.dark-mode .tracking-charge-box:nth-child(10) {
+            background: #4a2f1a !important;
+            border-color: #ff9944 !important;
+            color: #ffaa66 !important;
+        }
+
+        /* 10 cargas - rojo oscuro */
+        body.dark-mode .tracking-charge-box:nth-child(11) {
+            background: #4a1a1a !important;
+            border-color: #dd6666 !important;
+            color: #ff8c8c !important;
+        }
+
+        /* Leyenda de estados - con código de colores */
+        body.dark-mode .tracking-box {
+            background: #1e1e1e !important;
+            border-color: #555 !important;
+            color: #e0e0e0 !important;
+        }
+
+        /* Normal (0-4) */
+        body.dark-mode .tracking-box:nth-of-type(1) {
+            background: #2a2a2a !important;
+            border-color: #666 !important;
+        }
+
+        body.dark-mode .tracking-box:nth-of-type(1) strong {
+            color: #e0e0e0 !important;
+        }
+
+        /* Sobrecarga (5-7) - azul oscuro */
+        body.dark-mode .tracking-box:nth-of-type(2) {
+            background: #1a3a52 !important;
+            border-color: #5bb3ff !important;
+        }
+
+        body.dark-mode .tracking-box:nth-of-type(2) strong {
+            color: #8fc5ff !important;
+        }
+
+        /* Forzado (8-9) - naranja oscuro */
+        body.dark-mode .tracking-box:nth-of-type(3) {
+            background: #4a2f1a !important;
+            border-color: #ff9944 !important;
+        }
+
+        body.dark-mode .tracking-box:nth-of-type(3) strong {
+            color: #ffaa66 !important;
+        }
+
+        /* 10 cargas - rojo oscuro */
+        body.dark-mode .tracking-box:nth-of-type(4) {
+            background: #4a1a1a !important;
+            border-color: #dd6666 !important;
+        }
+
+        body.dark-mode .tracking-box:nth-of-type(4) strong {
+            color: #ff8c8c !important;
+        }
+
+        /* Frecuencia del Núcleo - destacado en rojo */
+        body.dark-mode .tracking-box:nth-of-type(5) {
+            background: #1e1e1e !important;
+            border-color: #cc5555 !important;
+        }
+
+        body.dark-mode .tracking-box:nth-of-type(5) h4,
+        body.dark-mode .tracking-box:nth-of-type(5) strong {
+            color: #ff8c8c !important;
+        }
+
+        /* Nota: tracking-box:nth-of-type(6) (Habilidades Usadas) usa el estilo base de .tracking-box */
+
+        body.dark-mode .tracking-sheet h4,
+        body.dark-mode .tracking-sheet strong {
+            color: #ff8c8c !important;
+        }
+
+        body.dark-mode .tracking-reminder {
+            background: #3a3a2a !important;
+            border-color: #666 !important;
+        }
+
+        body.dark-mode .tracking-reminder strong {
+            color: #ffb366 !important;
+        }
+
+        /* Botón de modo oscuro */
+        .dark-mode-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #8b0000;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 0.9em;
+            font-weight: 600;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .dark-mode-toggle:hover {
+            background: #a00000;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+        }
+
+        body.dark-mode .dark-mode-toggle {
+            background: #ff6b6b;
+        }
+
+        body.dark-mode .dark-mode-toggle:hover {
+            background: #ff8c8c;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                border: none;
+                max-width: 100%;
+                padding: 20px;
+            }
+            .dark-mode-toggle {
+                display: none;
+            }
+            body.dark-mode {
+                background: white;
+                color: #2c2c2c;
+            }
+            body.dark-mode .container {
+                background: white;
+                border: 1px solid #d4b896;
+            }
+            body.dark-mode h1,
+            body.dark-mode h2,
+            body.dark-mode h3,
+            body.dark-mode .stat-block strong,
+            body.dark-mode .weapon-name,
+            body.dark-mode .note-box h4 {
+                color: #8b0000;
+            }
+        }
+
+        .weapon-name {
+            font-weight: 700;
+            color: #8b0000;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .cost-restriction {
+            font-size: 0.9em;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Hero Section - Portada */
+        .hero-section {
+            position: relative;
+            width: 100vw;
+            margin-left: calc(-50vw + 50%);
+            height: 140vh;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            margin-bottom: 60px;
+            background: #1a1a1a;
+        }
+
+        .hero-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            opacity: 0.9;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 0.3) 0%,
+                rgba(0, 0, 0, 0.1) 50%,
+                rgba(0, 0, 0, 0.5) 100%
+            );
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 40px;
+            max-width: 900px;
+        }
+
+        .hero-title {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 4.5em;
+            color: #ffffff;
+            text-shadow: 
+                0 2px 10px rgba(0, 0, 0, 0.8),
+                0 0 30px rgba(139, 0, 0, 0.5),
+                2px 2px 4px rgba(0, 0, 0, 0.9);
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5em;
+            color: #f0e6d2;
+            text-shadow: 
+                0 2px 8px rgba(0, 0, 0, 0.9),
+                1px 1px 3px rgba(0, 0, 0, 1);
+            font-style: italic;
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+        }
+
+        .hero-creator {
+            font-size: 1.2em;
+            color: #d4b896;
+            text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .hero-scroll-hint {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9em;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+            40% { transform: translateX(-50%) translateY(-10px); }
+            60% { transform: translateX(-50%) translateY(-5px); }
+        }
+
+        /* Responsive para móviles */
+        @media (max-width: 768px) {
+            .hero-section {
+                height: 70vh;
+                min-height: 500px;
+            }
+
+            .hero-title {
+                font-size: 2.5em;
+                letter-spacing: 2px;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1em;
+            }
+
+            .hero-creator {
+                font-size: 1em;
+            }
+        }
+
+        /* Modo oscuro */
+        body.dark-mode .hero-overlay {
+            background: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 0.2) 0%,
+                rgba(0, 0, 0, 0.05) 50%,
+                rgba(0, 0, 0, 0.4) 100%
+            );
+        }
+
+        /* Prólogo */
+        .prologue-section {
+            background: linear-gradient(135deg, #fefbf5 0%, #f9f3e8 100%);
+            border: 2px solid #d4b896;
+            border-radius: 4px;
+            padding: 40px 50px;
+            margin: 40px 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .prologue-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(to right, transparent, #8b0000, transparent);
+        }
+
+        .prologue-section::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(to right, transparent, #8b0000, transparent);
+        }
+
+        .prologue-title {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 2em;
+            color: #8b0000;
+            text-align: center;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+
+        .prologue-subtitle {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 1.2em;
+            color: #666;
+            text-align: center;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .prologue-content {
+            font-size: 1.05em;
+            line-height: 1.9;
+            color: #3a3a3a;
+            text-align: justify;
+        }
+
+        .prologue-content p {
+            margin-bottom: 18px;
+        }
+
+        .prologue-content .section-break {
+            text-align: center;
+            margin: 30px 0;
+            color: #8b0000;
+            font-size: 1.5em;
+        }
+
+        body.dark-mode .prologue-section {
+            background: linear-gradient(135deg, #2a2a2a 0%, #1e1e1e 100%);
+            border-color: #444;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        body.dark-mode .prologue-title {
+            color: #ff8c8c;
+        }
+
+        body.dark-mode .prologue-subtitle {
+            color: #aaa;
+        }
+
+        body.dark-mode .prologue-content {
+            color: #d0d0d0;
+        }
+    </style>
+    <script>
+        // Cargar preferencia de modo oscuro
+        document.addEventListener('DOMContentLoaded', function() {
+            const darkModeEnabled = localStorage.getItem('darkMode') === 'true';
+            if (darkModeEnabled) {
+                document.body.classList.add('dark-mode');
+            }
+        });
+
+        // Toggle modo oscuro
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            const isDarkMode = document.body.classList.contains('dark-mode');
+            localStorage.setItem('darkMode', isDarkMode);
+            
+            // Actualizar texto del botón
+            const btn = document.querySelector('.dark-mode-toggle');
+            btn.textContent = isDarkMode ? '☀️ Modo Claro' : '🌙 Modo Oscuro';
+        }
+    </script>
+</head>
+<body>
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙 Modo Oscuro</button>
+    
+    <!-- Hero Section - Portada -->
+    <section class="hero-section">
+        <img src="portada.png" alt="La Trilogía del Reloj" class="hero-image">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">La Trilogía del Reloj</h1>
+            <p class="hero-subtitle">Instrumentos de Dominación Temporal</p>
+            <p class="hero-creator">Creador: Séricar, Mago Cronurgo Eladrin</p>
+        </div>
+        <div class="hero-scroll-hint">▼ Desplázate para continuar ▼</div>
+    </section>
+
+    <div class="container">
+        <h1>La Trilogía del Reloj</h1>
+        <div class="subtitle">Instrumentos de Dominación Temporal</div>
+
+        <!-- Prólogo -->
+        <div class="prologue-section">
+            <h2 class="prologue-title">Prólogo</h2>
+            <div class="prologue-subtitle">El instante que no volvió</div>
+            
+            <div class="prologue-content">
+                <p>La cueva no parecía antigua.</p>
+
+                <p>El hielo cubría las paredes en capas gruesas y opacas, como si el invierno hubiera decidido quedarse allí para siempre. No había ruinas. No había altares. Solo una perturbación que el reino no podía ignorar.</p>
+
+                <p>El grupo avanzaba con cautela.</p>
+
+                <p><strong>Balazar</strong> iba al frente, escudo firme, cada paso resonando con la seguridad de quien juró proteger.</p>
+
+                <p><strong>Kurisu</strong> caminaba unos pasos detrás, murmurando palabras que no eran del todo suyas, energía oscura contenida en la palma de la mano.</p>
+
+                <p><strong>Dante</strong> se deslizaba entre sombras y estalactitas, ligero, atento a cualquier grieta que pudiera volverse amenaza.</p>
+
+                <p><strong>Séricar</strong> cerraba la marcha.</p>
+
+                <p><em>Sentía el desajuste.</em></p>
+
+                <p>No era frío. No era magia común.</p>
+
+                <p><em>Era algo más sutil. Como si el mundo respirara fuera de ritmo.</em></p>
+
+                <p>Entonces el hielo crujió.</p>
+
+                <p>No hubo advertencia.<br>
+No hubo tiempo para preparar estrategia.</p>
+
+                <p><strong>El rugido descendió desde lo alto de la bóveda helada.</strong></p>
+
+                <p>El dragón de escarcha cayó sobre ellos como una tormenta hecha carne.</p>
+
+                <p>El combate fue brutal.</p>
+
+                <p>El aliento glacial congeló el aire mismo.<br>
+Balazar resistió el primer impacto, pero sus rodillas tocaron el hielo bajo el peso del golpe.<br>
+Kurisu respondió con poder prestado, llamas oscuras que chisporrotearon contra escamas imposibles.<br>
+Dante encontró un flanco, rápido, preciso… pero el dragón era antiguo y despiadado.</p>
+
+                <p>Séricar levantó la mano.</p>
+
+                <p><em>Calculó.</em></p>
+
+                <p><em>Midió distancias.</em></p>
+
+                <p><em>Pensó un segundo más de lo necesario.</em></p>
+
+                <p>El hechizo salió.<br>
+Pero no en el momento perfecto.</p>
+
+                <p><em>Nunca en el momento perfecto.</em></p>
+
+                <p>Hubo gritos.<br>
+Hubo sangre.<br>
+Hubo un instante en que la derrota pareció inevitable.</p>
+
+                <p>Y aun así, vencieron.</p>
+
+                <p>No por coordinación impecable.<br>
+No por estrategia brillante.</p>
+
+                <p>Sino porque, en algún punto, el dragón cometió un error.</p>
+
+                <p><em>Un margen diminuto.</em></p>
+
+                <p><em>Un instante.</em></p>
+
+                <p>Cuando la bestia cayó, el silencio fue insoportable.</p>
+
+                <p>Salieron con vida.</p>
+
+                <p>Eso debía bastar.</p>
+
+                <div class="section-break">—</div>
+
+                <p>Días después, en la quietud de su habitación, Séricar observaba un reloj.</p>
+
+                <p>El tic-tac era constante. Implacable.</p>
+
+                <p>Cerró los ojos y volvió a ver la caverna.</p>
+
+                <p>Balazar tambaleándose.<br>
+Kurisu sosteniendo un poder que podía consumirlo.<br>
+Dante arriesgando demasiado cerca de las fauces.</p>
+
+                <p><em>Si hubiera actuado antes.<br>
+Si hubiera anticipado mejor.<br>
+Si hubiera detenido aquel aliento un segundo más.</em></p>
+
+                <p>El reloj marcó otro segundo.</p>
+
+                <p>Y otro.</p>
+
+                <p>Sus ojos se fijaron en las manecillas.</p>
+
+                <p>No era deseo de poder.</p>
+
+                <p>No era ambición arcana.</p>
+
+                <p><strong>Era responsabilidad.</strong></p>
+
+                <p><em>Si pudiera empuñar el tiempo.</em></p>
+
+                <p>El reloj siguió avanzando.</p>
+
+                <p>Pero en ese instante, algo en Séricar dejó de hacerlo.</p>
+
+                <p style="text-align: center; margin-top: 25px; font-style: italic; color: #8b0000; font-size: 1.1em;"><strong>Y así comenzó todo.</strong></p>
+            </div>
+        </div>
+
+        <div class="stat-block">
+            <p><strong>Tipo:</strong> <span class="badge legendary">Legendario</span> (cada espada <span class="badge rare">Very Rare</span> individualmente)</p>
+            <p><strong>Requisito:</strong> Sintonización por un mago con competencia en Arcanos</p>
+            <p><strong>Creador:</strong> Séricar, mago cronurgo eladrin</p>
+        </div>
+
+        <hr class="divider">
+
+        <h1>PARTE I: EL ARMA</h1>
+
+        <hr class="divider">
+
+        <h2>I. Naturaleza del Conjunto</h2>
+        
+        <p style="font-style: italic; color: #555; margin-bottom: 20px; line-height: 1.8;">Tres hojas forjadas para desafiar lo inevitable. No cortan carne, cortan destinos. Quien las empuña no combate contra enemigos, sino contra la inmutabilidad del tiempo mismo. Cada golpe reescribe la historia de un instante. Cada activación arrastra a todos hacia un futuro incierto.</p>
+        
+        <p>Las Espadas Reloj son tres espadas con capacidades cronúrgicas, diseñadas para jugar con el tiempo y la probabilidad. No son armas independientes, sino fragmentos de un mismo mecanismo temporal. Cada activación altera un único flujo compartido, sin importar la distancia entre sus portadores.</p>
+
+        <h3>El Remolino Temporal: Teoría del Mecanismo</h3>
+
+        <div class="two-column-section">
+            <div class="text-column">
+                <p>En el corazón de cada espada, visible a través del cristal del núcleo, hay un remolino que parece drenar algo invisible. Los cronurgos que han estudiado estas armas describen la sensación como observar un desagüe tragando el hilo temporal mismo.</p>
+
+                <p><strong>No son tres remolinos separados. Es uno solo.</strong></p>
+
+                <p>Lo que se ve en los tres núcleos es el mismo fenómeno observado desde tres puntos de anclaje distintos. Cada espada es una ventana a la misma perturbación, un punto de contacto con una singularidad que existe en el tejido temporal subyacente, no en el espacio físico convencional.</p>
+
+                <p>Este remolino drena energía temporal del flujo natural de la realidad. Con cada uso, jala más fuerte. El tejido se tensa. La realidad se resiste. Eventualmente, cuando la tensión es demasiada, el universo intenta corregirse violentamente: el Vórtice Temporal.</p>
+
+                <p><em>El Vórtice no es un castigo. Es una ley natural. Como una cuerda elástica que finalmente debe soltarse.</em></p>
+            
+                <p>El remolino no existe "en" ningún lugar físico. Es una rasgadura en el tejido temporal mismo, una abertura permanente en la estructura subyacente de la realidad. Los núcleos de cristal simplemente lo hacen visible, como ventanas que permiten observar algo que normalmente sería imperceptible.</p>
+                
+            </div>
+            
+            <div class="image-column">
+                <img src="remolino.png" alt="El Remolino Temporal" class="vortex-image">
+                
+                <div style="margin-top: 20px;">
+
+                    <p>Crear este remolino fue el núcleo del proceso de forja. Durante la Infusión Temporal (Fase 3), la magia cronúrgica no solo imbuye las espadas: perfora deliberadamente el tejido temporal para abrir un punto de acceso directo a su energía. El remolino es la <strong>FUENTE</strong> de poder de las espadas. De ahí drenan su capacidad de manipular el tiempo.</p>
+
+                    <p>Las tres espadas son los anclajes que mantienen la abertura estable. Sin ellas, el remolino colapsaría... o la rasgadura se expandiría sin control. Fueron diseñadas para canalizar el flujo de energía de manera controlada.</p>
+
+                    <p><em>Lo único cierto: mientras las tres espadas existan, el remolino permanecerá abierto. Destruirlas podría cerrar la fuente... o liberar lo que está siendo contenido.</em></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="note-box">
+            <h4>Regla Fundamental</h4>
+            <p>Las tres espadas comparten un único contador global de Cargas de Entropía. La distancia o barreras físicas no interrumpen este vínculo.</p>
+        </div>
+
+        <h3>Propiedades Base</h3>
+        <ul>
+            <li>Cada espada es <strong>Very Rare</strong> de forma individual.</li>
+            <li>Cada espada requiere <strong>sintonización individual</strong>.</li>
+            <li>Las espadas deben estar sintonizadas por un <strong>mago con competencia en Arcanos</strong>.</li>
+            <li>Si las tres están sintonizadas por el mismo portador, el conjunto se considera <strong>Legendario</strong> y activa el sistema completo de Entropía.</li>
+            <li><strong>+1 a tiradas de ataque y daño.</strong></li>
+            <li>Cuentan como <strong>armas mágicas</strong>.</li>
+            <li>Cualquier criatura puede empuñar las espadas. Sin sintonización, funcionan como armas mágicas +1. Para activar sus habilidades especiales, al menos un portador debe estar sintonizado. Los efectos se calculan usando las estadísticas del portador sintonizado.</li>
+            <li>No infligen daño elemental adicional.</li>
+        </ul>
+
+        <hr class="divider">
+
+        <h2>II. Habilidades Individuales de las Espadas</h2>
+
+        <div class="image-container">
+            <img src="segundero.png" alt="Segundero - Rapier" class="sword-image">
+        </div>
+
+        <div class="ability-box">
+            <h4><span class="weapon-name">Segundero</span> (Rapier)</h4>
+            <p style="font-style: italic; color: #666; margin-bottom: 10px;">La más delgada de las tres. Su filo vibra con urgencia, acelerando los latidos del corazón de quien la empuña. Los aliados se mueven al compás de su ritmo frenético.</p>
+            <p><strong>Acción adicional:</strong> Al impactar, un aliado a 30 ft puede usar su Reacción para realizar un ataque o mover hasta la mitad de su velocidad sin provocar ataques de oportunidad. Este movimiento es adicional y no consume su movimiento normal del turno.</p>
+            <p class="cost-restriction"><strong>Restricción:</strong> Una vez por criatura por combate.</p>
+            <p class="cost-restriction"><strong>Costo:</strong> +1 Carga de Entropía.</p>
+        </div>
+
+        <div class="image-container">
+            <img src="minutero.png" alt="Minutero - Espada Versátil" class="sword-image">
+        </div>
+
+        <div class="ability-box">
+            <h4><span class="weapon-name">Minutero</span> (Espada Versátil)</h4>
+            <p style="font-style: italic; color: #666; margin-bottom: 10px;">Equilibrada y versátil, esta hoja recupera lo perdido. Su acero refleja no el presente, sino posibilidades todavía no gastadas.</p>
+            <p><strong>Acción:</strong> Elige una de las siguientes opciones para un aliado a 30 ft:</p>
+            <ul>
+                <li>Recuperar un slot de hechizo gastado de nivel 1 a 3 (solo lanzadores de conjuros).</li>
+                <li>Convertir un slot de hechizo disponible al siguiente nivel superior: 1→2, 2→3, o 3→4. El slot original se consume (solo lanzadores de conjuros).</li>
+                <li>Recuperar una habilidad de descanso corto ya utilizada.</li>
+            </ul>
+            <p class="cost-restriction"><strong>Restricción:</strong> Una vez por criatura por combate.</p>
+            <p class="cost-restriction"><strong>Costo:</strong> +1 Carga de Entropía.</p>
+        </div>
+
+        <div class="image-container">
+            <img src="hora.png" alt="Hora - Espada Corta" class="sword-image">
+        </div>
+
+        <div class="ability-box">
+            <h4><span class="weapon-name">Hora</span> (Espada Corta)</h4>
+            <p style="font-style: italic; color: #666; margin-bottom: 10px;">La más pesada, la más silenciosa. Cuando señala a alguien, el destino titubea. Las decisiones se bifurcan, obligadas a elegir de nuevo.</p>
+            <p><strong>Reacción:</strong> Cuando una criatura que puedas ver a 30 ft realiza una tirada de ataque, habilidad o salvación, puedes forzar que repita la tirada. Debe usar el nuevo resultado. Debe declararse inmediatamente después de la tirada y antes de que se determinen sus efectos.</p>
+            <p class="cost-restriction"><strong>Restricción:</strong> Una vez por criatura por combate.</p>
+            <p class="cost-restriction"><strong>Costo:</strong> +1 Carga de Entropía.</p>
+        </div>
+
+        <hr class="divider">
+
+        <h2>III. Sistema Global de Entropía</h2>
+
+        <p style="font-style: italic; color: #555; margin-bottom: 20px; line-height: 1.8;">Con cada uso tiras del hilo temporal. Con cada uso, el tejido se tensa. Eventualmente, algo debe romperse.</p>
+
+        <div class="image-container">
+            <img src="nucleo_estados.png" alt="Estados del Núcleo Temporal" class="sword-image" style="max-width: 100%;">
+            <p class="image-caption">Los cinco estados del Núcleo: Normal (0-4) • Sobrecarga (5-7) • Forzado (8-9) • Vórtice (10)</p>
+        </div>
+
+        <h3>Definición: Activación Mayor</h3>
+        <p>Se considera <strong>Activación Mayor</strong> cualquier uso de una habilidad especial descrita en este documento que incremente las Cargas de Entropía. Ataques normales, golpes críticos o daño convencional no constituyen una Activación Mayor.</p>
+
+        <h3>Mecánica del Sistema</h3>
+        <p>Cada Activación Mayor incrementa las Cargas de Entropía.</p>
+
+        <h4>Estados del Sistema:</h4>
+        <ul>
+            <li><strong>Estado Normal (0–4 cargas):</strong> No se realiza tirada de Vórtice.</li>
+            <li><strong>Estado Sobrecarga (5–7 cargas):</strong> Tras cada Activación Mayor, tira 1d6. Con 4–6 se activa el Vórtice.</li>
+            <li><strong>Estado Forzado (8–9 cargas):</strong> Tras cada Activación Mayor, tira 1d6. Con 3–6 se activa el Vórtice.</li>
+            <li><strong>10 cargas:</strong> El Vórtice se activa automáticamente (doble tirada en la tabla).</li>
+        </ul>
+
+        <p>El Vórtice se resuelve inmediatamente tras activarse. Luego, las Cargas vuelven a 0.</p>
+
+        <h3>Sincronía (Pasiva)</h3>
+        <p>El Núcleo refleja con absoluta precisión el estado del flujo temporal. Los portadores conocen siempre la cantidad exacta de Cargas acumuladas mediante cambios en brillo y vibración.</p>
+
+        <h3>Reinicio de Cargas</h3>
+        <p>Las Cargas solo se reinician si las tres espadas permanecen 1 minuto completo sin que ninguno de sus portadores participe en combate.</p>
+        <p><em>Participación incluye estar bajo iniciativa activa, ser objetivo de acciones hostiles o actuar dentro de un enfrentamiento.</em></p>
+
+        <hr class="divider">
+
+        <h2>IV. Poder Legendario: Activación del Conjunto Completo</h2>
+
+        <p>Cuando las tres espadas están sintonizadas por la misma persona o criatura, el Núcleo del Reloj puede configurarse al finalizar un Descanso Largo.</p>
+
+        <p>Si están sintonizadas por distintos portadores, el Sistema Global de Entropía permanece activo y las habilidades individuales pueden generar Cargas y activar el Vórtice, pero no puede elegirse una Frecuencia del Núcleo.</p>
+
+        <h3>Menú de Sintonización: Frecuencias del Núcleo</h3>
+        <p><em>Solo disponible si las tres espadas están sintonizadas por la misma persona o criatura. Al finalizar un Descanso Largo, elige una Frecuencia.</em></p>
+
+        <div class="ability-box">
+            <h4>1. Entropía Cero (Ofensiva)</h4>
+            <p style="font-style: italic; color: #666; margin-bottom: 10px;">La detención perfecta. El objetivo queda atrapado en un instante sin fin, incapaz de avanzar mientras el resto del mundo sigue adelante.</p>
+            <p><strong>Acción:</strong> Una criatura a 30 ft realiza salvación de CON.</p>
+            <p><strong>CD</strong> = 8 + bonificador de competencia + modificador de INT del sintonizador.</p>
+            <p><strong>Fallo:</strong> Queda Incapacitada y su velocidad se reduce a la mitad hasta el inicio de tu próximo turno.</p>
+            <p><strong>Éxito:</strong> Queda Ralentizada (como el hechizo Lentitud) hasta el final de tu próximo turno.</p>
+            <p class="cost-restriction"><strong>Restricción:</strong> Una vez por criatura por combate.</p>
+            <p class="cost-restriction"><strong>Costo:</strong> +2 Cargas.</p>
+        </div>
+
+        <div class="ability-box">
+            <h4>2. Perpetuidad (Defensiva)</h4>
+            <p style="font-style: italic; color: #666; margin-bottom: 10px;">Un segundo robado a la muerte misma. El portador puede anclar un alma al borde del abismo y devolverla contra su voluntad.</p>
+            <p><strong>Reacción:</strong> Cuando una criatura a 30 ft caiga a 0 PG, queda en 1 PG en su lugar.</p>
+            <p class="cost-restriction"><strong>Restricción:</strong> Una vez por criatura por combate.</p>
+            <p class="cost-restriction"><strong>Costo:</strong> +3 Cargas.</p>
+        </div>
+
+        <div class="ability-box">
+            <h4>3. Confluencia (Soporte)</h4>
+            <p style="font-style: italic; color: #666; margin-bottom: 10px;">Las líneas temporales se entrelazan. Los portadores dejan de ser individuos y se convierten en un único mecanismo sincronizado.</p>
+            <p><strong>Acción:</strong> Vincula a los portadores durante la ronda actual (40 ft).</p>
+            <p>Cada portador puede usar su Reacción para donar su siguiente Acción o todo su Movimiento base a otra criatura (aliada o no) a 40 ft.</p>
+            <p>La criatura que recibe la Acción o Movimiento la obtiene en su próximo turno. El portador que dona pierde ese recurso en su turno.</p>
+            <p>La habilidad finaliza cuando todos los portadores han decidido ceder o no su recurso.</p>
+            <p><strong>Límite:</strong> Una criatura no puede realizar más de dos Acciones en un mismo turno mediante este efecto.</p>
+            <p class="cost-restriction"><strong>Costo:</strong> +2 Cargas.</p>
+        </div>
+
+        <hr class="divider">
+
+        <h2>V. Vórtice Temporal</h2>
+
+        <img src="vortex_accion.png" alt="Vórtice Temporal en Acción" class="sword-image" style="display: block; margin: 25px auto;">
+
+        <p style="font-style: italic; color: #555; margin-bottom: 20px; line-height: 1.8;">El tiempo se pliega sobre sí mismo, negándose a permitir que el presente avance. La realidad se retuerce. Nadie es inmune a las consecuencias.</p>
+
+        <p>Tira 1d20 y resuelve inmediatamente. Afecta a todas las criaturas presentes.</p>
+        <p><em><strong>Nota:</strong> "Final de la ronda" significa hasta que la iniciativa vuelva al portador que activó el Vórtice.</em></p>
+
+        <h3>Tabla de Efectos (1d20)</h3>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 60px;">d20</th>
+                        <th>Efecto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>1</strong></td>
+                        <td>Todas las criaturas ganan +10 ft de movimiento hasta el final de su próximo turno.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>2</strong></td>
+                        <td>Todas las velocidades se reducen a 0 hasta el final de la ronda.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3</strong></td>
+                        <td>La iniciativa se reordena aleatoriamente de forma inmediata. Determina nuevo orden y continúa desde ahí.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>4</strong></td>
+                        <td>Todas las criaturas repiten su última Acción de la ronda actual si es posible (deben tener los recursos necesarios). Criaturas que aún no han actuado no se ven afectadas.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>5</strong></td>
+                        <td>Nadie puede usar Reacciones hasta el inicio del siguiente turno del portador.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>6</strong></td>
+                        <td>Todas las criaturas pueden mover 15 ft sin provocar ataques de oportunidad inmediatamente.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>7</strong></td>
+                        <td>Todas las condiciones activas duran una ronda adicional.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>8</strong></td>
+                        <td>Todas las condiciones activas terminan inmediatamente.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>9</strong></td>
+                        <td>Cada criatura afectada por una condición que requiera salvación debe repetirla inmediatamente.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>10</strong></td>
+                        <td>Una criatura aleatoria pierde su próximo turno. Si aún no ha actuado en esta ronda, pierde este turno. Si ya actuó, pierde el turno de la siguiente ronda.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>11</strong></td>
+                        <td>Una criatura aleatoria actúa inmediatamente (turno extra ahora). Si ya actuó en esta ronda, actúa de nuevo.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>12</strong></td>
+                        <td>Todo el daño infligido hasta el final de la ronda se convierte en daño de fuerza.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>13</strong></td>
+                        <td>Todas las tiradas de ataque hasta el final de la ronda se realizan con ventaja.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>14</strong></td>
+                        <td>Todas las tiradas de ataque hasta el final de la ronda se realizan con desventaja.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>15</strong></td>
+                        <td>Todas las criaturas intercambian posición con la más cercana. Si no hay criatura cercana, no se mueve.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>16</strong></td>
+                        <td>Las armas infligen daño mínimo hasta el final de la ronda.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>17</strong></td>
+                        <td>Las armas infligen daño máximo hasta el final de la ronda.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>18</strong></td>
+                        <td>El tiempo se comprime: cada criatura pierde su Acción adicional si tiene alguna (Action Surge, Haste, etc.).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>19</strong></td>
+                        <td>Cada criatura puede usar inmediatamente su Reacción si no la ha usado en esta ronda.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>20</strong></td>
+                        <td>Se tiran dos resultados adicionales en la tabla e ignora este resultado.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <hr class="divider">
+
+        <h2>VI. Notas Finales</h2>
+
+        <div class="note-box">
+            <h4>Ventaja del Creador</h4>
+            
+            <img src="Séricar.png" alt="Séricar, Mago Cronurgo Eladrin" class="sword-image" style="display: block; margin: 20px auto; max-width: 400px;">
+            
+            <p>Cuando ocurre un Vórtice Temporal, <strong>Séricar (o el creador de las armas)</strong> puede volver a tirar el resultado del d20 una vez si considera que el efecto le perjudica. Debe usar el nuevo resultado.</p>
+        </div>
+
+        <div class="note-box">
+            <h4>Notas para el DM</h4>
+            <p>La Trilogía del Reloj es un sistema de riesgo consciente.</p>
+            <p>El Vórtice es imparcial por diseño. Ajusta probabilidades si el ritmo de tu mesa lo requiere.</p>
+        </div>
+
+        <hr class="divider">
+
+        <h2 style="text-align: center; margin-top: 50px;">Hoja de Seguimiento para Jugadores</h2>
+        <p style="text-align: center; font-style: italic; color: #666; margin-bottom: 30px;">Fotocopia esta página para rastrear las Cargas de Entropía durante el combate</p>
+
+        <div class="tracking-sheet" style="border: 3px solid #8b0000; padding: 30px; margin: 20px 0; background: #fefbf5; page-break-inside: avoid;">
+            
+            <h3 style="text-align: center; color: #8b0000; margin-bottom: 25px; text-transform: uppercase; letter-spacing: 1px;">Cargas de Entropía</h3>
+            
+            <!-- Contador visual de cargas -->
+            <div style="display: flex; justify-content: center; gap: 8px; margin-bottom: 30px; flex-wrap: wrap;">
+                <div class="tracking-charge-box" style="width: 50px; height: 50px; border: 2px solid #333; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2em; background: white;">0</div>
+                <div class="tracking-charge-box" style="width: 50px; height: 50px; border: 2px solid #333; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2em; background: white;">1</div>
+                <div class="tracking-charge-box" style="width: 50px; height: 50px; border: 2px solid #333; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2em; background: white;">2</div>
+                <div class="tracking-charge-box" style="width: 50px; height: 50px; border: 2px solid #333; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2em; background: white;">3</div>
+                <div class="tracking-charge-box" style="width: 50px; height: 50px; border: 2px solid #333; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2em; background: white;">4</div>
+                <div class="tracking-charge-box" style="width: 50px; height: 50px; border: 2px solid #0066cc; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2em; background: #e6f2ff;">5</div>
+                <div class="tracking-charge-box" style="width: 50px; height: 50px; border: 2px solid #0066cc; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2em; background: #e6f2ff;">6</div>
+                <div class="tracking-charge-box" style="width: 50px; height: 50px; border: 2px solid #0066cc; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2em; background: #e6f2ff;">7</div>
+                <div class="tracking-charge-box" style="width: 50px; height: 50px; border: 2px solid #ff6600; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2em; background: #fff3e6;">8</div>
+                <div class="tracking-charge-box" style="width: 50px; height: 50px; border: 2px solid #ff6600; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2em; background: #fff3e6;">9</div>
+                <div class="tracking-charge-box" style="width: 50px; height: 50px; border: 3px solid #8b0000; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2em; background: #ffe6e6;">10</div>
+            </div>
+
+            <!-- Leyenda de estados -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 30px;">
+                <div class="tracking-box" style="border: 2px solid #333; padding: 10px; background: white;">
+                    <strong style="color: #333;">NORMAL (0-4)</strong><br>
+                    <span style="font-size: 0.9em;">No hay tirada de Vórtice</span>
+                </div>
+                <div class="tracking-box" style="border: 2px solid #0066cc; padding: 10px; background: #e6f2ff;">
+                    <strong style="color: #0066cc;">SOBRECARGA (5-7)</strong><br>
+                    <span style="font-size: 0.9em;">1d6: 4-6 = Vórtice</span>
+                </div>
+                <div class="tracking-box" style="border: 2px solid #ff6600; padding: 10px; background: #fff3e6;">
+                    <strong style="color: #ff6600;">FORZADO (8-9)</strong><br>
+                    <span style="font-size: 0.9em;">1d6: 3-6 = Vórtice</span>
+                </div>
+                <div class="tracking-box" style="border: 3px solid #8b0000; padding: 10px; background: #ffe6e6;">
+                    <strong style="color: #8b0000;">10 CARGAS</strong><br>
+                    <span style="font-size: 0.9em;">¡Vórtice automático! (tira 2d20)</span>
+                </div>
+            </div>
+
+            <!-- Frecuencia del Núcleo seleccionada -->
+            <div class="tracking-box" style="border: 2px solid #8b0000; padding: 15px; margin-bottom: 20px; background: white;">
+                <h4 style="margin-top: 0; color: #8b0000;">Frecuencia del Núcleo Activa:</h4>
+                <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                    <label style="display: flex; align-items: center; gap: 8px;">
+                        <div style="width: 18px; height: 18px; border: 2px solid #333;"></div>
+                        <span>Entropía Cero (+2 Cargas)</span>
+                    </label>
+                    <label style="display: flex; align-items: center; gap: 8px;">
+                        <div style="width: 18px; height: 18px; border: 2px solid #333;"></div>
+                        <span>Perpetuidad (+3 Cargas)</span>
+                    </label>
+                    <label style="display: flex; align-items: center; gap: 8px;">
+                        <div style="width: 18px; height: 18px; border: 2px solid #333;"></div>
+                        <span>Confluencia (+2 Cargas)</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Tracking de habilidades usadas -->
+            <div class="tracking-box" style="border: 2px solid #333; padding: 15px; background: white;">
+                <h4 style="margin-top: 0;">Habilidades Usadas Este Combate:</h4>
+                <p style="font-size: 0.85em; color: #666; margin-bottom: 15px;"><em>Cada habilidad solo puede usarse una vez por criatura por combate. Anota el nombre de la criatura afectada.</em></p>
+                
+                <div style="margin-bottom: 12px;">
+                    <strong>Segundero (Rapier):</strong>
+                    <div style="border-bottom: 1px solid #333; min-height: 25px; margin-top: 5px;"></div>
+                </div>
+                
+                <div style="margin-bottom: 12px;">
+                    <strong>Minutero (Espada Versátil):</strong>
+                    <div style="border-bottom: 1px solid #333; min-height: 25px; margin-top: 5px;"></div>
+                </div>
+                
+                <div style="margin-bottom: 12px;">
+                    <strong>Hora (Espada Corta):</strong>
+                    <div style="border-bottom: 1px solid #333; min-height: 25px; margin-top: 5px;"></div>
+                </div>
+                
+                <div>
+                    <strong>Frecuencia del Núcleo:</strong>
+                    <div style="border-bottom: 1px solid #333; min-height: 25px; margin-top: 5px;"></div>
+                </div>
+            </div>
+
+            <!-- Recordatorio de reinicio -->
+            <div class="tracking-reminder" style="margin-top: 20px; padding: 15px; background: #fff9e6; border: 2px dashed #d4b896; text-align: center;">
+                <strong style="color: #8b0000;">⚠️ REINICIO DE CARGAS:</strong><br>
+                <span style="font-size: 0.9em;">Las Cargas vuelven a 0 tras un Vórtice, o tras 1 minuto sin que ningún portador participe en combate.</span>
+            </div>
+
+        </div>
+
+        <hr class="section-divider" style="margin: 60px 0; border: none; border-top: 4px double #8b0000;">
+
+        <h1 style="margin-top: 60px;">PARTE II: LA FORJA</h1>
+        <p class="subtitle">Este documento detalla los requisitos para que un artífice o forjador pueda crear las tres espadas temporales y el Núcleo del Reloj desde cero.</p>
+
+        <hr class="divider">
+
+        <h2>I. Conocimiento Requerido</h2>
+
+        <h3>Teoría Temporal Básica</h3>
+        <ul>
+            <li>Comprensión de los flujos temporales y su manipulación</li>
+            <li>Estudio de paradojas temporales y sus consecuencias</li>
+            <li>Conocimiento de entropía temporal como concepto mágico</li>
+            <li>Páginas de investigación: Al menos 200 horas de estudio (8-10 sesiones de downtime)</li>
+        </ul>
+
+        <h3>Fuentes de Conocimiento Posibles</h3>
+        <ul>
+            <li>Tomos antiguos de cronurgos legendarios</li>
+            <li>Ruinas de civilizaciones que experimentaron con el tiempo</li>
+            <li>Mentor experto en magia temporal (puede ser un NPC, un lich, un dragón de bronce, etc.)</li>
+            <li>Visiones proféticas o contacto con entidades del Plano del Tiempo</li>
+            <li>Fragmentos de espadas temporales previas para estudiar</li>
+        </ul>
+
+        <h3>Habilidades Mágicas</h3>
+        <ul>
+            <li>Dominio de conjuros de 5to nivel o superior</li>
+            <li>Conocimiento del conjuro "Haste" (necesario como base teórica)</li>
+            <li>Idealmente: acceso a conjuros como "Time Stop", "Slow", "Temporal Shunt"</li>
+            <li>Competencia en Arcana y capacidad de lanzar conjuros de 5º nivel o superior.</li>
+        </ul>
+
+        <hr class="divider">
+
+        <h2>II. Materiales Base</h2>
+
+        <h3>Metales Especiales (para las hojas)</h3>
+
+        <div class="ability-box">
+            <h4>1. Mitral Temporal</h4>
+            <ul>
+                <li>Mitral refinado expuesto durante años a anomalías temporales</li>
+                <li><strong>Cantidad:</strong> 3 lingotes (uno por espada)</li>
+                <li><strong>Ubicación sugerida:</strong> Minas en zonas de distorsión temporal, ruinas de batallas donde Time Stop fue usado repetidamente, meteoritos que atravesaron portales planares</li>
+            </ul>
+        </div>
+
+        <div class="ability-box">
+            <h4>2. Adamantina Etérea</h4>
+            <ul>
+                <li>Adamantina del Plano Etéreo, más ligera pero igualmente resistente</li>
+                <li><strong>Cantidad:</strong> 1 lingote (para reforzar el centro del Núcleo)</li>
+                <li><strong>Ubicación sugerida:</strong> Comerciantes planares, expedición al Plano Etéreo, tesoro de dragón antiguo</li>
+            </ul>
+        </div>
+
+        <h3>Gema del Núcleo</h3>
+
+        <div class="ability-box">
+            <h4>3. Cristal Horológico</h4>
+            <ul>
+                <li>Una gema cristalina grande, extremadamente rara</li>
+                <li>Debe ser transparente y sin imperfecciones</li>
+                <li>Debe resonar con energía temporal (detectable con Detect Magic)</li>
+                <li>Será tallada en forma de icosaedro (d20) durante la Fase 1 de forja</li>
+                <li><strong>Tipos posibles:</strong>
+                    <ul>
+                        <li>Diamante temporal (formado en zona de anomalía temporal)</li>
+                        <li>Fragmento cristalizado del Plano del Tiempo</li>
+                        <li>Lágrima petrificada de un Fénix (criatura que renace = dominio temporal)</li>
+                    </ul>
+                </li>
+                <li><strong>Valor estimado:</strong> 50,000+ po</li>
+            </ul>
+            <div class="note-box" style="margin-top: 15px;">
+                <p><strong>NOTA:</strong> La forma de d20 es una tradición cronúrgica, simbolizando las múltiples líneas temporales posibles (20 resultados, 20 futuros). Algunos forjadores usan otras formas geométricas, pero el icosaedro es considerado el más estable para contener paradojas temporales. Es una decisión estética y simbólica, no un requisito mecánico absoluto.</p>
+            </div>
+        </div>
+
+        <h3>Componentes Alquímicos</h3>
+
+        <div class="ability-box">
+            <h4>4. Polvo de Reloj de Arena Ancestral</h4>
+            <ul>
+                <li>Arena de un desierto donde el tiempo fluye diferente</li>
+                <li>Usada para templar las hojas</li>
+                <li><strong>Cantidad:</strong> 1 frasco (100 gramos)</li>
+            </ul>
+        </div>
+
+        <div class="ability-box">
+            <h4>5. Aceite de Cronoesencia</h4>
+            <ul>
+                <li>Extraído de seres que viven fuera del tiempo normal</li>
+                <li><strong>Ejemplos:</strong> Androsphinx, ciertos tipos de genios, criaturas del Astral</li>
+                <li>Usado para lubricar las runas durante la inscripción</li>
+                <li><strong>Cantidad:</strong> 3 frascos (uno por espada)</li>
+            </ul>
+        </div>
+
+        <hr class="divider">
+
+        <h2>III. Componentes Temporales (Los Más Difíciles)</h2>
+
+        <p><em>Estos son los elementos "épicos" que requieren aventuras completas:</em></p>
+
+        <div class="ability-box">
+            <h4>1. Fragmento de Paradoja Estable</h4>
+            <p><strong>Descripción:</strong> Un objeto que existe simultáneamente en dos estados temporales</p>
+            <p><strong>Cómo obtenerlo:</strong></p>
+            <ul>
+                <li>Crear una paradoja controlada (ej: usar Time Stop mientras otra criatura usa Time Stop)</li>
+                <li>Buscar en ruinas donde experimentos temporales fallaron</li>
+                <li>Negociar con un cronurgo renegado</li>
+            </ul>
+            <p><strong>Uso:</strong> Se integra en el Núcleo para permitir la manipulación temporal</p>
+            <p><strong>Peligro:</strong> Alta probabilidad de causar anomalías si se maneja mal</p>
+        </div>
+
+        <div class="ability-box">
+            <h4>2. Aliento de un Momento Congelado</h4>
+            <p><strong>Descripción:</strong> Tiempo literalmente detenido, embotellado en un contenedor mágico</p>
+            <p><strong>Cómo obtenerlo:</strong></p>
+            <ul>
+                <li>Lanzar Time Stop y capturar la esencia del momento con un ritual</li>
+                <li>Explorar la "Cámara Eterna" (zona donde un Time Stop nunca terminó)</li>
+                <li>Robar de un cronurgo que colecciona "momentos"</li>
+            </ul>
+            <p><strong>Uso:</strong> Permite a las espadas "pausar" efectos temporales</p>
+            <p><strong>Cantidad:</strong> 3 viales (uno por espada)</p>
+        </div>
+
+        <div class="ability-box">
+            <h4>3. Lágrima de Quien Ha Vivido Dos Veces [OPCIONAL]</h4>
+            <p><strong>Descripción:</strong> Lágrima de una criatura que ha experimentado viaje temporal real</p>
+            <p><strong>Cómo obtenerlo:</strong></p>
+            <ul>
+                <li>Encontrar un NPC que viajó al pasado/futuro</li>
+                <li>Un replicante o clon que coexiste con su original</li>
+                <li>Un druida anciano que vivió dos veces su vida (reencarnación)</li>
+            </ul>
+            <p><strong>Nota:</strong> Debe ser dada voluntariamente (una lágrima robada no funciona)</p>
+            
+            <h4 style="margin-top: 20px;">Uso OPCIONAL - Soul-Binding (Vinculación de Propiedad)</h4>
+            <p>Si se añade la Lágrima durante la Fase 3, las espadas quedan "soul-bound" al forjador:</p>
+            
+            <h4 style="margin-top: 15px; font-size: 1em;">Mecánicas de Soul-Binding:</h4>
+            <ul>
+                <li>Las espadas son PROPIEDAD del forjador (otros pueden usarlas normalmente)</li>
+                <li>No pueden ser vendidas, regaladas, heredadas o transferidas permanentemente sin la muerte del dueño</li>
+                <li>NO hay restricción de distancia: las espadas funcionan a cualquier distancia del dueño</li>
+                <li>Si las espadas están separadas del dueño por más de 1 semana (7 días), se teletransportan automáticamente de vuelta a él</li>
+                <li>El vínculo solo se rompe con la muerte permanente del dueño</li>
+                <li>Si el dueño muere, las espadas pueden vincularse a un nuevo portador mediante un ritual de 24 horas (requiere Arcana DC 18 y una nueva lágrima)</li>
+            </ul>
+            
+            <h4 style="margin-top: 15px; font-size: 1em;">Ventajas del Soul-Binding:</h4>
+            <ul>
+                <li>Seguridad: No pueden ser robadas permanentemente</li>
+                <li>Retorno automático después de 1 semana sin importar la distancia</li>
+                <li>Conexión emocional profunda con las espadas</li>
+            </ul>
+            
+            <h4 style="margin-top: 15px; font-size: 1em;">Desventajas:</h4>
+            <ul>
+                <li>No puedes venderlas o regalarlas permanentemente</li>
+                <li>Dependen de tu supervivencia (si mueres sin resurrección, necesitan nuevo dueño para recuperar sus funciones mágicas)</li>
+                <li>Si las prestas por >1 semana, regresan a ti automáticamente</li>
+            </ul>
+            
+            <p><strong>NOTA IMPORTANTE:</strong> Las espadas pueden ser USADAS por cualquier persona, tengan o no soul-binding. El vínculo solo afecta la PROPIEDAD (quién es el dueño), no la usabilidad. Puedes prestar las espadas a aliados y funcionarán normalmente. La diferencia está en que con soul-binding regresan automáticamente después de 1 semana.</p>
+            
+            <p><em>Si NO usas la Lágrima: Las espadas funcionan normalmente pero sin soul-binding (pueden ser transferidas libremente, no regresan automáticamente)</em></p>
+        </div>
+
+        <div class="note-box" style="border: 3px double #8b0000; margin: 25px 0; padding: 20px;">
+            <h3 style="text-align: center; margin-bottom: 15px; color: #8b0000;">⚡ ATAJO ALTERNATIVO: CONFLUENCIA DEL FORJADOR ⚡</h3>
+            
+            <p>Si llegas al Día 6 sin el Fragmento de Paradoja y/o sin las Lágrimas, puedes arriesgar el siguiente método durante la Fase 3:</p>
+            
+            <h4>Método Estándar:</h4>
+            <ul>
+                <li>Durante el ritual de infusión (cuando lanzas Haste), la intensidad temporal es tan alta que permite abrir portales para traer versiones de ti mismo de diferentes líneas temporales (pasado/presente/futuro)</li>
+                <li>Las 3 versiones coexisten durante toda la Fase 3 de forja (Día 6)</li>
+                <li>Su coexistencia crea una paradoja estable (Fragmento de Paradoja)</li>
+                <li>Cada versión puede proporcionar una lágrima (3 Lágrimas totales)</li>
+            </ul>
+            
+            <p><strong>Requisitos:</strong></p>
+            <ul>
+                <li>Salvación de Arcana o Sabiduría DC 15 por cada portal</li>
+                <li><strong>Riesgo:</strong> Si falla, podrás reintentar UNA ÚNICA VEZ abrir el portal</li>
+                <li>Si vuelve a fallar: Las versiones temporales se desincronizazan y el forjador puede sufrir daño temporal permanente (envejecimiento, pérdida de memoria, etc.)</li>
+                <li>Deberás tomar un descanso largo antes de reintentar la Infusión Temporal</li>
+            </ul>
+            
+            <h4>Método Avanzado (solo magos nivel 17+):</h4>
+            <ul>
+                <li>Si lanzas Time Stop + Haste sobre ti mismo durante la Fase 3, la intensidad de la magia temporal es aún mayor</li>
+                <li>Las versiones de otras líneas temporales vienen a ti POR SÍ SOLAS</li>
+                <li>NO requiere salvación (éxito automático)</li>
+                <li><strong>Costo:</strong> Slot de nivel 9 (Time Stop) + slot de nivel 3 (Haste)</li>
+                <li><strong>Consecuencia:</strong> Deberás descansar 3 DÍAS completos antes de continuar a la Fase 4</li>
+                <li>El forjador queda exhausto por el trauma de existir en múltiples momentos simultáneos</li>
+            </ul>
+            
+            <p><strong>Beneficio de ambos métodos:</strong></p>
+            <ul>
+                <li>1 Fragmento de Paradoja (tres yos = paradoja estable)</li>
+                <li>3 Lágrimas (cada versión llora al verse a sí misma)</li>
+                <li>Reduce 4-6 sesiones de obtención de componentes</li>
+                <li>Mantiene el secreto (no necesitas NPCs externos)</li>
+            </ul>
+            
+            <p><em>Consulta con tu DM si este método está disponible en tu campaña.</em></p>
+        </div>
+
+        <hr class="divider">
+
+        <h2>IV. Herramientas y Condiciones de Forja</h2>
+
+        <h3>Forja Especial</h3>
+        <p>No puede ser una forja ordinaria</p>
+        <p><strong>Opciones:</strong></p>
+        <ol>
+            <li>Forja de un maestro enano/dragón/gigante que trabaje materiales legendarios</li>
+            <li>Forja construida en un nexo temporal (donde 3+ líneas temporales se cruzan)</li>
+            <li>Forja alimentada por fuego de un Fénix o dragón de bronce (conexión temporal)</li>
+            <li>Cámara sellada donde el tiempo puede ser manipulado artificialmente</li>
+        </ol>
+
+        <h3>Herramientas</h3>
+        <ul>
+            <li>Martillo de Forja Magistral (+3 o superior)</li>
+            <li>Yunque de Adamantina</li>
+            <li>Moldes especiales para cada espada (deben ser tallados con precisión)</li>
+            <li>Set de herramientas de grabador de runas (para inscribir símbolos temporales)</li>
+        </ul>
+
+        <h3>Condiciones Ambientales</h3>
+        <ul>
+            <li><strong>Temperatura:</strong> Debe fluctuar entre frío extremo y calor extremo (representando ciclos)</li>
+            <li><strong>Tiempo:</strong> La forja debe durar exactamente 7 días (número mágico de ciclos temporales)</li>
+            <li><strong>Asistentes:</strong> Al menos 2 ayudantes con conocimiento en Arcana 15+</li>
+            <li><strong>Protección:</strong> Círculo mágico contra anomalías temporales</li>
+        </ul>
+
+        <hr class="divider">
+
+        <h2>V. Proceso de Forja (Resumen General)</h2>
+
+        <div class="ability-box">
+            <h4>FASE 1: Preparación del Núcleo (Día 1-2)</h4>
+            <ul>
+                <li>Tallar el Cristal Horológico en forma de icosaedro (d20)</li>
+                <li>Infundir el Fragmento de Paradoja en el centro de la gema</li>
+                <li>Sellar con Adamantina Etérea para crear la carcasa externa</li>
+                <li><strong>Ritual:</strong> Lanzar "Haste" + "Slow" simultáneamente sobre el Núcleo</li>
+                <li><strong>Salvación:</strong> Arcana DC 20 para estabilizar las energías opuestas</li>
+                <li><strong>Fallo:</strong> El Núcleo explota (6d10 de daño de fuerza en 30 ft, materiales perdidos)</li>
+            </ul>
+        </div>
+
+        <div class="ability-box">
+            <h4>FASE 2: Forja de las Hojas (Día 3-5)</h4>
+            <ul>
+                <li>Fundir el Mitral Temporal con fuego mágico de 3000°F+</li>
+                <li>Formar cada hoja según su diseño (rapier, longsword, shortsword)</li>
+                <li>Templar en Polvo de Reloj de Arena Ancestral mezclado con agua bendita</li>
+                <li>Inscribir runas temporales usando Aceite de Cronoesencia</li>
+                <li><strong>Salvación (por cada espada):</strong> Arcana DC 18</li>
+                <li><strong>Fallo:</strong> La espada es +1 mágica pero no tiene propiedades temporales</li>
+            </ul>
+        </div>
+
+        <div class="ability-box">
+            <h4>FASE 3: Infusión Temporal (Día 6)</h4>
+            
+            <div class="warning-box" style="margin-bottom: 15px;">
+                <p><strong>⚠️ NOTA:</strong> Si no tienes el Fragmento de Paradoja y/o las Lágrimas, puedes usar el método "Confluencia del Forjador" descrito en la Sección III (Componente #3). Este método permite obtener ambos componentes durante esta fase, pero tiene riesgos y costos.</p>
+            </div>
+            
+            <ul>
+                <li>Colocar cada espada en contacto con el Núcleo</li>
+                <li>Verter un Aliento de un Momento Congelado en cada hoja</li>
+                <li>[OPCIONAL] Añadir la Lágrima de Quien Ha Vivido Dos Veces (debe caer naturalmente sobre la hoja). Si se usa, las espadas quedan soul-bound al forjador (ver Sección III, Componente #3). Si NO se usa, las espadas funcionan normalmente sin restricciones de propiedad o distancia.</li>
+                <li><strong>Ritual:</strong> Lanzar ritual de 8 horas: "Haste" + "Enhance Ability" + "Magic Weapon" combinados</li>
+                <li><strong>Salvación:</strong> Arcana DC 22 (puede usar Inspiration o ayuda de asistentes)</li>
+                <li><strong>Fallo:</strong> Las espadas no se sincronizan con el Núcleo (pueden funcionar solas pero no comparten Cargas de Entropía)</li>
+            </ul>
+        </div>
+
+        <div class="ability-box">
+            <h4>FASE 4: Calibración Final (Día 7)</h4>
+            <ul>
+                <li>Activar cada espada una vez en presencia del Núcleo</li>
+                <li>Observar cómo el Núcleo responde a cada uso</li>
+                <li>Ajustar la resonancia mediante pequeños golpes de martillo en las runas</li>
+                <li>Realizar el "Primer Vórtice Controlado" (disparar 10 Cargas intencionalmente en área segura)</li>
+                <li><strong>Salvación:</strong> Arcana DC 16</li>
+                <li><strong>Fallo:</strong> Las espadas quedan desincronizadas, se debe repetir esta fase desde el principio</li>
+            </ul>
+        </div>
+
+        <div class="note-box">
+            <h4>RESULTADO:</h4>
+            <ul>
+                <li><strong>Éxito total:</strong> Las tres espadas y el Núcleo funcionan perfectamente como se describe</li>
+                <li><strong>Éxito parcial:</strong> Funcionan pero con 1-2 fallos menores (DM decide penalizaciones)</li>
+                <li><strong>Fallo crítico:</strong> El Núcleo se fractura, las espadas son mágicas +1 comunes, materiales perdidos</li>
+            </ul>
+        </div>
+
+        <hr class="divider">
+
+        <h2>VI. Riesgos y Consecuencias</h2>
+
+        <h3>Durante la Forja</h3>
+        
+        <p><strong>Anomalías temporales pueden manifestarse:</strong></p>
+        <ul>
+            <li>Eco temporal del forjador aparece y habla mensajes crípticos</li>
+            <li>Objetos cercanos envejecen o rejuvenecen aleatoriamente</li>
+            <li>Bucles temporales de 5-10 minutos (los jugadores repiten acciones)</li>
+        </ul>
+
+        <p><strong>Atraer atención no deseada:</strong></p>
+        <ul>
+            <li>Inevitables investigan la perturbación temporal</li>
+            <li>Cronurgos rivales intentan robar el proceso</li>
+            <li>Criaturas del Plano del Tiempo se filtran a través de grietas</li>
+        </ul>
+
+        <h3>Después de la Creación</h3>
+        
+        <p><strong>El forjador puede sufir "Resonancia Temporal":</strong></p>
+        <ul>
+            <li>Ve destellos de eventos futuros (1-2 días adelante)</li>
+            <li>Sueña con momentos de su pasado con claridad perfecta</li>
+            <li>Envejece 1d4 años o rejuvenece 1d4 años (tira 1d2: 1=envejece, 2=rejuvenece)</li>
+        </ul>
+
+        <hr class="divider">
+
+        <h2>VII. Notas para el DM</h2>
+
+        <h3>Escalabilidad</h3>
+        <ul>
+            <li><strong>Para partido de nivel 8-12:</strong> Elimina los componentes más exóticos (Fragmento de Paradoja puede ser una gema encantada común), reduce DCs en 2-3 puntos</li>
+            <li><strong>Para partido de nivel 13-16:</strong> Usa el documento tal como está</li>
+            <li><strong>Para partido de nivel 17-20:</strong> Aumenta DCs en 2 puntos, añade combate contra Inevitables durante la forja</li>
+        </ul>
+
+        <h3>Tiempo de Campaña</h3>
+        <ul>
+            <li>Investigación inicial: 3-5 sesiones</li>
+            <li>Obtención de materiales base: 2-4 sesiones</li>
+            <li>Obtención de componentes temporales: 4-8 sesiones (1-2 por componente épico)</li>
+            <li>Construcción de la forja/negociación: 1-2 sesiones</li>
+            <li>Forja final: 1 sesión épica (puede ser downtime con tiradas críticas)</li>
+        </ul>
+        <p><strong>TOTAL ESTIMADO:</strong> 11-20 sesiones de juego</p>
+
+        <h3>Alternativas Narrativas</h3>
+        <ul>
+            <li>Séricar puede encontrar UNA espada ya hecha y usarla como "plantilla" para las otras dos</li>
+            <li>Un mentor puede hacer el 50% del trabajo, dejando a Séricar hacer la parte crítica</li>
+            <li>Las espadas pueden crearse una a la vez (Segundero primero, más simple)</li>
+        </ul>
+
+        <hr class="divider">
+
+        <h2>VIII. Plot Hooks para Iniciar el Arco</h2>
+
+        <div class="ability-box">
+            <h4>Hook 1: El Manuscrito Olvidado</h4>
+            <p>Un mercader de libros raros ofrece a Séricar un tomo polvoriento: "Cronosíntesis: Forjando lo Imposible". El libro está escrito en un lenguaje antiguo y describe la teoría de infundir metal con tiempo destilado. La última página muestra un boceto de tres espadas conectadas a una gema central. El autor del libro: un cronurgo legendario llamado "El Tejedor de Instantes", desaparecido hace 200 años.</p>
+        </div>
+
+        <div class="ability-box">
+            <h4>Hook 2: Visión Durante Descanso Largo</h4>
+            <p>Durante una meditación o sueño, Séricar tiene una visión: se ve a sí mismo empuñando tres espadas brillantes, congelando a un enemigo en el tiempo. Una voz susurra: "Lo que aún no existe, existe ya en el hilo del mañana. Forja tu destino, cronurgo". Al despertar, Séricar encuentra un fragmento de metal desconocido en su bolsillo: Mitral Temporal, del tamaño de una moneda. No estaba ahí antes.</p>
+        </div>
+
+        <div class="ability-box">
+            <h4>Hook 3: Encargo de un Mentor Misterioso</h4>
+            <p>Un mago anciano contacta a Séricar con un encargo: "Necesito que forjes tres espadas capaces de manipular el tiempo. Yo proporcionaré el conocimiento y parte de los materiales... pero tú debes hacer el trabajo. Es tu destino, aunque aún no lo sepas". El mago puede ser una versión FUTURA de Séricar, un dragón de bronce disfrazado, o un genuino mentor interesado en ver si Séricar tiene el talento.</p>
+        </div>
+
+        <div class="ability-box">
+            <h4>Hook 4: Fragmento Encontrado en Dungeon</h4>
+            <p>Durante una aventura no relacionada, el party encuentra una espada rota y corroída en un cofre antiguo. Cuando Séricar la toca, siente un pulso de energía temporal. Un Identify revela: "Fragmento de Segundero, Espada del Instante - Rota hace 300 años en un Vórtice Temporal catastrófico". Hay suficiente material intacto para estudiar su construcción... y quizás replicarla.</p>
+        </div>
+
+        <hr class="section-divider" style="margin: 60px 0; border: none; border-top: 4px double #8b0000;">
+
+        <h2 style="text-align: center;">APÉNDICE: Primeros Experimentos de Séricar</h2>
+
+        <p style="text-align: center; font-style: italic; margin-bottom: 30px;">Antes de crear la Trilogía del Reloj en su forma final, Séricar experimentó con múltiples variantes, buscando diferentes enfoques para manipular el tiempo. Estos prototipos fallidos revelaron verdades importantes sobre la cronurgia: no todo poder es útil, y la elegancia de un diseño reside en su eficiencia, no en su intensidad.</p>
+
+        <p style="text-align: center; font-style: italic; margin-bottom: 30px;">Los siguientes experimentos fueron abandonados por razones específicas, pero sus lecciones moldearon la versión definitiva de las espadas. Se documentan aquí como advertencia.</p>
+
+        <hr class="divider">
+
+        <h2>I. La Forja Carmesí (Variante Ígnea)</h2>
+
+        <img src="forja_carmesi.png" alt="La Forja Carmesí - Variante Ígnea" class="sword-image">
+
+        <h3>Concepto</h3>
+        <p>En su primer intento, Séricar buscaba poder desmesurado. Razonó que si el fuego eterno nunca se extingue, entonces existe fuera del tiempo lineal. Infundió en los núcleos cristalinos esencias de elementales de fuego y fragmentos de Plano Elemental del Fuego, creyendo que esto amplificaría exponencialmente la energía temporal disponible.</p>
+
+        <h3>Resultado</h3>
+        <p>Las espadas funcionaron. De hecho, fueron devastadoramente poderosas: cada golpe dejaba estelas de fuego temporal que persistían segundos después del ataque, los enemigos no solo eran ralentizados sino <em>incinerados mientras estaban congelados en el tiempo</em>. El vórtice temporal que generaban era visible a kilómetros de distancia, una columna carmesí de realidad distorsionada.</p>
+
+        <h3>Consecuencias Mecánicas</h3>
+        
+        <div class="ability-box">
+            <p><strong>Ventaja:</strong> +2d6 de daño de fuego adicional en cada ataque. Enemigos ralentizados también sufren 1d6 de daño de fuego al inicio de cada uno de sus turnos.</p>
+        </div>
+
+        <div class="warning-box">
+            <p><strong>Desventaja crítica:</strong> El fuego eterno drena constantemente el hilo temporal. Luego del primer uso las espadas consumen <strong>1 Carga de Entropía por turno</strong> automáticamente, incluso sin usarse. Al llegar a 10 Cargas, el Vórtice se activa involuntariamente.</p>
+            
+            <p><strong>Problema adicional:</strong> Apagar el fuego temporal requiere:</p>
+            <ul>
+                <li>Manipulación elemental opuesta (hielo o vacío térmico)</li>
+                <li>Desaceleración del flujo temporal (e.g: Slow)</li>
+            </ul>
+            <p>Redirigir la energía ígnea a otro objetivo solo transfiere el problema.</p>
+        </div>
+
+        <div class="note-box">
+            <h4>Veredicto de Séricar</h4>
+            <p><em>"Poder sin control es un arma que te mata a ti primero. Las espadas ardían con la furia de un sol moribundo, pero yo no podía soltarlas sin consecuencias, ni guardarlas sin que la forja entera se incendiara. El tiempo no debe ser quemado; debe ser tejido con precisión. Los prototipos carmesíes fueron desanclados antes de que destruyeran algo que amara."</em></p>
+        </div>
+
+        <div class="note-box">
+            <h4>Nota para el DM</h4>
+            <p>Estas espadas son una opción para campañas de nivel 15+ donde el riesgo extremo es parte de la diversión. Funcionan mejor en escenarios de "todo o nada" (batallas finales, misiones suicidas). Su drenaje constante acelera la llegada del Vórtice.</p>
+            <p><strong>No es un arma estratégica. Es una llama sostenida sobre pólvora.</strong></p>
+        </div>
+
+        <hr class="divider">
+
+        <h2>II. La Resonancia del Umbral (Variante Necromántica)</h2>
+
+        <img src="resonancia_umbral.png" alt="La Resonancia del Umbral - Variante Necromántica" class="sword-image">
+
+        <h3>Concepto</h3>
+        <p>Después del fracaso ígneo, Séricar adoptó un enfoque más cerebral. Razonó que la muerte y el tiempo están entrelazados: los muertos existen fuera del flujo temporal, eternos en su estado final. Si pudiera anclar esencias de seres no-vivos (espectros, fragmentos de almas, ecos de memoria) en los núcleos, las espadas podrían <em>consultar</em> el pasado directamente, revelando información estratégica: trampas olvidadas, eventos históricos, incluso atisbos de futuros posibles vistos por quienes ya partieron.</p>
+
+        <p>Infundió en las espadas: polvo de hueso de lichs, fragmentos de gemas de necromancia, y lágrimas de espectros voluntarios.</p>
+
+        <h3>Resultado</h3>
+        <p>Las espadas funcionaron como "oráculo táctico". Al activarlas en una mazmorra o campo de batalla, Séricar podía escuchar susurros: advertencias de exploradores muertos, lamentos de víctimas antiguas, ecos de conversaciones entre enemigos hace décadas. En teoría, esto era ventaja estratégica pura.</p>
+
+        <h3>Consecuencias Mecánicas</h3>
+        
+        <div class="ability-box">
+            <p><strong>Ventaja:</strong> 3 veces al día, el portador puede usar una acción para "escuchar el umbral". Tira 1d20:</p>
+            <ul>
+                <li><strong>15-20:</strong> Recibes información útil sobre el área (ubicación de trampas, presencia de enemigos, un secreto histórico relevante).</li>
+                <li><strong>8-14:</strong> Recibes información ambigua o parcial (el DM da una pista críptica).</li>
+                <li><strong>1-7:</strong> Contacto con entidad hostil o eco perturbador (ver desventaja).</li>
+            </ul>
+        </div>
+
+        <div class="warning-box">
+            <p><strong>Desventaja crítica:</strong> Los ecos y/o visiones no siempre vienen cuando los llamas. A veces llegan <em>sin ser invocados</em>. Cada descanso largo, el DM tira 1d6 en secreto:</p>
+            <ul>
+                <li><strong>1-2:</strong> El portador escucha un eco traumático ligado al lugar donde duerme (gritos de batalla, últimas palabras de un asesinado, lamentos de hambruna). Salvación de Sabiduría DC 15 o sufre 1 nivel de exhaustion por falta de sueño.</li>
+                <li><strong>3-4:</strong> Interferencia: durante el siguiente combate, debe hacer salvación de Concentración DC 12 al inicio de su turno o quedar <em>stunned</em> hasta el final de su turno (sobrecarga de voces).</li>
+                <li><strong>5-6:</strong> Sin incidente.</li>
+            </ul>
+            
+            <p><strong>Problema adicional:</strong> Las entidades contactadas no siempre cooperan. Algunas son vengativas, otras confundidas, varias violentas. En un 10% de los usos, una entidad intenta poseer al portador (Salvación de Carisma DC 16 o quedar poseído por 1 minuto).</p>
+        </div>
+
+        <div class="note-box">
+            <h4>Veredicto de Séricar</h4>
+            <p><em>"La información es poder, pero la locura es su precio. Las espadas me mostraron secretos que ningún vivo debería conocer... y también me mostraron horrores que no pedí ver. Escuchar a los muertos es como abrir una puerta que no puedes cerrar: eventualmente, algo cruza en la dirección equivocada. Las sellé en una bóveda protegida por runas de silencio. Si alguna vez las encuentras, no digas que no te advertí."</em></p>
+        </div>
+
+        <div class="note-box">
+            <h4>Nota para el DM</h4>
+            <p>Estas espadas son ideales para campañas con tono oscuro o de horror. Ofrecen ventaja táctica real, pero con un costo psicológico constante. Funcionan mejor con jugadores que disfrutan el roleplay de personajes atormentados o que llevan cargas emocionales. No recomendadas para campañas heroicas estándar, a menos que quieras introducir un arco de "arma maldita" que el party deba purificar o destruir.</p>
+        </div>
+
+        <hr class="divider">
+
+        <h2 style="text-align: center;">Conclusión: El Camino Hacia la Perfección</h2>
+
+        <p>Después de estos experimentos, Séricar comprendió la lección fundamental de la cronurgia como ingeniería:</p>
+
+        <blockquote style="border-left: 4px solid #8b0000; padding-left: 20px; margin: 25px 0; font-style: italic; color: #555;">
+            "Las espadas temporales no deben ser armas de destrucción masiva. Deben ser herramientas precisas que otorguen control, no caos. El tiempo es un recurso, y como todo recurso, debe ser administrado con inteligencia, no desperdiciado en espectáculos de poder."
+        </blockquote>
+
+        <p>Y así, la <strong>Trilogía del Reloj</strong> se encaminó a su forma final: sin fuego eterno que drenara la energía, sin ecos que enloquecieran al portador. Solo tiempo puro, tejido con precisión, estable y eficiente.</p>
+
+        <blockquote style="border-left: 4px solid #c41e3a; padding-left: 20px; margin: 25px 0; font-style: italic; color: #8b0000; font-weight: bold;">
+            "El tiempo no perdona a quienes juegan con él sin respeto. El tiempo no castiga. Corrige. Si lo entiendes… eres cronurgo."
+        </blockquote>
+
+        <p style="text-align: right; font-style: italic; margin-top: 30px;"><em>— Séricar, Maestro Cronurgo, en sus notas personales destruidas (y reconstruidas por él mismo desde una línea temporal alternativa, porque por supuesto que lo hizo)</em></p>
+
+        <hr class="section-divider" style="margin: 60px 0; border: none; border-top: 4px double #8b0000;">
+
+        <h2 style="text-align: center;">Cronosfera: Ritual de Desanclaje Controlado</h2>
+
+        <img src="cronosfera.png" alt="Cronosfera - Ritual de Desanclaje Controlado" class="sword-image" style="display: block; margin: 20px auto;">
+
+        <p>La Cronosfera no es un hechizo de detención temporal. Es un procedimiento de desacoplamiento progresivo del flujo.</p>
+
+        <p>Desarrollada por Séricar tras sus primeros experimentos fallidos, la Cronosfera permite cerrar una rasgadura temporal sin provocar una corrección violenta del tejido del mundo.</p>
+
+        <p><strong>No destruye el remolino. Elimina el diferencial que lo mantiene abierto.</strong></p>
+
+        <h3>Fundamento Teórico</h3>
+
+        <p>El remolino existe mientras haya drenaje.</p>
+
+        <p>Incluso en estado estable, las espadas mantienen un micro-flujo constante de energía temporal que impide que la rasgadura cicatrice.</p>
+
+        <p>La Cronosfera crea una región donde el flujo temporal se desacelera de forma gradual y controlada. Dentro de la esfera:</p>
+
+        <ul>
+            <li>El drenaje disminuye progresivamente.</li>
+            <li>La vibración del Núcleo se atenúa.</li>
+            <li>El diferencial energético tiende a cero.</li>
+        </ul>
+
+        <p>Cuando el drenaje se vuelve imposible, el remolino pierde su punto de anclaje y comienza a cerrarse por sí mismo.</p>
+
+        <p><em>El tejido no es forzado. Se le permite recomponerse.</em></p>
+
+        <h3>Procedimiento</h3>
+
+        <p><strong>Requisitos:</strong></p>
+        <ul>
+            <li>Las tres espadas.</li>
+            <li>Conocimiento profundo de cronurgia (Arcana 20+ o equivalente).</li>
+            <li>Concentración ininterrumpida.</li>
+            <li>Un espacio libre de interferencias mágicas mayores.</li>
+        </ul>
+
+        <p><strong>Duración:</strong> Entre 1 hora y 8 horas, a discreción del DM, según la estabilidad del remolino.</p>
+
+        <h3>Fases del Ritual</h3>
+
+        <div class="ability-box">
+            <h4>Fase I — Estabilización</h4>
+            <p>La Cronosfera se manifiesta como una cúpula translúcida de distorsión leve. El tiempo dentro comienza a desacelerarse imperceptiblemente.</p>
+            <p>Las espadas vibran con mayor intensidad durante los primeros minutos.</p>
+        </div>
+
+        <div class="ability-box">
+            <h4>Fase II — Atenuación</h4>
+            <p>El flujo disminuye de forma perceptible. El brillo del Núcleo se apaga gradualmente. Las Cargas de Entropía no pueden incrementarse. El drenaje automático se reduce turno tras turno.</p>
+            <p>El lanzador debe mantener concentración. Cualquier interrupción puede provocar un Vórtice inmediato.</p>
+        </div>
+
+        <div class="ability-box">
+            <h4>Fase III — Cierre</h4>
+            <p>Cuando el drenaje alcanza cero:</p>
+            <ul>
+                <li>El remolino se estrecha.</li>
+                <li>La singularidad pierde cohesión.</li>
+                <li>La rasgadura cicatriza.</li>
+            </ul>
+            <p>Las espadas conservan su estructura física y permanecen como armas mágicas +1, pero pierden permanentemente toda capacidad cronúrgica. No pueden reactivarse sin repetir un proceso completo de forja.</p>
+        </div>
+
+        <h3>Riesgos</h3>
+
+        <div class="warning-box">
+            <p><strong>La Cronosfera no es infalible.</strong></p>
+            
+            <p>Si el ritual se interrumpe en Fase II o III:</p>
+            <ul>
+                <li>Se activa inmediatamente un Vórtice.</li>
+                <li>El tejido puede sufrir una cicatriz residual.</li>
+                <li>El lanzador debe realizar una salvación de Constitución o Sabiduría (CD determinada por el DM) o sufrir Resonancia Temporal: visiones fragmentadas del futuro o envejecimiento/rejuvenecimiento leve.</li>
+            </ul>
+            
+            <p><em>Cerrar una herida es más difícil que abrirla.</em></p>
+        </div>
+
+        <h3>Consecuencias Cosmológicas</h3>
+
+        <p>Un cierre exitoso no deja poder activo.</p>
+
+        <p>Sin embargo, el lugar donde se realizó el ritual puede presentar anomalías menores durante días o semanas:</p>
+
+        <ul>
+            <li>Ecos débiles.</li>
+            <li>Alteraciones leves en la percepción del tiempo.</li>
+            <li>Sensación persistente de presión invertida.</li>
+        </ul>
+
+        <p><em>El tejido recuerda haber sido tensado.</em></p>
+
+        <hr class="section-divider" style="margin: 60px 0; border: none; border-top: 4px double #8b0000;">
+        <p style="text-align: center; font-size: 1.2em; color: #888;"><strong>FIN DEL DOCUMENTO</strong></p>
+
+    </div>
+</body>
+</html>
