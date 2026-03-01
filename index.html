@@ -1059,8 +1059,16 @@ Si hubiera detenido aquel aliento un segundo más.</em></p>
 
         <div class="stat-block">
             <p><strong>Tipo:</strong> <span class="badge legendary">Legendario</span> (cada espada <span class="badge rare">Very Rare</span> individualmente)</p>
-            <p><strong>Requisito:</strong> Sintonización por un mago con competencia en Arcanos</p>
+            <p><strong>Requisito:</strong> Requiere sintonización</p>
             <p><strong>Creador:</strong> Séricar, mago cronurgo eladrin</p>
+        </div>
+
+        <div style="text-align: center; margin: 30px 0;">
+            <div style="display: inline-block; border: 3px solid #8b0000; padding: 15px 30px; background: linear-gradient(135deg, #fefbf5 0%, #f9f3e8 100%); box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                <p style="margin: 0; font-size: 1.3em; font-weight: bold; color: #8b0000; letter-spacing: 1px;">╔════════════════════════════════════╗</p>
+                <p style="margin: 5px 0; font-size: 1.3em; font-weight: bold; color: #8b0000; letter-spacing: 1px;">║  NIVEL RECOMENDADO: 3-7           ║</p>
+                <p style="margin: 0; font-size: 1.3em; font-weight: bold; color: #8b0000; letter-spacing: 1px;">╚════════════════════════════════════╝</p>
+            </div>
         </div>
 
         <hr class="divider">
@@ -1202,6 +1210,31 @@ Si hubiera detenido aquel aliento un segundo más.</em></p>
         <h3>Reinicio de Cargas</h3>
         <p>Las Cargas solo se reinician si las tres espadas permanecen 1 minuto completo sin que ninguno de sus portadores participe en combate.</p>
         <p><em>Participación incluye estar bajo iniciativa activa, ser objetivo de acciones hostiles o actuar dentro de un enfrentamiento.</em></p>
+
+        <h3>Impulso Temporal</h3>
+        
+        <div class="ability-box">
+            <p style="font-style: italic; color: #666; margin-bottom: 15px;">Cuando un arma de la trilogía cruza un umbral crítico de entropía, el caos temporal otorga un breve impulso de poder al portador antes de estabilizarse en su nuevo estado.</p>
+            
+            <p><strong>Efecto:</strong> Durante el turno en que las Cargas de Entropía cruzan de un estado a otro, el arma otorga un bonificador temporal mejorado.</p>
+            
+            <h4 style="margin-top: 15px; color: #0066cc;">Umbrales de Activación:</h4>
+            <ul>
+                <li><strong>4 → 5 Cargas</strong> (Normal → Sobrecarga): El arma otorga +2 al ataque y daño hasta el final de ese turno (reemplazando el +1 base del arma).</li>
+                <li><strong>7 → 8 Cargas</strong> (Sobrecarga → Forzado): El arma otorga +2 al ataque y daño hasta el final de ese turno (reemplazando el +1 base del arma).</li>
+            </ul>
+            
+            <div class="note-box" style="margin-top: 15px;">
+                <p><strong>IMPORTANTE:</strong></p>
+                <ul>
+                    <li>El impulso solo se activa al <strong>cruzar</strong> estos umbrales específicos, no durante el estado completo.</li>
+                    <li>Solo se activa al <strong>ascender</strong> de estado, no al descender o resetear cargas.</li>
+                    <li>El bonificador +2 <strong>reemplaza</strong> el +1 base; el arma nunca otorga +3.</li>
+                    <li>Este efecto se aplica solo al turno en que se cruza el umbral.</li>
+                    <li>No afecta aumentos de cargas dentro del mismo estado (ej: 5→6 o 8→9).</li>
+                </ul>
+            </div>
+        </div>
 
         <hr class="divider">
 
@@ -1457,6 +1490,36 @@ Si hubiera detenido aquel aliento un segundo más.</em></p>
                 </div>
             </div>
 
+            <!-- Tracking de imperfecciones -->
+            <div class="tracking-box" style="border: 2px solid #ff6600; padding: 15px; background: #fff9f0; margin-top: 20px;">
+                <h4 style="margin-top: 0; color: #ff6600;">⚠️ Imperfecciones del Arma:</h4>
+                <p style="font-size: 0.85em; color: #666; margin-bottom: 15px;">
+                    <em>Si tu arma tiene imperfecciones de la forja, anótalas aquí. 
+                    Recuerda aplicar estos efectos durante el combate.</em>
+                </p>
+                
+                <div style="margin-bottom: 12px;">
+                    <strong>Segundero:</strong>
+                    <div style="border-bottom: 1px solid #333; min-height: 25px; margin-top: 5px;"></div>
+                </div>
+                
+                <div style="margin-bottom: 12px;">
+                    <strong>Minutero:</strong>
+                    <div style="border-bottom: 1px solid #333; min-height: 25px; margin-top: 5px;"></div>
+                </div>
+                
+                <div style="margin-bottom: 12px;">
+                    <strong>Hora:</strong>
+                    <div style="border-bottom: 1px solid #333; min-height: 25px; margin-top: 5px;"></div>
+                </div>
+                
+                <div style="margin-top: 15px; padding: 10px; background: #ffe6e6; border-left: 4px solid #8b0000;">
+                    <strong style="color: #8b0000;">IMPORTANTE:</strong> Si un arma tiene el defecto 
+                    <strong>"empieza con 1 carga"</strong>, anótalo claramente. El combate debe 
+                    comenzar con 1 Carga de Entropía ya acumulada.
+                </div>
+            </div>
+
             <!-- Recordatorio de reinicio -->
             <div class="tracking-reminder" style="margin-top: 20px; padding: 15px; background: #fff9e6; border: 2px dashed #d4b896; text-align: center;">
                 <strong style="color: #8b0000;">⚠️ REINICIO DE CARGAS:</strong><br>
@@ -1543,6 +1606,9 @@ Si hubiera detenido aquel aliento un segundo más.</em></p>
             </ul>
             <div class="note-box" style="margin-top: 15px;">
                 <p><strong>NOTA:</strong> La forma de d20 es una tradición cronúrgica, simbolizando las múltiples líneas temporales posibles (20 resultados, 20 futuros). Algunos forjadores usan otras formas geométricas, pero el icosaedro es considerado el más estable para contener paradojas temporales. Es una decisión estética y simbólica, no un requisito mecánico absoluto.</p>
+            </div>
+            <div class="warning-box" style="margin-top: 15px;">
+                <p><strong>⚠️ ADVERTENCIA PARA EL DM:</strong> Este cristal, una vez infundido con energía temporal durante la forja, se convierte en un <strong>núcleo temporal inestable</strong>. Su naturaleza paradójica hace que sea <strong>irreconocible como objeto vendible</strong> para comerciantes comunes. Ningún tasador convencional puede evaluar su valor, y los mercaderes de objetos mágicos lo consideran "demasiado peligroso" o "incomprensible". Aunque técnicamente vale más de 50,000 po en componentes, su venta es narrativamente imposible sin atraer atención extremadamente peligrosa (Inevitables, cronurgos hostiles, o peor).</p>
             </div>
         </div>
 
@@ -1716,30 +1782,53 @@ Si hubiera detenido aquel aliento un segundo más.</em></p>
 
         <hr class="divider">
 
-        <h2>V. Proceso de Forja (Resumen General)</h2>
+        <h2>V. Proceso de Forja (Sistema Graduado)</h2>
+
+        <div class="note-box" style="margin-bottom: 25px;">
+            <p><strong>FILOSOFÍA DE DISEÑO:</strong> Este sistema reemplaza los fallos catastróficos con consecuencias graduadas y manejables. Los errores crean imperfecciones reparables, no la pérdida total de materiales o tiempo. El objetivo es mantener la tensión sin frustrar a los jugadores.</p>
+        </div>
 
         <div class="ability-box">
             <h4>FASE 1: Preparación del Núcleo (Día 1-2)</h4>
+            <p style="font-style: italic; color: #666; margin-bottom: 10px;">Tallar el Cristal Horológico en forma de icosaedro y sellarlo con el Fragmento de Paradoja.</p>
+            
             <ul>
                 <li>Tallar el Cristal Horológico en forma de icosaedro (d20)</li>
                 <li>Infundir el Fragmento de Paradoja en el centro de la gema</li>
                 <li>Sellar con Adamantina Etérea para crear la carcasa externa</li>
                 <li><strong>Ritual:</strong> Lanzar "Haste" + "Slow" simultáneamente sobre el Núcleo</li>
-                <li><strong>Salvación:</strong> Arcana DC 20 para estabilizar las energías opuestas</li>
-                <li><strong>Fallo:</strong> El Núcleo explota (6d10 de daño de fuerza en 30 ft, materiales perdidos)</li>
+                <li><strong>Salvación:</strong> Arcana DC 15 para estabilizar las energías opuestas</li>
+            </ul>
+            
+            <p><strong>Resultado:</strong></p>
+            <ul>
+                <li><strong>Éxito:</strong> El núcleo se estabiliza correctamente. Continuar a Fase 2.</li>
+                <li><strong>Fallo:</strong> El núcleo se vuelve temporalmente inestable. El forjador debe esperar 8 horas para que se estabilice por sí solo. No se pierden materiales, solo tiempo.</li>
             </ul>
         </div>
 
         <div class="ability-box">
             <h4>FASE 2: Forja de las Hojas (Día 3-5)</h4>
+            <p style="font-style: italic; color: #666; margin-bottom: 10px;">Forjar cada espada requiere tres pruebas distintas que representan conocimiento arcano, habilidad artesanal y resistencia física.</p>
+            
+            <p><strong>Por cada espada, el forjador realiza 3 tiradas:</strong></p>
+            <ol>
+                <li><strong>Arcana DC 18</strong> (conocimiento de runas temporales)</li>
+                <li><strong>Smith's Tools DC 15</strong> (técnica de forja)</li>
+                <li><strong>Constitución DC 15</strong> (resistir el calor extremo y las 72 horas de trabajo continuo)</li>
+            </ol>
+            
+            <p><strong>Resultado según éxitos logrados:</strong></p>
             <ul>
-                <li>Fundir el Mitral Temporal con fuego mágico de 3000°F+</li>
-                <li>Formar cada hoja según su diseño (rapier, longsword, shortsword)</li>
-                <li>Templar en Polvo de Reloj de Arena Ancestral mezclado con agua bendita</li>
-                <li>Inscribir runas temporales usando Aceite de Cronoesencia</li>
-                <li><strong>Salvación (por cada espada):</strong> Arcana DC 18</li>
-                <li><strong>Fallo:</strong> La espada es +1 mágica pero no tiene propiedades temporales</li>
+                <li><strong>3 éxitos:</strong> La espada se forja perfectamente. Sin imperfecciones.</li>
+                <li><strong>2 éxitos:</strong> La espada funciona pero con una imperfección menor. Tirar 1d4 en la <strong>Tabla de Imperfecciones Menores</strong> (ver más adelante).</li>
+                <li><strong>1 éxito:</strong> Igual que 2 éxitos, tirar 1d4 en la tabla de imperfecciones.</li>
+                <li><strong>0 éxitos:</strong> La espada tiene una imperfección severa. El DM elige la más costosa de reparar de la <strong>Tabla de Imperfecciones Menores</strong> (no se tira d4).</li>
             </ul>
+            
+            <div class="note-box" style="margin-top: 15px;">
+                <p><strong>IMPORTANTE:</strong> Independiente del resultado, la fase se completa y la forja continúa. Las imperfecciones pueden repararse posteriormente mediante <strong>Reforja Menor</strong>.</p>
+            </div>
         </div>
 
         <div class="ability-box">
@@ -1749,35 +1838,127 @@ Si hubiera detenido aquel aliento un segundo más.</em></p>
                 <p><strong>⚠️ NOTA:</strong> Si no tienes el Fragmento de Paradoja y/o las Lágrimas, puedes usar el método "Confluencia del Forjador" descrito en la Sección III (Componente #3). Este método permite obtener ambos componentes durante esta fase, pero tiene riesgos y costos.</p>
             </div>
             
+            <p style="font-style: italic; color: #666; margin-bottom: 10px;">Sincronizar las tres espadas con el Núcleo del Reloj mediante infusión de energía temporal.</p>
+            
             <ul>
                 <li>Colocar cada espada en contacto con el Núcleo</li>
                 <li>Verter un Aliento de un Momento Congelado en cada hoja</li>
                 <li>[OPCIONAL] Añadir la Lágrima de Quien Ha Vivido Dos Veces (debe caer naturalmente sobre la hoja). Si se usa, las espadas quedan soul-bound al forjador (ver Sección III, Componente #3). Si NO se usa, las espadas funcionan normalmente sin restricciones de propiedad o distancia.</li>
                 <li><strong>Ritual:</strong> Lanzar ritual de 8 horas: "Haste" + "Enhance Ability" + "Magic Weapon" combinados</li>
-                <li><strong>Salvación:</strong> Arcana DC 22 (puede usar Inspiration o ayuda de asistentes)</li>
-                <li><strong>Fallo:</strong> Las espadas no se sincronizan con el Núcleo (pueden funcionar solas pero no comparten Cargas de Entropía)</li>
+                <li><strong>Salvación:</strong> Arcana DC 18 (puede usar Inspiration o ayuda de asistentes)</li>
             </ul>
+            
+            <p><strong>Resultado:</strong></p>
+            <ul>
+                <li><strong>20 natural:</strong> ¡Perfección absoluta! Si alguna espada tiene una imperfección menor de la Fase 2, el forjador puede eliminar una de ellas (a su elección).</li>
+                <li><strong>16-19:</strong> Éxito completo. Las espadas se sincronizan perfectamente con el Núcleo.</li>
+                <li><strong>11-15:</strong> Sincronización lograda, pero con defecto en el sistema de impulso. El <strong>impulso temporal</strong> (buff al cruzar estados Normal→Sobrecarga y Sobrecarga→Forzado) otorga +2 <strong>solo al ataque</strong>; el bonificador al daño permanece en +1. <strong>Costo de reparación: 800 po</strong>.</li>
+                <li><strong>10 o menos:</strong> Igual que 11-15, además el arma comienza cada combate con <strong>1 Carga de Entropía ya acumulada</strong> (este defecto debe anotarse en la hoja de personaje del portador). <strong>Costo de reparación: 1,000 po</strong>.</li>
+            </ul>
+            
+            <div class="warning-box" style="margin-top: 15px;">
+                <p><strong>⚠️ TRACKING IMPORTANTE:</strong> Si un arma tiene el defecto "empieza con 1 carga", el jugador debe anotarlo claramente en su hoja de personaje junto al nombre del arma. El DM debe recordar este inicio modificado al comienzo de cada combate hasta que la imperfección sea reparada.</p>
+            </div>
         </div>
 
         <div class="ability-box">
             <h4>FASE 4: Calibración Final (Día 7)</h4>
+            <p style="font-style: italic; color: #666; margin-bottom: 10px;">Realizar el primer Vórtice controlado para verificar que el sistema completo funciona correctamente.</p>
+            
             <ul>
                 <li>Activar cada espada una vez en presencia del Núcleo</li>
                 <li>Observar cómo el Núcleo responde a cada uso</li>
                 <li>Ajustar la resonancia mediante pequeños golpes de martillo en las runas</li>
                 <li>Realizar el "Primer Vórtice Controlado" (disparar 10 Cargas intencionalmente en área segura)</li>
                 <li><strong>Salvación:</strong> Arcana DC 16</li>
-                <li><strong>Fallo:</strong> Las espadas quedan desincronizadas, se debe repetir esta fase desde el principio</li>
+            </ul>
+            
+            <p><strong>Resultado:</strong></p>
+            <ul>
+                <li><strong>Éxito:</strong> ¡Las espadas están completas! El conjunto funciona perfectamente (con las imperfecciones previas, si las hay).</li>
+                <li><strong>Fallo:</strong> Las espadas quedan temporalmente desincronizadas. Se debe repetir solo esta fase (Día 7) desde el principio. No se pierden materiales ni se generan imperfecciones adicionales.</li>
             </ul>
         </div>
 
-        <div class="note-box">
-            <h4>RESULTADO:</h4>
+        <hr class="divider">
+
+        <h2>V-A. Tabla de Imperfecciones Menores</h2>
+        
+        <p style="font-style: italic; color: #666; margin-bottom: 20px;">Estas imperfecciones surgen durante la Fase 2 de forja cuando el proceso no es perfecto. Pueden acumularse con defectos de Fase 3.</p>
+
+        <div class="ability-box">
+            <p><strong>Tirar 1d4 cuando se obtienen 1-2 éxitos en Fase 2:</strong></p>
+            
+            <table style="width: 100%; border-collapse: collapse; margin-top: 15px;">
+                <thead>
+                    <tr style="background: #8b0000; color: white;">
+                        <th style="border: 1px solid #666; padding: 10px; text-align: center;">d4</th>
+                        <th style="border: 1px solid #666; padding: 10px;">Imperfección</th>
+                        <th style="border: 1px solid #666; padding: 10px;">Efecto en Combate</th>
+                        <th style="border: 1px solid #666; padding: 10px; text-align: center;">Costo Reparación</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="border: 1px solid #666; padding: 10px; text-align: center; font-weight: bold;">1</td>
+                        <td style="border: 1px solid #666; padding: 10px;"><strong>Eco Residual</strong></td>
+                        <td style="border: 1px solid #666; padding: 10px;">La primera vez en cada combate que activas Sobrecarga o Forzado, recibes <strong>1d4 de daño de fuerza</strong>.</td>
+                        <td style="border: 1px solid #666; padding: 10px; text-align: center;">500 po</td>
+                    </tr>
+                    <tr style="background: #f9f9f9;">
+                        <td style="border: 1px solid #666; padding: 10px; text-align: center; font-weight: bold;">2</td>
+                        <td style="border: 1px solid #666; padding: 10px;"><strong>Desfase Breve</strong></td>
+                        <td style="border: 1px solid #666; padding: 10px;">Cuando activas Sobrecarga o Forzado, <strong>tu velocidad se reduce en 10 pies</strong> hasta el final de tu turno.</td>
+                        <td style="border: 1px solid #666; padding: 10px; text-align: center;">750 po</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #666; padding: 10px; text-align: center; font-weight: bold;">3</td>
+                        <td style="border: 1px solid #666; padding: 10px;"><strong>Resonancia Inestable</strong></td>
+                        <td style="border: 1px solid #666; padding: 10px;">El impulso temporal <strong>+2 solo aplica en estado Forzado</strong>, no en Sobrecarga.</td>
+                        <td style="border: 1px solid #666; padding: 10px; text-align: center;">1,000 po</td>
+                    </tr>
+                    <tr style="background: #f9f9f9;">
+                        <td style="border: 1px solid #666; padding: 10px; text-align: center; font-weight: bold;">4</td>
+                        <td style="border: 1px solid #666; padding: 10px;"><strong>Sin Fallo</strong></td>
+                        <td style="border: 1px solid #666; padding: 10px;">No hay imperfección. La espada funciona normalmente.</td>
+                        <td style="border: 1px solid #666; padding: 10px; text-align: center;">—</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="note-box" style="margin-top: 25px;">
+            <h4>⚠️ IMPERFECCIONES ACUMULATIVAS</h4>
+            <p>Un arma puede acumular múltiples imperfecciones provenientes de diferentes fases del proceso de forja. Los efectos de cada imperfección se aplican simultáneamente durante el combate.</p>
+            <p style="margin-top: 10px;"><strong>Ejemplo:</strong> Si SEGUNDERO tiene "Eco Residual" (Fase 2) y "impulso solo al ataque" (Fase 3), sufrirá 1d4 de daño al entrar en Sobrecarga/Forzado Y el impulso temporal solo otorgará +2 al ataque (no al daño).</p>
+            <p style="margin-top: 10px;"><strong>Costos acumulativos:</strong> El costo total de reparación es la suma de todas las imperfecciones presentes en el arma. En el ejemplo anterior: 500 po + 800 po = <strong>1,300 po</strong>.</p>
+        </div>
+
+        <hr class="divider">
+
+        <h2>V-B. Reforja Menor (Reparación de Imperfecciones)</h2>
+        
+        <p style="font-style: italic; color: #666; margin-bottom: 20px;">Un herrero con conocimiento arcano puede reparar las imperfecciones menores sin deshacer el arma completa. Este proceso es más accesible que la forja original.</p>
+
+        <div class="ability-box">
+            <h4>Requisitos:</h4>
             <ul>
-                <li><strong>Éxito total:</strong> Las tres espadas y el Núcleo funcionan perfectamente como se describe</li>
-                <li><strong>Éxito parcial:</strong> Funcionan pero con 1-2 fallos menores (DM decide penalizaciones)</li>
-                <li><strong>Fallo crítico:</strong> El Núcleo se fractura, las espadas son mágicas +1 comunes, materiales perdidos</li>
+                <li><strong>Tiempo:</strong> 1 día de trabajo por imperfección</li>
+                <li><strong>Costo:</strong> El oro indicado en la tabla de la imperfección (para materiales especializados)</li>
+                <li><strong>Habilidad:</strong> Competencia en Arcana o Smith's Tools</li>
+                <li><strong>Tirada:</strong> Arcana o Smith's Tools DC 14</li>
             </ul>
+            
+            <h4 style="margin-top: 20px;">Resultado:</h4>
+            <ul>
+                <li><strong>Éxito (14+):</strong> La imperfección se elimina permanentemente. El arma funciona como si nunca hubiera tenido ese defecto.</li>
+                <li><strong>Fallo (13 o menos):</strong> No se logra reparar, pero el arma no empeora. El forjador puede intentarlo nuevamente otro día (pagando materiales de nuevo).</li>
+                <li><strong>20 natural:</strong> ¡Trabajo magistral! Se eliminan <strong>2 imperfecciones menores</strong> si el arma tiene varias (a elección del forjador). Solo se paga el costo de una.</li>
+            </ul>
+            
+            <div class="note-box" style="margin-top: 15px;">
+                <p><strong>NOTA PARA EL DM:</strong> La reforja puede convertirse en una side quest. Tal vez el oro necesario está en manos de un mercader corrupto, o los materiales solo se encuentran en una zona peligrosa. Usa esto como gancho narrativo en lugar de solo restar oro.</p>
+            </div>
         </div>
 
         <hr class="divider">
