@@ -1,0 +1,500 @@
+═══════════════════════════════════════════════════════════════════
+    REQUISITOS DE CREACIÓN: LA TRILOGÍA DEL RELOJ
+═══════════════════════════════════════════════════════════════════
+
+Este documento detalla los requisitos para que un artífice o forjador pueda 
+crear las tres espadas temporales y el Núcleo del Reloj desde cero.
+
+
+═══════════════════════════════════════════════════════════════════
+I. CONOCIMIENTO REQUERIDO
+═══════════════════════════════════════════════════════════════════
+
+TEORÍA TEMPORAL BÁSICA
+• Comprensión de los flujos temporales y su manipulación
+• Estudio de paradojas temporales y sus consecuencias
+• Conocimiento de entropía temporal como concepto mágico
+• Páginas de investigación: Al menos 200 horas de estudio (8-10 sesiones de downtime)
+
+FUENTES DE CONOCIMIENTO POSIBLES:
+• Tomos antiguos de cronurgos legendarios
+• Ruinas de civilizaciones que experimentaron con el tiempo
+• Mentor experto en magia temporal (puede ser un NPC, un lich, un dragón de bronce, etc.)
+• Visiones proféticas o contacto con entidades del Plano del Tiempo
+• Fragmentos de espadas temporales previas para estudiar
+
+HABILIDADES MÁGICAS:
+• Dominio de conjuros de 5to nivel o superior
+• Conocimiento del conjuro "Haste" (necesario como base teórica)
+• Idealmente: acceso a conjuros como "Time Stop", "Slow", "Temporal Shunt"
+• Competencia en Arcana 18+ (o equivalente)
+
+
+═══════════════════════════════════════════════════════════════════
+II. MATERIALES BASE
+═══════════════════════════════════════════════════════════════════
+
+METALES ESPECIALES (para las hojas):
+
+1. MITRAL TEMPORAL
+   • Mitral refinado expuesto durante años a anomalías temporales
+   • Cantidad: 3 lingotes (uno por espada)
+   • Ubicación sugerida: Minas en zonas de distorsión temporal, ruinas de batallas 
+     donde Time Stop fue usado repetidamente, meteoritos que atravesaron portales planares
+
+2. ADAMANTINA ETÉREA
+   • Adamantina del Plano Etéreo, más ligera pero igualmente resistente
+   • Cantidad: 1 lingote (para reforzar el centro del Núcleo)
+   • Ubicación sugerida: Comerciantes planares, expedición al Plano Etéreo, 
+     tesoro de dragón antiguo
+
+GEMA DEL NÚCLEO:
+
+3. CRISTAL HOROLÓGICO
+   • Una gema cristalina grande, extremadamente rara
+   • Debe ser transparente y sin imperfecciones
+   • Debe resonar con energía temporal (detectable con Detect Magic)
+   • Será tallada en forma de icosaedro (d20) durante la Fase 1 de forja
+   • Tipos posibles: 
+     - Diamante temporal (formado en zona de anomalía temporal)
+     - Fragmento cristalizado del Plano del Tiempo
+     - Lágrima petrificada de un Fénix (criatura que renace = dominio temporal)
+   • Valor estimado: 50,000+ po
+   
+   NOTA: La forma de d20 es una tradición cronúrgica, simbolizando las múltiples 
+   líneas temporales posibles (20 resultados, 20 futuros). Algunos forjadores usan 
+   otras formas geométricas, pero el icosaedro es considerado el más estable para 
+   contener paradojas temporales. Es una decisión estética y simbólica, no un 
+   requisito mecánico absoluto.
+
+COMPONENTES ALQUÍMICOS:
+
+4. POLVO DE RELOJ DE ARENA ANCESTRAL
+   • Arena de un desierto donde el tiempo fluye diferente
+   • Usada para templar las hojas
+   • Cantidad: 1 frasco (100 gramos)
+
+5. ACEITE DE CRONOESENCIA
+   • Extraído de seres que viven fuera del tiempo normal
+   • Ejemplos: Androsphinx, ciertos tipos de genios, criaturas del Astral
+   • Usado para lubricar las runas durante la inscripción
+   • Cantidad: 3 frascos (uno por espada)
+
+
+═══════════════════════════════════════════════════════════════════
+III. COMPONENTES TEMPORALES (LOS MÁS DIFÍCILES)
+═══════════════════════════════════════════════════════════════════
+
+Estos son los elementos "épicos" que requieren aventuras completas:
+
+1. FRAGMENTO DE PARADOJA ESTABLE
+   • Descripción: Un objeto que existe simultáneamente en dos estados temporales
+   • Cómo obtenerlo: 
+     - Crear una paradoja controlada (ej: usar Time Stop mientras otra criatura usa Time Stop)
+     - Buscar en ruinas donde experimentos temporales fallaron
+     - Negociar con un cronurgo renegado
+   • Uso: Se integra en el Núcleo para permitir la manipulación temporal
+   • Peligro: Alta probabilidad de causar anomalías si se maneja mal
+
+2. ALIENTO DE UN MOMENTO CONGELADO
+   • Descripción: Tiempo literalmente detenido, embotellado en un contenedor mágico
+   • Cómo obtenerlo:
+     - Lanzar Time Stop y capturar la esencia del momento con un ritual
+     - Explorar la "Cámara Eterna" (zona donde un Time Stop nunca terminó)
+     - Robar de un cronurgo que colecciona "momentos"
+   • Uso: Permite a las espadas "pausar" efectos temporales
+   • Cantidad: 3 viales (uno por espada)
+
+3. LÁGRIMA DE QUIEN HA VIVIDO DOS VECES [OPCIONAL]
+   • Descripción: Lágrima de una criatura que ha experimentado viaje temporal real
+   • Cómo obtenerlo:
+     - Encontrar un NPC que viajó al pasado/futuro
+     - Un replicante o clon que coexiste con su original
+     - Un druida anciano que vivió dos veces su vida (reencarnación)
+   • Nota: Debe ser dada voluntariamente (una lágrima robada no funciona)
+   
+   • Uso OPCIONAL - Soul-Binding (Vinculación de Propiedad):
+     Si se añade la Lágrima durante la Fase 3, las espadas quedan "soul-bound" al forjador:
+     
+     MECÁNICAS DE SOUL-BINDING:
+     - Las espadas son PROPIEDAD del forjador (otros pueden usarlas normalmente)
+     - No pueden ser vendidas, regaladas, heredadas o transferidas permanentemente sin la 
+       muerte del dueño
+     - NO hay restricción de distancia: las espadas funcionan a cualquier distancia del dueño
+     - Si las espadas están separadas del dueño por más de 1 semana (7 días), se teletransportan
+       automáticamente de vuelta a él (aparecen en su espacio o espacio desocupado más cercano)
+     - El vínculo solo se rompe con la muerte permanente del dueño
+     - Si el dueño muere, las espadas pueden vincularse a un nuevo portador mediante un
+       ritual de 24 horas (requiere Arcana DC 18 y una nueva lágrima)
+     
+     VENTAJAS DEL SOUL-BINDING:
+     - Seguridad: No pueden ser robadas permanentemente
+     - Retorno automático después de 1 semana sin importar la distancia
+     - Conexión emocional profunda con las espadas
+     
+     DESVENTAJAS:
+     - No puedes venderlas o regalarlas permanentemente
+     - Dependen de tu supervivencia (si mueres sin resurrección, necesitan nuevo dueño 
+       para recuperar sus funciones mágicas)
+     - Si las prestas por >1 semana, regresan a ti automáticamente
+     
+     NOTA IMPORTANTE: Las espadas pueden ser USADAS por cualquier persona, tengan o no 
+     soul-binding. El vínculo solo afecta la PROPIEDAD (quién es el dueño), no la 
+     usabilidad. Puedes prestar las espadas a aliados y funcionarán normalmente. La 
+     diferencia está en que con soul-binding regresan automáticamente después de 1 semana.
+     
+     Si NO usas la Lágrima: Las espadas funcionan normalmente pero sin soul-binding
+     (pueden ser transferidas libremente, no regresan automáticamente)
+
+   ═══════════════════════════════════════════════════════════════
+   ATAJO ALTERNATIVO: CONFLUENCIA DEL FORJADOR
+   ═══════════════════════════════════════════════════════════════
+   
+   Si llegas al Día 6 sin el Fragmento de Paradoja y/o sin las Lágrimas, puedes 
+   arriesgar el siguiente método durante la Fase 3:
+
+   MÉTODO ESTÁNDAR:
+   • Durante el ritual de infusión (cuando lanzas Haste), la intensidad temporal 
+     es tan alta que permite abrir portales para traer versiones de ti mismo de 
+     diferentes líneas temporales (pasado/presente/futuro)
+   • Las 3 versiones coexisten durante toda la Fase 3 de forja (Día 6)
+   • Su coexistencia crea una paradoja estable (Fragmento de Paradoja)
+   • Cada versión puede proporcionar una lágrima (3 Lágrimas totales)
+
+   Requisitos:
+   • Salvación de Arcana o Sabiduría DC 15 por cada portal
+   • Riesgo: Si falla, podrás reintentar UNA ÚNICA VEZ abrir el portal
+   • Si vuelve a fallar: Las versiones temporales se desincronizazan y el forjador 
+     puede sufrir daño temporal permanente (envejecimiento, pérdida de memoria, etc.)
+   • Deberás tomar un descanso largo antes de reintentar la Infusión Temporal
+
+   MÉTODO AVANZADO (solo magos nivel 17+):
+   • Si lanzas Time Stop + Haste sobre ti mismo durante la Fase 3, la intensidad 
+     de la magia temporal es aún mayor
+   • Las versiones de otras líneas temporales vienen a ti POR SÍ SOLAS
+   • NO requiere salvación (éxito automático)
+   • Costo: Slot de nivel 9 (Time Stop) + slot de nivel 3 (Haste)
+   • Consecuencia: Deberás descansar 3 DÍAS completos antes de continuar a la Fase 4
+   • El forjador queda exhausto por el trauma de existir en múltiples momentos simultáneos
+
+   Beneficio de ambos métodos:
+   • 1 Fragmento de Paradoja (tres yos = paradoja estable)
+   • 3 Lágrimas (cada versión llora al verse a sí misma)
+   • Reduce 4-6 sesiones de obtención de componentes
+   • Mantiene el secreto (no necesitas NPCs externos)
+
+   Consulta con tu DM si este método está disponible en tu campaña.
+   ═══════════════════════════════════════════════════════════════
+
+
+═══════════════════════════════════════════════════════════════════
+IV. HERRAMIENTAS Y CONDICIONES DE FORJA
+═══════════════════════════════════════════════════════════════════
+
+FORJA ESPECIAL:
+
+• No puede ser una forja ordinaria
+• Opciones:
+  1. Forja de un maestro enano/dragón/gigante que trabaje materiales legendarios
+  2. Forja construida en un nexo temporal (donde 3+ líneas temporales se cruzan)
+  3. Forja alimentada por fuego de un Fénix o dragón de bronce (conexión temporal)
+  4. Cámara sellada donde el tiempo puede ser manipulado artificialmente
+
+HERRAMIENTAS:
+
+• Martillo de Forja Magistral (+3 o superior)
+• Yunque de Adamantina
+• Moldes especiales para cada espada (deben ser tallados con precisión)
+• Set de herramientas de grabador de runas (para inscribir símbolos temporales)
+
+CONDICIONES AMBIENTALES:
+
+• Temperatura: Debe fluctuar entre frío extremo y calor extremo (representando ciclos)
+• Tiempo: La forja debe durar exactamente 7 días (número mágico de ciclos temporales)
+• Asistentes: Al menos 2 ayudantes con conocimiento en Arcana 15+
+• Protección: Círculo mágico contra anomalías temporales
+
+
+═══════════════════════════════════════════════════════════════════
+V. PROCESO DE FORJA (RESUMEN GENERAL)
+═══════════════════════════════════════════════════════════════════
+
+FASE 1: PREPARACIÓN DEL NÚCLEO (Día 1-2)
+• Tallar el Cristal Horológico en forma de icosaedro (d20)
+• Infundir el Fragmento de Paradoja en el centro de la gema
+• Sellar con Adamantina Etérea para crear la carcasa externa
+• Ritual: Lanzar "Haste" + "Slow" simultáneamente sobre el Núcleo
+• Salvación: Arcana DC 20 para estabilizar las energías opuestas
+• Fallo: El Núcleo explota (6d10 de daño de fuerza en 30 ft, materiales perdidos)
+
+FASE 2: FORJA DE LAS HOJAS (Día 3-5)
+• Fundir el Mitral Temporal con fuego mágico de 3000°F+
+• Formar cada hoja según su diseño (rapier, longsword, shortsword)
+• Templar en Polvo de Reloj de Arena Ancestral mezclado con agua bendita
+• Inscribir runas temporales usando Aceite de Cronoesencia
+• Salvación (por cada espada): Arcana DC 18
+• Fallo: La espada es +1 mágica pero no tiene propiedades temporales
+
+FASE 3: INFUSIÓN TEMPORAL (Día 6)
+
+⚠️ NOTA: Si no tienes el Fragmento de Paradoja y/o las Lágrimas, puedes usar el método 
+   "Confluencia del Forjador" descrito en la Sección III (Componente #3). Este método 
+   permite obtener ambos componentes durante esta fase, pero tiene riesgos y costos.
+
+• Colocar cada espada en contacto con el Núcleo
+• Verter un Aliento de un Momento Congelado en cada hoja
+• [OPCIONAL] Añadir la Lágrima de Quien Ha Vivido Dos Veces (debe caer naturalmente sobre
+  la hoja). Si se usa, las espadas quedan soul-bound al forjador (ver Sección III, Componente #3).
+  Si NO se usa, las espadas funcionan normalmente sin restricciones de propiedad o distancia.
+• Lanzar ritual de 8 horas: "Haste" + "Enhance Ability" + "Magic Weapon" combinados
+• Salvación: Arcana DC 22 (puede usar Inspiration o ayuda de asistentes)
+• Fallo: Las espadas no se sincronizan con el Núcleo (pueden funcionar solas pero 
+  no comparten Cargas de Entropía)
+
+FASE 4: CALIBRACIÓN FINAL (Día 7)
+• Activar cada espada una vez en presencia del Núcleo
+• Observar cómo el Núcleo responde a cada uso
+• Ajustar la resonancia mediante pequeños golpes de martillo en las runas
+• Realizar el "Primer Vórtice Controlado" (disparar 10 Cargas intencionalmente en área segura)
+• Salvación: Arcana DC 16
+• Fallo: Las espadas quedan desincronizadas, se debe repetir esta fase desde el principio
+
+RESULTADO:
+• Éxito total: Las tres espadas y el Núcleo funcionan perfectamente como se describe
+• Éxito parcial: Funcionan pero con 1-2 fallos menores (DM decide penalizaciones)
+• Fallo crítico: El Núcleo se fractura, las espadas son mágicas +1 comunes, 
+  materiales perdidos
+
+
+═══════════════════════════════════════════════════════════════════
+VI. RIESGOS Y CONSECUENCIAS
+═══════════════════════════════════════════════════════════════════
+
+DURANTE LA FORJA:
+
+• Anomalías temporales pueden manifestarse:
+  - Eco temporal del forjador aparece y habla mensajes crípticos
+  - Objetos cercanos envejecen o rejuvenecen aleatoriamente
+  - Bucles temporales de 5-10 minutos (los jugadores repiten acciones)
+
+• Atraer atención no deseada:
+  - Inevitables investigan la perturbación temporal
+  - Cronurgos rivales intentan robar el proceso
+  - Criaturas del Plano del Tiempo se filtran a través de grietas
+
+DESPUÉS DE LA CREACIÓN:
+
+• El forjador puede sufir "Resonancia Temporal":
+  - Ve destellos de eventos futuros (1-2 días adelante)
+  - Sueña con momentos de su pasado con claridad perfecta
+  - Envejece 1d4 años o rejuvenece 1d4 años (tira 1d2: 1=envejece, 2=rejuvenece)
+
+
+═══════════════════════════════════════════════════════════════════
+VII. NOTAS PARA EL DM
+═══════════════════════════════════════════════════════════════════
+
+ESCALABILIDAD:
+
+• Para partido de nivel 8-12: Elimina los componentes más exóticos (Fragmento de Paradoja 
+  puede ser una gema encantada común), reduce DCs en 2-3 puntos
+
+• Para partido de nivel 13-16: Usa el documento tal como está
+
+• Para partido de nivel 17-20: Aumenta DCs en 2 puntos, añade combate contra 
+  Inevitables durante la forja
+
+TIEMPO DE CAMPAÑA:
+
+• Investigación inicial: 3-5 sesiones
+• Obtención de materiales base: 2-4 sesiones
+• Obtención de componentes temporales: 4-8 sesiones (1-2 por componente épico)
+• Construcción de la forja/negociación: 1-2 sesiones
+• Forja final: 1 sesión épica (puede ser downtime con tiradas críticas)
+
+TOTAL ESTIMADO: 11-20 sesiones de juego
+
+ALTERNATIVAS NARRATIVAS:
+
+• Séricar puede encontrar UNA espada ya hecha y usarla como "plantilla" para las otras dos
+• Un mentor puede hacer el 50% del trabajo, dejando a Séricar hacer la parte crítica
+• Las espadas pueden crearse una a la vez (Segundero primero, más simple)
+
+
+═══════════════════════════════════════════════════════════════════
+VIII. PLOT HOOKS PARA INICIAR EL ARCO
+═══════════════════════════════════════════════════════════════════
+
+HOOK 1: EL MANUSCRITO OLVIDADO
+Un mercader de libros raros ofrece a Séricar un tomo polvoriento: "Cronosíntesis: 
+Forjando lo Imposible". El libro está escrito en un lenguaje antiguo y describe la 
+teoría de infundir metal con tiempo destilado. La última página muestra un boceto de 
+tres espadas conectadas a una gema central. El autor del libro: un cronurgo legendario 
+llamado "El Tejedor de Instantes", desaparecido hace 200 años.
+
+HOOK 2: VISIÓN DURANTE DESCANSO LARGO
+Durante una meditación o sueño, Séricar tiene una visión: se ve a sí mismo empuñando 
+tres espadas brillantes, congelando a un enemigo en el tiempo. Una voz susurra: 
+"Lo que aún no existe, existe ya en el hilo del mañana. Forja tu destino, cronurgo". 
+Al despertar, Séricar encuentra un fragmento de metal desconocido en su bolsillo: 
+Mitral Temporal, del tamaño de una moneda. No estaba ahí antes.
+
+HOOK 3: ENCARGO DE UN MENTOR MISTERIOSO
+Un mago anciano contacta a Séricar con un encargo: "Necesito que forjes tres espadas 
+capaces de manipular el tiempo. Yo proporcionaré el conocimiento y parte de los 
+materiales... pero tú debes hacer el trabajo. Es tu destino, aunque aún no lo sepas". 
+El mago puede ser una versión FUTURA de Séricar, un dragón de bronce disfrazado, o 
+un genuino mentor interesado en ver si Séricar tiene el talento.
+
+HOOK 4: FRAGMENTO ENCONTRADO EN DUNGEON
+Durante una aventura no relacionada, el party encuentra una espada rota y corroída en 
+un cofre antiguo. Cuando Séricar la toca, siente un pulso de energía temporal. Un 
+Identify revela: "Fragmento de Segundero, Espada del Instante - Rota hace 300 años en 
+un Vórtice Temporal catastrófico". Hay suficiente material intacto para estudiar su 
+construcción... y quizás replicarla.
+
+
+═══════════════════════════════════════════════════════════════════
+APÉNDICE: PRIMEROS EXPERIMENTOS DE SÉRICAR
+═══════════════════════════════════════════════════════════════════
+
+Antes de crear la Trilogía del Reloj en su forma final, Séricar experimentó con 
+múltiples variantes, buscando diferentes enfoques para manipular el tiempo. Estos 
+prototipos fallidos revelaron verdades importantes sobre la cronurgia: no todo poder 
+es útil, y la elegancia de un diseño reside en su eficiencia, no en su intensidad.
+
+Los siguientes experimentos fueron abandonados por razones específicas, pero sus 
+lecciones moldearon la versión definitiva de las espadas. Se documentan aquí como 
+advertencia.
+
+
+═══════════════════════════════════════════════════════════════════
+I. LA FORJA CARMESÍ (Variante Ígnea)
+═══════════════════════════════════════════════════════════════════
+
+CONCEPTO:
+En su primer intento, Séricar buscaba poder desmesurado. Razonó que si el fuego 
+eterno nunca se extingue, entonces existe fuera del tiempo lineal. Infundió en los 
+núcleos cristalinos esencias de elementales de fuego y fragmentos de Plano Elemental 
+del Fuego, creyendo que esto amplificaría exponencialmente la energía temporal 
+disponible.
+
+RESULTADO:
+Las espadas funcionaron. De hecho, fueron devastadoramente poderosas: cada golpe 
+dejaba estelas de fuego temporal que persistían segundos después del ataque, los 
+enemigos no solo eran ralentizados sino *incinerados mientras estaban congelados en 
+el tiempo*. El vórtice temporal que generaban era visible a kilómetros de distancia, 
+una columna carmesí de realidad distorsionada.
+
+CONSECUENCIAS MECÁNICAS:
+- **Ventaja:** +2d6 de daño de fuego adicional en cada ataque. Enemigos ralentizados 
+  también sufren 1d6 de daño de fuego al inicio de cada uno de sus turnos.
+- **Desventaja crítica:** El fuego eterno drena constantemente el hilo temporal. 
+  Luego del primer uso las espadas consumen **1 Carga de Entropía por turno** automáticamente,
+  incluso sin usarse. Al llegar a 10 Cargas, el Vórtice se activa involuntariamente.
+- **Problema adicional:** Apagar el fuego temporal requiere:
+  - Manipulación elemental opuesta. (hielo o vacío térmico)
+  - Desaceleración del flujo temporal (e.g: Slow)
+  Redirigir la energía ígnea a otro objetivo solo transfiere el problema.
+
+VEREDICTO DE SÉRICAR:
+"Poder sin control es un arma que te mata a ti primero. Las espadas ardían con la 
+furia de un sol moribundo, pero yo no podía soltarlas sin consecuencias, ni guardarlas 
+sin que la forja entera se incendiara. El tiempo no debe ser quemado; debe ser 
+tejido con precisión. Los prototipos carmesíes fueron desanclados antes de que destruyeran 
+algo que amara."
+
+NOTA PARA EL DM:
+Estas espadas son una opción para campañas de nivel 15+ donde el riesgo extremo es 
+parte de la diversión. Funcionan mejor en escenarios de "todo o nada" (batallas 
+finales, misiones suicidas). Su drenaje constante acelera la llegada del Vórtice.
+No es un arma estratégica.
+Es una llama sostenida sobre pólvora.
+
+
+═══════════════════════════════════════════════════════════════════
+II. LA RESONANCIA DEL UMBRAL (Variante Necromántica)
+═══════════════════════════════════════════════════════════════════
+
+CONCEPTO:
+Después del fracaso ígneo, Séricar adoptó un enfoque más cerebral. Razonó que la 
+muerte y el tiempo están entrelazados: los muertos existen fuera del flujo temporal, 
+eternos en su estado final. Si pudiera anclar esencias de seres no-vivos (espectros, 
+fragmentos de almas, ecos de memoria) en los núcleos, las espadas podrían *consultar* 
+el pasado directamente, revelando información estratégica: trampas olvidadas, eventos 
+históricos, incluso atisbos de futuros posibles vistos por quienes ya partieron.
+
+Infundió en las espadas: polvo de hueso de lichs, fragmentos de gemas de necromancia, 
+y lágrimas de espectros voluntarios.
+
+RESULTADO:
+Las espadas funcionaron como "oráculo táctico". Al activarlas en una mazmorra o campo 
+de batalla, Séricar podía escuchar susurros: advertencias de exploradores muertos, 
+lamentos de víctimas antiguas, ecos de conversaciones entre enemigos hace décadas. 
+En teoría, esto era ventaja estratégica pura.
+
+CONSECUENCIAS MECÁNICAS:
+- **Ventaja:** 3 veces al día, el portador puede usar una acción para "escuchar el 
+  umbral". Tira 1d20:
+  - **15-20:** Recibes información útil sobre el área (ubicación de trampas, presencia 
+    de enemigos, un secreto histórico relevante).
+  - **8-14:** Recibes información ambigua o parcial (el DM da una pista críptica).
+  - **1-7:** Contacto con entidad hostil o eco perturbador (ver desventaja).
+
+- **Desventaja crítica:** Los ecos y/o visiones no siempre vienen cuando los llamas. 
+  A veces llegan *sin ser invocados*. Cada descanso largo, el DM tira 1d6 en secreto:
+  - **1-2:** El portador escucha un eco traumático ligado al lugar donde duerme 
+    (gritos de batalla, últimas palabras de un asesinado, lamentos de hambruna). 
+    Salvación de Sabiduría DC 15 o sufre 1 nivel de exhaustion por falta de sueño.
+  - **3-4:** Interferencia: durante el siguiente combate, debe hacer salvación de 
+    Concentración DC 12 al inicio de su turno o quedar *stunned* hasta el final de 
+    su turno (sobrecarga de voces).
+  - **5-6:** Sin incidente.
+
+- **Problema adicional:** Las entidades contactadas no siempre cooperan. Algunas 
+  son vengativas, otras confundidas, varias violentas. En un 10% de los usos, una 
+  entidad intenta poseer al portador (Salvación de Carisma DC 16 o quedar poseído 
+  por 1 minuto).
+
+VEREDICTO DE SÉRICAR:
+"La información es poder, pero la locura es su precio. Las espadas me mostraron 
+secretos que ningún vivo debería conocer... y también me mostraron horrores que no 
+pedí ver. Escuchar a los muertos es como abrir una puerta que no puedes cerrar: 
+eventualmente, algo cruza en la dirección equivocada. Las sellé en una bóveda
+protegida por runas de silencio. Si alguna vez las encuentras, no digas que no te
+advertí."
+
+NOTA PARA EL DM:
+Estas espadas son ideales para campañas con tono oscuro o de horror. Ofrecen ventaja 
+táctica real, pero con un costo psicológico constante. Funcionan mejor con jugadores 
+que disfrutan el roleplay de personajes atormentados o que llevan cargas emocionales. 
+No recomendadas para campañas heroicas estándar, a menos que quieras introducir un 
+arco de "arma maldita" que el party deba purificar o destruir.
+
+
+═══════════════════════════════════════════════════════════════════
+CONCLUSIÓN: EL CAMINO HACIA LA PERFECCIÓN
+═══════════════════════════════════════════════════════════════════
+
+Después de estos experimentos, Séricar comprendió la lección fundamental de la 
+cronurgia como ingeniería:
+
+"Las espadas temporales no deben ser armas de destrucción masiva. Deben ser 
+herramientas precisas que otorguen control, no caos. El tiempo es un recurso, y como 
+todo recurso, debe ser administrado con inteligencia, no desperdiciado en espectáculos 
+de poder."
+
+Y así, la **Trilogía del Reloj** se encaminó a su forma final: sin fuego eterno que drenara 
+la energía, sin ecos que enloquecieran al portador. Solo tiempo puro, tejido con 
+precisión, estable y eficiente.
+
+"El tiempo no perdona a quienes juegan con él sin respeto. El tiempo no castiga. Corrige.
+Si lo entiendes… eres cronurgo."
+
+— Séricar, Maestro Cronurgo, en sus notas personales destruidas (y reconstruidas 
+por él mismo desde una línea temporal alternativa, porque por supuesto que lo hizo)
+
+
+═══════════════════════════════════════════════════════════════════
+FIN DEL DOCUMENTO
+═══════════════════════════════════════════════════════════════════

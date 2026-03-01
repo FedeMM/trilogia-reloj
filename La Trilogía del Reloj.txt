@@ -78,7 +78,7 @@ de Entropía. La distancia o barreras físicas no interrumpen este vínculo.
 PROPIEDADES BASE
 • Cada espada es Very Rare de forma individual.
 • Cada espada requiere sintonización individual.
-• Las espadas deben estar sintonizadas por un mago con competencia en Arcanos.
+• Cualquier criatura puede sintonizarse con las espadas.
 • Si las tres están sintonizadas por el mismo portador, el conjunto se considera 
   Legendario y activa el sistema completo de Entropía.
 • +1 a tiradas de ataque y daño.
