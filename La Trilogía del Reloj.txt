@@ -79,8 +79,8 @@ PROPIEDADES BASE
 • Cada espada es Very Rare de forma individual.
 • Cada espada requiere sintonización individual.
 • Cualquier criatura puede sintonizarse con las espadas.
-• Si las tres están sintonizadas por el mismo portador, el conjunto se considera 
-  Legendario y activa el sistema completo de Entropía.
+• Si las tres están sintonizadas (sin importar por cuántos portadores), el conjunto 
+  se considera Legendario y activa el sistema completo de Entropía.
 • +1 a tiradas de ataque y daño.
 • Cuentan como armas mágicas.
 • Cualquier criatura puede empuñar las espadas. Sin sintonización, funcionan como 
@@ -188,16 +188,18 @@ IMPORTANTE:
 IV. PODER LEGENDARIO: ACTIVACIÓN DEL CONJUNTO COMPLETO
 ────────────────────────────────────────────────────────────────────────────────
 
-Cuando las tres espadas están sintonizadas por la misma persona o criatura, el 
-Núcleo del Reloj puede configurarse al finalizar un Descanso Largo.
+Cuando las tres espadas están sintonizadas (sin importar por cuántos portadores), 
+el Núcleo del Reloj puede configurarse para resonar en una Frecuencia específica al 
+finalizar un Descanso Largo.
 
-Si están sintonizadas por distintos portadores, el Sistema Global de Entropía 
-permanece activo y las habilidades individuales pueden generar Cargas y activar 
-el Vórtice, pero no puede elegirse una Frecuencia del Núcleo.
+Cualquier portador sintonizado puede reconfigurar la frecuencia durante su descanso. 
+Si múltiples portadores descansan en momentos distintos, la frecuencia queda 
+configurada por el último portador que finalizó su descanso.
 
 MENÚ DE SINTONIZACIÓN: FRECUENCIAS DEL NÚCLEO
-Solo disponible si las tres espadas están sintonizadas por la misma persona o 
-criatura. Al finalizar un Descanso Largo, elige una Frecuencia.
+Requiere las tres espadas sintonizadas. Al finalizar un Descanso Largo, cualquier 
+portador sintonizado puede elegir una Frecuencia. Solo una frecuencia puede estar 
+activa a la vez.
 
 1. ENTROPÍA CERO (Ofensiva)
 La detención perfecta. El objetivo queda atrapado en un instante sin fin, incapaz 
