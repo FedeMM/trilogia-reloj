@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Trilogía del Reloj - Formulario de Feedback</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .page {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-family: 'Libre Baskerville', serif;
+            color: #8b0000;
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 30px;
+            font-size: 0.95em;
+        }
+
+        .intro {
+            background: #fff9e6;
+            border: 2px dashed #d4b896;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+
+        .intro h3 {
+            color: #8b0000;
+            margin-bottom: 10px;
+        }
+
+        .section {
+            margin-bottom: 35px;
+            padding: 20px;
+            background: #fefbf5;
+            border-left: 4px solid #c41e3a;
+            page-break-inside: avoid;
+        }
+
+        .section-title {
+            font-family: 'Libre Baskerville', serif;
+            color: #8b0000;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .question {
+            margin-bottom: 25px;
+            padding: 15px;
+            background: white;
+            border-radius: 5px;
+            border: 1px solid #d4b896;
+        }
+
+        .question-number {
+            font-weight: 700;
+            color: #c41e3a;
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+
+        .question-text {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .response-area {
+            border: 2px solid #d4b896;
+            background: #ffffff;
+            min-height: 80px;
+            padding: 10px;
+            border-radius: 3px;
+            color: #999;
+            font-style: italic;
+        }
+
+        .response-area.short {
+            min-height: 40px;
+        }
+
+        .scale {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .scale-option {
+            flex: 1;
+            border: 2px solid #d4b896;
+            background: white;
+            padding: 8px 5px;
+            text-align: center;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
+
+        .scale-option strong {
+            display: block;
+            color: #8b0000;
+            font-size: 1.1em;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .metric-box {
+            border: 2px solid #d4b896;
+            background: white;
+            padding: 12px;
+            border-radius: 5px;
+        }
+
+        .metric-label {
+            font-weight: 600;
+            color: #8b0000;
+            margin-bottom: 5px;
+        }
+
+        .metric-value {
+            border: 1px solid #d4b896;
+            padding: 5px;
+            text-align: center;
+            background: #fefbf5;
+            min-height: 30px;
+        }
+
+        .checklist {
+            margin-top: 10px;
+        }
+
+        .checklist-item {
+            background: white;
+            border: 1px solid #d4b896;
+            padding: 10px;
+            margin-bottom: 8px;
+            border-radius: 3px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .checkbox {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #8b0000;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .tip {
+            background: #e6f3ff;
+            border-left: 4px solid #0066cc;
+            padding: 12px;
+            margin-top: 15px;
+            font-size: 0.9em;
+            border-radius: 3px;
+        }
+
+        .warning {
+            background: #fff3cd;
+            border-left: 4px solid #ff6600;
+            padding: 12px;
+            margin-top: 15px;
+            font-size: 0.9em;
+            border-radius: 3px;
+            font-weight: 600;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .page {
+                padding: 20px;
+                box-shadow: none;
+            }
+
+            .section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <h1>📋 Formulario de Feedback</h1>
+        <div class="subtitle">La Trilogía del Reloj - Versión 1.1</div>
+
+        <div class="intro">
+            <h3>Gracias por playtestar La Trilogía del Reloj</h3>
+            <p>Este formulario está diseñado para recolectar feedback específico sobre la experiencia de juego. Por favor complétalo <strong>inmediatamente después de la sesión</strong> mientras la experiencia está fresca.</p>
+            <p style="margin-top: 10px;"><strong>Tiempo estimado:</strong> 15-20 minutos</p>
+        </div>
+
+        <!-- INFORMACIÓN DE SESIÓN -->
+        <div class="section">
+            <div class="section-title">📊 Información de la Sesión</div>
+
+            <div class="question">
+                <div class="question-number">Fecha de la sesión:</div>
+                <div class="response-area short">[Escribe aquí]</div>
+            </div>
+
+            <div class="question">
+                <div class="question-number">Nivel del party:</div>
+                <div class="response-area short">[Escribe aquí]</div>
+            </div>
+
+            <div class="question">
+                <div class="question-number">Composición del party (clases):</div>
+                <div class="response-area short">[Escribe aquí]</div>
+            </div>
+
+            <div class="question">
+                <div class="question-number">¿Cuántos portadores de espadas?</div>
+                <div class="response-area short">[1 / 2 / 3 portadores]</div>
+            </div>
+
+            <div class="question">
+                <div class="question-number">¿Usaron poderes legendarios? (1 portador con 3 espadas)</div>
+                <div class="response-area short">[Sí / No - Si sí, ¿cuál poder?]</div>
+            </div>
+        </div>
+
+        <!-- MÉTRICAS DE COMBATE -->
+        <div class="section">
+            <div class="section-title">⚔️ Métricas de Combate</div>
+
+            <div class="question">
+                <div class="question-number">Número de encuentros donde se usaron las espadas:</div>
+                <div class="response-area short">[Escribe número]</div>
+            </div>
+
+            <div class="metrics-grid">
+                <div class="metric-box">
+                    <div class="metric-label">Vórtices activados:</div>
+                    <div class="metric-value">[#]</div>
+                </div>
+                <div class="metric-box">
+                    <div class="metric-label">Carga máxima alcanzada:</div>
+                    <div class="metric-value">[0-10]</div>
+                </div>
+                <div class="metric-box">
+                    <div class="metric-label">Veces en Sobrecarga (5-7):</div>
+                    <div class="metric-value">[#]</div>
+                </div>
+                <div class="metric-box">
+                    <div class="metric-label">Veces en Forzado (8-9):</div>
+                    <div class="metric-value">[#]</div>
+                </div>
+            </div>
+
+            <div class="question" style="margin-top: 20px;">
+                <div class="question-number">¿Cuántas veces se activó el Impulso Temporal (4→5 o 7→8)?</div>
+                <div class="response-area short">[Escribe número]</div>
+            </div>
+
+            <div class="question">
+                <div class="question-number">Habilidad más usada:</div>
+                <div class="response-area short">[Reverso / Retraso / Celeridad / Legendaria]</div>
+            </div>
+
+            <div class="question">
+                <div class="question-number">Habilidad menos usada o ignorada:</div>
+                <div class="response-area short">[Escribe aquí]</div>
+            </div>
+        </div>
+
+        <!-- EXPERIENCIA DE JUEGO -->
+        <div class="section">
+            <div class="section-title">🎮 Experiencia de Juego</div>
+
+            <div class="question">
+                <div class="question-number">1. Diversión General (1-5)</div>
+                <div class="question-text">¿Qué tan divertidas fueron las espadas en combate?</div>
+                <div class="scale">
+                    <div class="scale-option"><strong>1</strong><br>Aburridas</div>
+                    <div class="scale-option"><strong>2</strong><br>Poco<br>interesantes</div>
+                    <div class="scale-option"><strong>3</strong><br>OK</div>
+                    <div class="scale-option"><strong>4</strong><br>Divertidas</div>
+                    <div class="scale-option"><strong>5</strong><br>Emocionantes</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <div class="question-number">2. Tensión vs. Frustración (1-5)</div>
+                <div class="question-text">¿El sistema de entropía creó tensión emocionante o frustración?</div>
+                <div class="scale">
+                    <div class="scale-option"><strong>1</strong><br>Muy<br>frustrante</div>
+                    <div class="scale-option"><strong>2</strong><br>Algo<br>molesto</div>
+                    <div class="scale-option"><strong>3</strong><br>Balanceado</div>
+                    <div class="scale-option"><strong>4</strong><br>Buena<br>tensión</div>
+                    <div class="scale-option"><strong>5</strong><br>Tensión<br>perfecta</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <div class="question-number">3. Complejidad del Tracking (1-5)</div>
+                <div class="question-text">¿Fue fácil trackear las cargas compartidas?</div>
+                <div class="scale">
+                    <div class="scale-option"><strong>1</strong><br>Caótico</div>
+                    <div class="scale-option"><strong>2</strong><br>Confuso</div>
+                    <div class="scale-option"><strong>3</strong><br>Manejable</div>
+                    <div class="scale-option"><strong>4</strong><br>Fácil</div>
+                    <div class="scale-option"><strong>5</strong><br>Intuitivo</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <div class="question-number">4. Coordinación del Party</div>
+                <div class="question-text">¿Los jugadores coordinaron el uso de habilidades o cada uno "hizo lo suyo"?</div>
+                <div class="response-area">[Describe cómo fue la comunicación entre jugadores respecto a las cargas]</div>
+            </div>
+
+            <div class="question">
+                <div class="question-number">5. Impacto en Ritmo del Combate</div>
+                <div class="question-text">¿Las espadas aceleraron, ralentizaron o mantuvieron el ritmo normal del combate?</div>
+                <div class="response-area">[Aceleraron / Ralentizaron / Normal - Explica por qué]</div>
+            </div>
+        </div>
+
+        <!-- VÓRTICE TEMPORAL -->
+        <div class="section">
+            <div class="section-title">🌀 Vórtice Temporal</div>
+
+            <div class="question">
+                <div class="question-number">6. ¿Qué resultados del Vórtice salieron?</div>
+                <div class="response-area">[Lista los números del d20 que salieron y describe qué pasó]</div>
+            </div>
+
+            <div class="question">
+                <div class="question-number">7. Reacción del Party al Vórtice (1-5)</div>
+                <div class="question-text">¿El Vórtice fue emocionante o problemático?</div>
+                <div class="scale">
+                    <div class="scale-option"><strong>1</strong><br>Horrible,<br>lo odiamos</div>
+                    <div class="scale-option"><strong>2</strong><br>Muy<br>disruptivo</div>
+                    <div class="scale-option"><strong>3</strong><br>Interesante</div>
+                    <div class="scale-option"><strong>4</strong><br>Emocionante</div>
+                    <div class="scale-option"><strong>5</strong><br>Momento<br>épico</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <div class="question-number">8. ¿Los jugadores evitaron activamente llegar a 10 cargas?</div>
+                <div class="response-area short">[Sí / No / A veces - Explica]</div>
+            </div>
+
+            <div class="question">
+                <div class="question-number">9. ¿Algún resultado del Vórtice fue confuso o difícil de resolver?</div>
+                <div class="response-area">[Describe qué resultados causaron problemas y por qué]</div>
+            </div>
+        </div>
+
+        <!-- BALANCE Y PODER -->
+        <div class="section">
+            <div class="section-title">⚖️ Balance y Poder</div>
+
+            <div class="question">
+                <div class="question-number">10. Poder Percibido (1-5)</div>
+                <div class="question-text">¿Las espadas parecieron apropiadas para el nivel del party?</div>
+                <div class="scale">
+                    <div class="scale-option"><strong>1</strong><br>Muy<br>débiles</div>
+                    <div class="scale-option"><strong>2</strong><br>Algo<br>débiles</div>
+                    <div class="scale-option"><strong>3</strong><br>Balanceadas</div>
+                    <div class="scale-option"><strong>4</strong><br>Algo<br>fuertes</div>
+                    <div class="scale-option"><strong>5</strong><br>Muy<br>fuertes</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <div class="question-number">11. ¿Algún portador dominó el combate gracias a las espadas?</div>
+                <div class="response-area">[Sí / No - Si sí, describe cómo]</div>
+            </div>
+
+            <div class="question">
+                <div class="question-number">12. Impulso Temporal (Nuevo v1.1)</div>
+                <div class="question-text">¿Se sintió el impulso temporal (+2 al ataque/daño al cruzar 4→5 y 7→8)?</div>
+                <div class="response-area">[Describe si fue impactante, si los jugadores lo usaron estratégicamente, etc.]</div>
+            </div>
+
+            <div class="question">
+                <div class="question-number">13. ¿Alguna combinación de habilidades pareció "rota" o demasiado fuerte?</div>
+                <div class="response-area">[Describe si encontraste alguna sinergia problemática]</div>
+            </div>
+        </div>
+
+        <!-- PROBLEMAS ENCONTRADOS -->
+        <div class="section">
+            <div class="section-title">🐛 Problemas Encontrados</div>
+
+            <div class="question">
+                <div class="question-number">14. Checklist de Problemas Potenciales</div>
+                <div class="checklist">
+                    <div class="checklist-item">
+                        <div class="checkbox"></div>
+                        <div>Jugadores olvidaron que las cargas son compartidas</div>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checkbox"></div>
+                        <div>Confusión sobre cuándo se reinician las cargas</div>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checkbox"></div>
+                        <div>No entendieron el Impulso Temporal (cuándo se activa)</div>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checkbox"></div>
+                        <div>Creyeron que +2 se suma al +1 (en vez de reemplazarlo)</div>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checkbox"></div>
+                        <div>Olvidaron las restricciones "1 vez por criatura por combate"</div>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checkbox"></div>
+                        <div>El Vórtice interrumpió demasiado el flujo del combate</div>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checkbox"></div>
+                        <div>Alguna habilidad nunca fue usada porque no entendieron su utilidad</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <div class="question-number">15. Otros problemas no listados:</div>
+                <div class="response-area">[Describe cualquier otro problema, bug o situación confusa]</div>
+            </div>
+        </div>
+
+        <!-- MOMENTOS MEMORABLES -->
+        <div class="section">
+            <div class="section-title">✨ Momentos Memorables</div>
+
+            <div class="question">
+                <div class="question-number">16. Mejor Momento con las Espadas</div>
+                <div class="question-text">Describe el momento más épico, divertido o emocionante relacionado con las espadas:</div>
+                <div class="response-area">[Cuenta la historia completa]</div>
+            </div>
+
+            <div class="question">
+                <div class="question-number">17. Peor Momento</div>
+                <div class="question-text">Describe el momento más frustrante, confuso o problemático:</div>
+                <div class="response-area">[Cuenta qué salió mal]</div>
+            </div>
+        </div>
+
+        <!-- SUGERENCIAS -->
+        <div class="section">
+            <div class="section-title">💡 Sugerencias de Mejora</div>
+
+            <div class="question">
+                <div class="question-number">18. ¿Qué cambiarías de las espadas?</div>
+                <div class="response-area">[Mecánicas, balance, habilidades específicas, sistema de entropía, etc.]</div>
+            </div>
+
+            <div class="question">
+                <div class="question-number">19. ¿Algo que deberías agregar que falta?</div>
+                <div class="response-area">[Nuevas habilidades, clarificaciones, ejemplos, etc.]</div>
+            </div>
+
+            <div class="question">
+                <div class="question-number">20. ¿Algo que debería eliminarse?</div>
+                <div class="response-area">[Habilidades, mecánicas o reglas que sobran]</div>
+            </div>
+        </div>
+
+        <!-- VEREDICTO FINAL -->
+        <div class="section">
+            <div class="section-title">🎯 Veredicto Final</div>
+
+            <div class="question">
+                <div class="question-number">21. ¿Recomendarías estas espadas a otro grupo? (1-5)</div>
+                <div class="scale">
+                    <div class="scale-option"><strong>1</strong><br>No</div>
+                    <div class="scale-option"><strong>2</strong><br>Probablemente<br>no</div>
+                    <div class="scale-option"><strong>3</strong><br>Tal vez</div>
+                    <div class="scale-option"><strong>4</strong><br>Sí</div>
+                    <div class="scale-option"><strong>5</strong><br>Absolutamente</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <div class="question-number">22. ¿Los jugadores quieren seguir usando las espadas?</div>
+                <div class="response-area short">[Sí / No / Mixto - Explica]</div>
+            </div>
+
+            <div class="question">
+                <div class="question-number">23. Comentario Final Libre</div>
+                <div class="question-text">Cualquier cosa adicional que quieras mencionar:</div>
+                <div class="response-area">[Escribe aquí cualquier comentario, idea o sugerencia adicional]</div>
+            </div>
+        </div>
+
+        <div class="warning">
+            <strong>📧 Enviar Feedback:</strong> Por favor envía este formulario completado a [tu email o método preferido] o compártelo en tu repositorio/Discord. ¡Gracias por ayudar a mejorar La Trilogía del Reloj!
+        </div>
+
+    </div>
+</body>
+</html>

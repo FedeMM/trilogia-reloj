@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Trilogía del Reloj - DM Cheatsheet</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-family: 'Libre Baskerville', serif;
+            color: #8b0000;
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 30px;
+            font-size: 0.95em;
+        }
+
+        .section {
+            margin-bottom: 25px;
+            page-break-inside: avoid;
+        }
+
+        .section-header {
+            background: linear-gradient(135deg, #8b0000 0%, #c41e3a 100%);
+            color: white;
+            padding: 10px 15px;
+            font-weight: 700;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 15px;
+            font-size: 0.9em;
+        }
+
+        table th {
+            background: #8b0000;
+            color: white;
+            padding: 10px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        table td {
+            padding: 8px 10px;
+            border: 1px solid #d4b896;
+            vertical-align: top;
+        }
+
+        table tr:nth-child(even) {
+            background: #f9f3e8;
+        }
+
+        .critical-box {
+            background: #fff3cd;
+            border: 3px solid #ff6600;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .critical-box h3 {
+            color: #ff6600;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .quick-ref {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .quick-ref-item {
+            background: #fefbf5;
+            border-left: 4px solid #c41e3a;
+            padding: 10px;
+            font-size: 0.9em;
+        }
+
+        .quick-ref-item strong {
+            color: #8b0000;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .vortex-table {
+            font-size: 0.85em;
+        }
+
+        .vortex-table td:first-child {
+            font-weight: 700;
+            text-align: center;
+            background: #8b0000 !important;
+            color: white;
+            width: 50px;
+        }
+
+        .dc-table td {
+            text-align: center;
+        }
+
+        .dc-table td:first-child {
+            text-align: left;
+            font-weight: 600;
+            background: #f9f3e8 !important;
+        }
+
+        .warning {
+            background: #ffe6e6;
+            border-left: 4px solid #ff0000;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 0.9em;
+        }
+
+        .tip {
+            background: #e6f3ff;
+            border-left: 4px solid #0066cc;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 0.9em;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .page {
+                padding: 15px;
+                box-shadow: none;
+            }
+
+            .section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <h1>🎲 DM Cheatsheet</h1>
+        <div class="subtitle">La Trilogía del Reloj - Referencia Rápida v1.1</div>
+
+        <!-- CRITICAL INFO -->
+        <div class="critical-box">
+            <h3>⚠️ INFORMACIÓN CRÍTICA</h3>
+            <div class="quick-ref">
+                <div class="quick-ref-item">
+                    <strong>Arma Base:</strong>
+                    Espada Larga +1 al ataque y daño
+                </div>
+                <div class="quick-ref-item">
+                    <strong>Cargas:</strong>
+                    COMPARTIDAS entre las 3 espadas (0-10)
+                </div>
+                <div class="quick-ref-item">
+                    <strong>Reinicio:</strong>
+                    1 minuto sin combate para las 3 espadas
+                </div>
+                <div class="quick-ref-item">
+                    <strong>Nivel Recomendado:</strong>
+                    3-7 (power spike en nivel 5-6)
+                </div>
+            </div>
+        </div>
+
+        <!-- ESTADOS DEL NÚCLEO -->
+        <div class="section">
+            <div class="section-header">🕐 Estados del Núcleo y Activación del Vórtice</div>
+            <table>
+                <tr>
+                    <th style="width: 150px;">Estado</th>
+                    <th style="width: 100px;">Cargas</th>
+                    <th>Mecánica de Vórtice</th>
+                </tr>
+                <tr>
+                    <td><strong>Normal</strong></td>
+                    <td>0-4</td>
+                    <td>No hay tirada de Vórtice.</td>
+                </tr>
+                <tr>
+                    <td><strong>Sobrecarga</strong></td>
+                    <td>5-7</td>
+                    <td><strong>Tras cada Activación Mayor, tira 1d6:</strong> Con 4-6 → Vórtice (50% chance)</td>
+                </tr>
+                <tr>
+                    <td><strong>Forzado</strong></td>
+                    <td>8-9</td>
+                    <td><strong>Tras cada Activación Mayor, tira 1d6:</strong> Con 3-6 → Vórtice (66% chance)</td>
+                </tr>
+                <tr>
+                    <td><strong>Vórtice Automático</strong></td>
+                    <td>10</td>
+                    <td>🚨 VÓRTICE INMEDIATO: Tira 1d20 DOS VECES en tabla. Reinicia cargas a 0.</td>
+                </tr>
+            </table>
+            <div class="warning" style="margin-top: 10px;">
+                <strong>Activación Mayor:</strong> Cualquier uso de habilidad especial que incremente Cargas. Ataques normales NO cuentan.
+            </div>
+        </div>
+
+        <!-- IMPULSO TEMPORAL -->
+        <div class="section">
+            <div class="section-header">💫 Impulso Temporal (NUEVO v1.1)</div>
+            <div class="tip">
+                <strong>Efecto:</strong> Al cruzar de 4→5 cargas o 7→8 cargas, el arma otorga <strong>+2 al ataque y daño</strong> hasta el final de ese turno (reemplaza el +1 base).<br><br>
+                <strong>Importante:</strong> Solo al ascender, no al descender. El arma NUNCA otorga +3 (el +2 reemplaza el +1).
+            </div>
+        </div>
+
+        <!-- HABILIDADES INDIVIDUALES -->
+        <div class="section">
+            <div class="section-header">⚡ Habilidades Individuales (Cada Espada)</div>
+            <table>
+                <tr>
+                    <th style="width: 180px;">Espada</th>
+                    <th style="width: 120px;">Tipo</th>
+                    <th style="width: 80px;">Costo</th>
+                    <th>Efecto</th>
+                </tr>
+                <tr>
+                    <td><strong>SEGUNDERO</strong><br><em style="font-size: 0.85em;">(Rapier)</em></td>
+                    <td>Acción Adicional<br>(al impactar)</td>
+                    <td>+1</td>
+                    <td>Aliado a 30 ft puede usar Reacción para: atacar O mover ½ velocidad sin AoO. <em>1/criatura/combate</em></td>
+                </tr>
+                <tr>
+                    <td><strong>MINUTERO</strong><br><em style="font-size: 0.85em;">(Espada Versátil)</em></td>
+                    <td>Acción</td>
+                    <td>+1</td>
+                    <td>Aliado a 30 ft: recuperar slot 1-3 O convertir slot al +1 nivel O recuperar habilidad descanso corto. <em>1/criatura/combate</em></td>
+                </tr>
+                <tr>
+                    <td><strong>HORA</strong><br><em style="font-size: 0.85em;">(Espada Corta)</em></td>
+                    <td>Reacción</td>
+                    <td>+1</td>
+                    <td>Criatura a 30 ft repite tirada de ataque/habilidad/salvación (debe usar nuevo resultado). <em>1/criatura/combate</em></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- FRECUENCIAS DEL NÚCLEO -->
+        <div class="section">
+            <div class="section-header">🌟 Frecuencias del Núcleo (requiere las 3 sintonizadas)</div>
+            <div class="warning">
+                <strong>Requisito:</strong> Las 3 espadas deben estar sintonizadas (sin importar por cuántos portadores). Cualquier portador sintonizado puede elegir 1 frecuencia al finalizar un Descanso Largo. <strong>Si múltiples portadores descansan en momentos distintos, la frecuencia queda configurada por el último que finalizó su descanso.</strong>
+            </div>
+            <table>
+                <tr>
+                    <th style="width: 150px;">Poder</th>
+                    <th style="width: 100px;">Tipo</th>
+                    <th style="width: 80px;">Costo</th>
+                    <th>Efecto</th>
+                </tr>
+                <tr>
+                    <td><strong>Entropía Cero</strong></td>
+                    <td>Acción</td>
+                    <td>+2</td>
+                    <td>Criatura a 30 ft: SAL CON (CD 8+comp+INT). Fallo: Incapacitada + vel. ½ hasta tu próximo turno. Éxito: Ralentizada. <em>1/criatura/combate</em></td>
+                </tr>
+                <tr>
+                    <td><strong>Perpetuidad</strong></td>
+                    <td>Reacción</td>
+                    <td>+3</td>
+                    <td>Cuando criatura a 30 ft cae a 0 PG → queda en 1 PG. <em>1/criatura/combate</em></td>
+                </tr>
+                <tr>
+                    <td><strong>Confluencia</strong></td>
+                    <td>Acción</td>
+                    <td>+2</td>
+                    <td>Portadores vinculados (40 ft). Pueden donar Acción/Movimiento con Reacción. Máx 2 Acciones/criatura.</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- TABLA VÓRTICE TEMPORAL -->
+        <div class="section">
+            <div class="section-header">🌀 Tabla Vórtice Temporal (1d20)</div>
+            <div class="warning">
+                <strong>Activación:</strong> Al llegar a 10 Cargas. Tira 1d20 inmediatamente. Afecta a TODAS las criaturas presentes. Después, reinicia cargas a 0.
+            </div>
+            <table class="vortex-table">
+                <tr><td>1</td><td>Todas las criaturas: +10 ft movimiento hasta final de su próximo turno</td></tr>
+                <tr><td>2</td><td>Todas las velocidades → 0 hasta final de la ronda</td></tr>
+                <tr><td>3</td><td>Iniciativa reordenada aleatoriamente (tirar nueva iniciativa, continuar desde ahí)</td></tr>
+                <tr><td>4</td><td>Todas las criaturas repiten su última Acción si es posible (necesitan recursos)</td></tr>
+                <tr><td>5</td><td>Nadie puede usar Reacciones hasta inicio del siguiente turno del portador</td></tr>
+                <tr><td>6</td><td>Todas las criaturas mueven 15 ft sin provocar AoO inmediatamente</td></tr>
+                <tr><td>7</td><td>Todas las condiciones activas duran +1 ronda</td></tr>
+                <tr><td>8</td><td>Todas las condiciones activas terminan inmediatamente</td></tr>
+                <tr><td>9</td><td>Criaturas con condiciones que requieren salvación: repiten salvación ahora</td></tr>
+                <tr><td>10</td><td>Criatura aleatoria pierde su próximo turno</td></tr>
+                <tr><td>11</td><td>Criatura aleatoria actúa inmediatamente (turno extra)</td></tr>
+                <tr><td>12</td><td>Todo el daño → daño de fuerza hasta final de ronda</td></tr>
+                <tr><td>13</td><td>Todos los ataques con ventaja hasta final de ronda</td></tr>
+                <tr><td>14</td><td>Todos los ataques con desventaja hasta final de ronda</td></tr>
+                <tr><td>15</td><td>Todas las criaturas intercambian posición con la más cercana</td></tr>
+                <tr><td>16</td><td>Armas infligen daño mínimo hasta final de ronda</td></tr>
+                <tr><td>17</td><td>Armas infligen daño máximo hasta final de ronda</td></tr>
+                <tr><td>18</td><td>Cada criatura pierde su Acción adicional (Action Surge, Haste, etc.)</td></tr>
+                <tr><td>19</td><td>Cada criatura puede usar su Reacción inmediatamente si no la ha usado</td></tr>
+                <tr><td>20</td><td>Tirar 2 resultados adicionales (ignorar este 20)</td></tr>
+            </table>
+            <div class="tip">
+                <strong>💡 Tip DM:</strong> Si el creador (Séricar) está presente, puede re-tirar el d20 una vez si el resultado le perjudica.
+            </div>
+        </div>
+
+        <!-- DCS DE FORJA -->
+        <div class="section">
+            <div class="section-header">🔨 DCs del Proceso de Forja</div>
+            <table class="dc-table">
+                <tr>
+                    <th>Fase</th>
+                    <th>Día</th>
+                    <th>Tiradas</th>
+                    <th>Notas</th>
+                </tr>
+                <tr>
+                    <td><strong>Fase 1: Preparación</strong></td>
+                    <td>1-2</td>
+                    <td>Arcana DC 15</td>
+                    <td>Fallo: esperar 8 horas, re-intentar</td>
+                </tr>
+                <tr>
+                    <td><strong>Fase 2: Forja</strong></td>
+                    <td>3-5</td>
+                    <td>Arcana DC 18<br>Smith DC 15<br>CON DC 15</td>
+                    <td>3 éxitos: perfecto<br>2 éxitos: 1d4 imperfección<br>1 éxito: 1d4 imperfección<br>0 éxitos: peor imperfección</td>
+                </tr>
+                <tr>
+                    <td><strong>Fase 3: Infusión</strong></td>
+                    <td>6</td>
+                    <td>Arcana DC 18</td>
+                    <td>Natural 20: elimina 1 imperfección<br>11-15: impulso solo a ataque (800 po)<br>≤10: +1 carga inicio combate (1000 po)</td>
+                </tr>
+                <tr>
+                    <td><strong>Fase 4: Calibración</strong></td>
+                    <td>7</td>
+                    <td>Automático</td>
+                    <td>Fallo: repetir solo esta fase</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- IMPERFECCIONES -->
+        <div class="section">
+            <div class="section-header">🔧 Tabla Imperfecciones Menores (1d4)</div>
+            <table>
+                <tr>
+                    <th style="width: 60px;">d4</th>
+                    <th>Imperfección</th>
+                    <th style="width: 100px;">Reparación</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><strong>Eco Residual:</strong> 1d4 daño de fuerza al entrar en Sobrecarga/Forzado (1ª vez por combate)</td>
+                    <td>500 po</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><strong>Desfase Cromático:</strong> Velocidad -10 ft al activar Sobrecarga/Forzado (hasta final del turno)</td>
+                    <td>750 po</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><strong>Resonancia Inestable:</strong> Impulso temporal solo aplica en Forzado, no en Sobrecarga</td>
+                    <td>1,000 po</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><strong>Sin Fallo:</strong> La espada es perfecta esta vez</td>
+                    <td>—</td>
+                </tr>
+            </table>
+            <div class="tip">
+                <strong>Reforja Menor:</strong> 1 día + costo en po + Arcana/Smith DC 14. Natural 20 elimina 2 imperfecciones. Los costos se acumulan.
+            </div>
+        </div>
+
+        <!-- TRACKING TIPS -->
+        <div class="section">
+            <div class="section-header">📊 Tips de Tracking en Mesa</div>
+            <div class="quick-ref">
+                <div class="quick-ref-item">
+                    <strong>Cargas Visibles:</strong>
+                    Usa dados grandes (d10 o d12) en el centro de la mesa para trackear cargas compartidas
+                </div>
+                <div class="quick-ref-item">
+                    <strong>Estados Visuales:</strong>
+                    Verde (0-4), Amarillo (5-7), Rojo (8-9), Negro (10=Vórtice)
+                </div>
+                <div class="quick-ref-item">
+                    <strong>Comunicación:</strong>
+                    Recuerda a jugadores anunciar cuando usen habilidades: "uso Reverso, +1 carga"
+                </div>
+                <div class="quick-ref-item">
+                    <strong>Vórtice Prep:</strong>
+                    Ten el d20 preparado cuando lleguen a 8-9 cargas
+                </div>
+            </div>
+        </div>
+
+        <!-- COMMON QUESTIONS -->
+        <div class="section">
+            <div class="section-header">❓ Preguntas Frecuentes</div>
+            <div class="tip">
+                <strong>P:</strong> ¿El Impulso Temporal se suma al +1 base?<br>
+                <strong>R:</strong> NO. El +2 REEMPLAZA el +1. El arma nunca otorga +3.
+            </div>
+            <div class="tip">
+                <strong>P:</strong> ¿Las cargas se resetean al terminar el combate?<br>
+                <strong>R:</strong> Solo si las 3 espadas pasan 1 minuto sin participar en combate.
+            </div>
+            <div class="tip">
+                <strong>P:</strong> ¿Un portador puede usar varias habilidades en el mismo turno?<br>
+                <strong>R:</strong> Sí, si tiene los recursos (Acción, Acción Adicional, Reacción). Las cargas se acumulan.
+            </div>
+            <div class="tip">
+                <strong>P:</strong> ¿Cuándo exactamente tiro el 1d6 para Vórtice en Sobrecarga/Forzado?<br>
+                <strong>R:</strong> INMEDIATAMENTE después de que se use una habilidad (+1 carga). Si sale Vórtice, se resuelve antes de continuar.
+            </div>
+            <div class="tip">
+                <strong>P:</strong> ¿Qué pasa si llegan a 10 cargas durante el turno de un enemigo?<br>
+                <strong>R:</strong> El Vórtice se activa inmediatamente (tira d20 DOS veces), sin importar de quién es el turno.
+            </div>
+            <div class="tip">
+                <strong>P:</strong> ¿Los ataques normales incrementan cargas?<br>
+                <strong>R:</strong> NO. Solo las habilidades especiales (Activación Mayor) incrementan cargas.
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

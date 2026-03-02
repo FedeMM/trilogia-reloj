@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Trilogía del Reloj - Cartas de Referencia Rápida</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .page {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+        }
+
+        .print-instructions {
+            background: #fff9e6;
+            border: 2px dashed #d4b896;
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            border: 3px solid #8b0000;
+            border-radius: 8px;
+            padding: 15px;
+            background: linear-gradient(135deg, #fefbf5 0%, #f9f3e8 100%);
+            page-break-inside: avoid;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .card-header {
+            background: linear-gradient(135deg, #8b0000 0%, #c41e3a 100%);
+            color: white;
+            padding: 12px;
+            margin: -15px -15px 15px -15px;
+            border-radius: 5px 5px 0 0;
+            text-align: center;
+        }
+
+        .card-header h2 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 1.5em;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .card-header .subtitle {
+            font-size: 0.85em;
+            margin-top: 5px;
+            opacity: 0.9;
+        }
+
+        .section {
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            font-weight: 700;
+            color: #8b0000;
+            font-size: 0.95em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
+            border-bottom: 2px solid #d4b896;
+            padding-bottom: 3px;
+        }
+
+        .ability {
+            background: white;
+            border-left: 3px solid #c41e3a;
+            padding: 8px;
+            margin-bottom: 8px;
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+
+        .ability-name {
+            font-weight: 700;
+            color: #c41e3a;
+            margin-bottom: 3px;
+        }
+
+        .cost {
+            display: inline-block;
+            background: #8b0000;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-top: 4px;
+        }
+
+        .warning {
+            background: #fff3cd;
+            border: 2px solid #ff6600;
+            padding: 8px;
+            margin-top: 10px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+
+        .estados {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px;
+            margin-top: 5px;
+            font-size: 0.85em;
+        }
+
+        .estado {
+            padding: 4px 6px;
+            border-radius: 3px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .estado.normal { background: #90ee90; color: #2d5016; }
+        .estado.sobrecarga { background: #ffd700; color: #755500; }
+        .estado.forzado { background: #ff6347; color: white; }
+        .estado.vortice { background: #8b0000; color: white; }
+
+        .impulso-box {
+            background: #e6f3ff;
+            border: 2px solid #0066cc;
+            padding: 8px;
+            margin-top: 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .print-instructions {
+                display: none;
+            }
+
+            .page {
+                max-width: 100%;
+                padding: 10px;
+            }
+
+            .card {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="print-instructions">
+            <p><strong>📋 INSTRUCCIONES DE IMPRESIÓN:</strong> Imprime esta página y recorta las cartas. Cada jugador debe tener su carta durante el combate.</p>
+        </div>
+
+        <div class="cards-container">
+            
+            <!-- SEGUNDERO -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>⚔️ SEGUNDERO</h2>
+                    <div class="subtitle">Rapier +1 • Very Rare</div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">🕐 Estados del Núcleo</div>
+                    <div class="estados">
+                        <div class="estado normal">Normal: 0-4</div>
+                        <div class="estado sobrecarga">Sobrecarga: 5-7</div>
+                        <div class="estado forzado">Forzado: 8-9</div>
+                        <div class="estado vortice">Vórtice: 10</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">⚡ Habilidad Individual</div>
+                    
+                    <div class="ability">
+                        <div class="ability-name">Impulso de Aliado</div>
+                        <strong>Acción Adicional (al impactar):</strong> Un aliado a 30 ft puede usar su Reacción para:<br>
+                        • Realizar un ataque, O<br>
+                        • Mover hasta la mitad de su velocidad sin provocar AoO
+                        <div class="cost">+1 Carga</div>
+                    </div>
+                </div>
+
+                <div class="impulso-box">
+                    <strong>💫 Impulso Temporal:</strong><br>
+                    Al cruzar 4→5 o 7→8 cargas: <strong>+2 al ataque y daño</strong> este turno (reemplaza el +1)
+                </div>
+
+                <div class="warning">
+                    ⚠️ 1 vez por criatura por combate • Cargas COMPARTIDAS entre las 3 espadas
+                </div>
+            </div>
+
+            <!-- MINUTERO -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>⚔️ MINUTERO</h2>
+                    <div class="subtitle">Espada Versátil +1 • Very Rare</div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">🕐 Estados del Núcleo</div>
+                    <div class="estados">
+                        <div class="estado normal">Normal: 0-4</div>
+                        <div class="estado sobrecarga">Sobrecarga: 5-7</div>
+                        <div class="estado forzado">Forzado: 8-9</div>
+                        <div class="estado vortice">Vórtice: 10</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">⚡ Habilidad Individual</div>
+                    
+                    <div class="ability">
+                        <div class="ability-name">Recuperación Temporal</div>
+                        <strong>Acción:</strong> Elige UNA opción para un aliado a 30 ft:<br>
+                        • Recuperar slot de hechizo gastado (nivel 1-3)<br>
+                        • Convertir slot disponible al siguiente nivel (1→2, 2→3, 3→4)<br>
+                        • Recuperar habilidad de descanso corto usada
+                        <div class="cost">+1 Carga</div>
+                    </div>
+                </div>
+
+                <div class="impulso-box">
+                    <strong>💫 Impulso Temporal:</strong><br>
+                    Al cruzar 4→5 o 7→8 cargas: <strong>+2 al ataque y daño</strong> este turno (reemplaza el +1)
+                </div>
+
+                <div class="warning">
+                    ⚠️ 1 vez por criatura por combate • Cargas COMPARTIDAS entre las 3 espadas
+                </div>
+            </div>
+
+            <!-- HORA -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>⚔️ HORA</h2>
+                    <div class="subtitle">Espada Corta +1 • Very Rare</div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">🕐 Estados del Núcleo</div>
+                    <div class="estados">
+                        <div class="estado normal">Normal: 0-4</div>
+                        <div class="estado sobrecarga">Sobrecarga: 5-7</div>
+                        <div class="estado forzado">Forzado: 8-9</div>
+                        <div class="estado vortice">Vórtice: 10</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">⚡ Habilidad Individual</div>
+                    
+                    <div class="ability">
+                        <div class="ability-name">Destino Bifurcado</div>
+                        <strong>Reacción:</strong> Cuando una criatura a 30 ft realiza una tirada de ataque, habilidad o salvación, fuerzas que repita la tirada. Debe usar el nuevo resultado.
+                        <div style="font-size: 0.85em; margin-top: 5px; font-style: italic;">Declarar inmediatamente después de la tirada, antes de determinar efectos</div>
+                        <div class="cost">+1 Carga</div>
+                    </div>
+                </div>
+
+                <div class="impulso-box">
+                    <strong>💫 Impulso Temporal:</strong><br>
+                    Al cruzar 4→5 o 7→8 cargas: <strong>+2 al ataque y daño</strong> este turno (reemplaza el +1)
+                </div>
+
+                <div class="warning">
+                    ⚠️ 1 vez por criatura por combate • Cargas COMPARTIDAS entre las 3 espadas
+                </div>
+            </div>
+
+        </div>
+
+        <!-- CARTAS DE FRECUENCIAS DEL NÚCLEO -->
+        <h2 style="text-align: center; font-family: 'Libre Baskerville', serif; color: #8b0000; margin: 30px 0 20px 0;">FRECUENCIAS DEL NÚCLEO (requiere las 3 sintonizadas)</h2>
+        
+        <div class="cards-container">
+            
+            <!-- Entropía Cero -->
+            <div class="card" style="border-color: #c41e3a;">
+                <div class="card-header" style="background: linear-gradient(135deg, #c41e3a 0%, #ff6347 100%);">
+                    <h2 style="font-size: 1.3em;">ENTROPÍA CERO</h2>
+                    <div class="subtitle">Ofensiva</div>
+                </div>
+
+                <div class="ability" style="border-left-color: #ff6347;">
+                    <strong>Acción:</strong> Una criatura a 30 ft realiza salvación de CON.
+                </div>
+
+                <div class="ability" style="border-left-color: #ff6347;">
+                    <strong>CD:</strong> 8 + competencia + INT
+                </div>
+
+                <div class="ability" style="border-left-color: #ff6347;">
+                    <strong>Fallo:</strong> Incapacitada + velocidad ½ hasta tu próximo turno
+                </div>
+
+                <div class="ability" style="border-left-color: #ff6347;">
+                    <strong>Éxito:</strong> Ralentizada hasta final de tu próximo turno
+                </div>
+
+                <div class="cost">+2 Cargas</div>
+                <div class="warning" style="margin-top: 10px; background: #ffe6e6;">
+                    1 vez por criatura por combate
+                </div>
+            </div>
+
+            <!-- Perpetuidad -->
+            <div class="card" style="border-color: #0066cc;">
+                <div class="card-header" style="background: linear-gradient(135deg, #0066cc 0%, #4da6ff 100%);">
+                    <h2 style="font-size: 1.3em;">PERPETUIDAD</h2>
+                    <div class="subtitle">Defensiva</div>
+                </div>
+
+                <div class="ability" style="border-left-color: #0066cc;">
+                    <strong>Reacción:</strong> Cuando una criatura a 30 ft cae a 0 PG
+                </div>
+
+                <div class="ability" style="border-left-color: #0066cc;">
+                    <strong>Efecto:</strong> La criatura queda en 1 PG en lugar de 0 PG
+                </div>
+
+                <div class="cost" style="background: #0066cc;">+3 Cargas</div>
+                <div class="warning" style="margin-top: 10px; background: #e6f3ff;">
+                    1 vez por criatura por combate
+                </div>
+            </div>
+
+            <!-- Confluencia -->
+            <div class="card" style="border-color: #2e8b57;">
+                <div class="card-header" style="background: linear-gradient(135deg, #2e8b57 0%, #3cb371 100%);">
+                    <h2 style="font-size: 1.3em;">CONFLUENCIA</h2>
+                    <div class="subtitle">Soporte</div>
+                </div>
+
+                <div class="ability" style="border-left-color: #2e8b57;">
+                    <strong>Acción:</strong> Vincula portadores (40 ft) durante esta ronda
+                </div>
+
+                <div class="ability" style="border-left-color: #2e8b57;">
+                    <strong>Efecto:</strong> Cada portador puede usar Reacción para donar su Acción o Movimiento a otra criatura a 40 ft
+                </div>
+
+                <div class="ability" style="border-left-color: #2e8b57;">
+                    <strong>Límite:</strong> Máximo 2 Acciones por criatura en su turno
+                </div>
+
+                <div class="cost" style="background: #2e8b57;">+2 Cargas</div>
+            </div>
+
+        </div>
+
+        <!-- Reglas Críticas -->
+        <div style="border: 3px solid #ff6600; padding: 20px; margin-top: 30px; background: #fff9e6; border-radius: 8px;">
+            <h3 style="color: #ff6600; margin-bottom: 15px; text-align: center;">📌 REGLAS CRÍTICAS</h3>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
+                <div style="background: white; padding: 12px; border-left: 4px solid #8b0000; border-radius: 4px;">
+                    <strong style="color: #8b0000;">Reinicio de Cargas:</strong><br>
+                    Las 3 espadas deben estar 1 minuto SIN combate
+                </div>
+                
+                <div style="background: white; padding: 12px; border-left: 4px solid #ffa500; border-radius: 4px;">
+                    <strong style="color: #ffa500;">Sobrecarga (5-7):</strong><br>
+                    Tras cada uso: tira 1d6. Con 4-6 → Vórtice (50%)
+                </div>
+
+                <div style="background: white; padding: 12px; border-left: 4px solid #ff6347; border-radius: 4px;">
+                    <strong style="color: #ff6347;">Forzado (8-9):</strong><br>
+                    Tras cada uso: tira 1d6. Con 3-6 → Vórtice (66%)
+                </div>
+                
+                <div style="background: white; padding: 12px; border-left: 4px solid #8b0000; border-radius: 4px;">
+                    <strong style="color: #8b0000;">10 Cargas:</strong><br>
+                    Vórtice AUTOMÁTICO (tira 1d20 DOS veces). Cargas → 0
+                </div>
+                
+                <div style="background: white; padding: 12px; border-left: 4px solid #0066cc; border-radius: 4px;">
+                    <strong style="color: #0066cc;">Bonificador Base:</strong><br>
+                    Siempre +1 al ataque y daño (excepto Impulso Temporal)
+                </div>
+
+                <div style="background: white; padding: 12px; border-left: 4px solid #2e8b57; border-radius: 4px;">
+                    <strong style="color: #2e8b57;">Restricción:</strong><br>
+                    Cada habilidad: 1 vez por criatura por combate
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
