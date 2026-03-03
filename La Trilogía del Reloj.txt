@@ -96,6 +96,7 @@ II. HABILIDADES INDIVIDUALES DE LAS ESPADAS
 SEGUNDERO (Rapier)
 La más delgada de las tres. Su filo vibra con urgencia, acelerando los latidos 
 del corazón de quien la empuña. Los aliados se mueven al compás de su ritmo frenético.
+
 Acción adicional: Al impactar, un aliado a 30 ft puede usar su Reacción para 
 realizar un ataque o mover hasta la mitad de su velocidad sin provocar ataques 
 de oportunidad. Este movimiento es adicional y no consume su movimiento normal 
@@ -317,6 +318,139 @@ NOTAS PARA EL DM
 La Trilogía del Reloj es un sistema de riesgo consciente.
 El Vórtice es imparcial por diseño. Ajusta probabilidades si el ritmo de tu mesa 
 lo requiere.
+
+
+────────────────────────────────────────────────────────────────────────────────
+VII. VÍNCULO ETERNO: EL ARMA QUE ENVEJECE CONTIGO
+────────────────────────────────────────────────────────────────────────────────
+
+El tiempo no solo fluye a través de las espadas — fluye a través de TI también.
+
+Las espadas temporales no son objetos inertes que otorgan poder. Son fragmentos 
+del tejido temporal, vivos con cada latido de entropía que acumulan. Cuando un 
+portador las empuña sesión tras sesión, combate tras combate, el arma registra 
+cada decisión, cada momento crítico, cada gota de sangre derramada.
+
+Con el tiempo suficiente, el arma y el portador ya no son dos entidades separadas. 
+Se convierten en algo más: una resonancia de Hilo Temporal, un vínculo que 
+trasciende la simple sintonización mágica.
+
+Este no es un proceso que puedas forzar con rituales o conjuros. Es el resultado 
+natural de cargar un arma temporal a través de arcos narrativos completos, de 
+usarla cuando importa, de confiar en ella cuando todo está en juego.
+
+El núcleo del reloj lo sabe. Lo registra. Y cuando el vínculo madura lo suficiente, 
+recompensa esa lealtad.
+
+
+   ╔═══════════════════════════════════════════════════════════════╗
+   ║           NIVELES DE MADURACIÓN DEL VÍNCULO ETERNO            ║
+   ╚═══════════════════════════════════════════════════════════════╝
+
+   ┌───────────────────────────────────────────────────────────────┐
+   │  NIVEL 1: VÍNCULO NACIENTE                                    │
+   │                                                               │
+   │  Requisitos:                                                  │
+   │  • Nivel mínimo 7                                             │
+   │  • Haber usado el arma de forma consistente durante al menos  │
+   │    un arco narrativo completo                                 │
+   │                                                               │
+   │  Beneficios:                                                  │
+   │  • Impulso Temporal Mejorado: Ahora otorga +3 al ataque y     │
+   │    daño al cruzar umbrales (en lugar de +2)                   │
+   │  • Sentido de Proximidad: Puedes sentir la ubicación          │
+   │    aproximada de las otras dos espadas si están dentro de     │
+   │    1 milla (dirección general, no distancia exacta)           │
+   │                                                               │
+   │  Momento narrativo: El núcleo del reloj comienza a pulsar     │
+   │  suavemente en sincronía con tu corazón.                      │
+   └───────────────────────────────────────────────────────────────┘
+
+   ┌───────────────────────────────────────────────────────────────┐
+   │  NIVEL 2: VÍNCULO MADURO                                      │
+   │                                                               │
+   │  Requisitos:                                                  │
+   │  • Nivel mínimo 9                                             │
+   │  • Haber usado el arma de forma consistente durante al menos  │
+   │    dos arcos narrativos completos desde que la obtuviste      │
+   │                                                               │
+   │  Beneficios (acumulativos con Nivel 1):                       │
+   │  • Bonificador Base Aumentado: El bonificador permanente del  │
+   │    arma aumenta de +1 a +2 (al ataque y daño)                 │
+   │  • Invocación Temporal (1/día): Como acción adicional, puedes │
+   │    invocar una de tus espadas sintonizadas a tu mano desde    │
+   │    hasta 100 pies de distancia. Si otro portador está         │
+   │    sintonizado con ella, la invocación NO rompe su            │
+   │    sintonización                                              │
+   │  • Reconocimiento del Vínculo (1/descanso largo): Si caes a   │
+   │    0 puntos de golpe mientras empuñas una espada, el núcleo   │
+   │    emite un pulso temporal que te estabiliza automáticamente. │
+   │    Quedas inconsciente pero no haces tiradas de muerte hasta  │
+   │    tu próximo turno (1 turno de gracia para aliados)          │
+   │                                                               │
+   │  Momento narrativo: Cuando miras el núcleo, ves tu propio     │
+   │  reflejo atrapado dentro del remolino temporal. El arma te    │
+   │  reconoce como su portador definitivo.                        │
+   └───────────────────────────────────────────────────────────────┘
+
+
+NOTAS PARA EL DM
+
+¿QUÉ ES "USO CONSISTENTE"?
+El jugador empuñó o usó el arma en momentos significativos del arco narrativo. 
+No necesita ser "cada combate" — es suficiente con que el jugador claramente 
+prioriza esta arma sobre otras opciones mágicas. Si cambió a otra arma mágica 
+temporalmente pero volvió a la Trilogía para los momentos importantes, eso cuenta 
+como uso consistente.
+
+¿QUÉ ES UN "ARCO NARRATIVO"?
+Típicamente: 3-6 sesiones con un objetivo o antagonista principal.
+
+Ejemplos:
+• "Rescatar al alcalde secuestrado por el culto"
+• "Detener la invasión de los drow en el Underdark"
+• "Recuperar el artefacto robado del Templo de Pelor"
+
+Usa tu criterio: un mega-dungeon de 8 sesiones puede ser un solo arco, mientras 
+que una ciudad con 4 misiones independientes en 2 sesiones cada una pueden ser 
+varios arcos.
+
+TIMING ESPERADO
+• Nivel 7 se alcanza típicamente después de 1-2 arcos narrativos grandes 
+  (15-20 sesiones desde nivel 1)
+• Nivel 9 se alcanza típicamente después de 2-3 arcos adicionales 
+  (25-30 sesiones totales)
+
+Resultado: El Vínculo Naciente aparece justo cuando el +1 del arma empieza a 
+quedarse atrás (nivel 7-8, cuando otros tienen +2). El Vínculo Maduro aparece 
+cuando el arma se ha vuelto verdaderamente icónica para el personaje (nivel 9+, 
+cuando el +2 la mantiene relevante frente a armas Very Rare o Legendary).
+
+COMPARTIR EL ARMA
+Cada portador sintonizado trackea su propio progreso de Vínculo Eterno de forma 
+independiente. Si tres jugadores sintonizan las tres espadas y las usan 
+consistentemente, los tres pueden alcanzar Vínculo Maduro con sus respectivas 
+armas.
+
+MUERTE DEL PORTADOR
+Si un portador con Vínculo muere pero es resucitado (revivify, raise dead, etc.), 
+el Vínculo permanece intacto — el núcleo lo recuerda. 
+
+Si el portador muere permanentemente (el jugador retira al personaje, true death, 
+desintegración sin recuperación, etc.), el Vínculo se rompe. La próxima persona 
+que sintonice el arma empieza desde cero.
+
+FLEXIBILIDAD DE CAMPAÑA
+Este sistema se adapta automáticamente al ritmo de tu mesa:
+• Campañas rápidas (dungeon crawl): Los jugadores alcanzan niveles 7 y 9, pero 
+  probablemente no completen suficientes arcos → El nivel los gate-keepea
+• Campañas lentas (mucho roleplay/downtime): Los jugadores completan muchos arcos, 
+  pero tardan en subir de nivel → El nivel los gate-keepea
+• Campañas balanceadas: Ambos requisitos se alinean naturalmente alrededor de 
+  niveles 7-9
+
+El resultado: Vínculo Eterno activa cuando es apropiado narrativa Y mecánicamente, 
+sin importar el estilo de juego.
 
 
 ════════════════════════════════════════════════════════════════════════════════
@@ -1033,5 +1167,109 @@ durante días o semanas:
 El tejido recuerda haber sido tensado.
 
 
+════════════════════════════════════════════════════════════════════════════════
+APÉNDICE: MOMENTOS NARRATIVOS ÉPICOS (Opcional para DMs)
+════════════════════════════════════════════════════════════════════════════════
+
+La Trilogía del Reloj es un sistema mecánico por diseño — las Cargas de Entropía 
+son objetivas, el Vórtice es imparcial, las reglas son claras.
+
+Pero eso no significa que deba ser una experiencia puramente numérica.
+
+Este apéndice ofrece sugerencias narrativas opcionales para DMs que quieran dar 
+peso dramático a ciertos momentos clave del sistema. Ninguno de estos momentos 
+cambia las mecánicas — solo añaden color, tensión y emoción.
+
+Usa lo que te sirva. Ignora lo que no.
+
+
+────────────────────────────────────────────────────────────────────────────────
+PRIMER VÓRTICE: EL MOMENTO DE REVELACIÓN
+────────────────────────────────────────────────────────────────────────────────
+
+La primera vez que el grupo activa un Vórtice Temporal (10 Cargas), es un momento 
+de descubrimiento. Los portadores acaban de descubrir que estas armas no solo 
+otorgan poder — también desatan consecuencias impredecibles.
+
+**Sugerencia narrativa:**
+Cuando tires el d20 del Vórtice por primera vez, haz una pausa dramática. Describe 
+cómo el núcleo del reloj explota en un remolino negro visible. Los tres portadores 
+sienten simultáneamente cómo el tejido del tiempo se retuerce a su alrededor.
+
+**Roleplay sugerido para jugadores:**
+"¿Qué... qué hemos desatado?"
+"Estas armas están conectadas a algo mucho más grande que nosotros."
+
+
+────────────────────────────────────────────────────────────────────────────────
+PRIMERA SOBRECARGA (5 CARGAS): EL VÉRTIGO TEMPORAL
+────────────────────────────────────────────────────────────────────────────────
+
+La primera vez que las Cargas de Entropía alcanzan 5 (estado SOBRECARGA), el 
+grupo cruza el umbral de seguridad. Ya no están jugando con fuego — están jugando 
+con el tiempo mismo.
+
+**Sugerencia narrativa:**
+Cuando las Cargas pasen de 4 a 5 por primera vez, describe cómo los portadores 
+sienten un vértigo súbito. Durante 1-2 segundos, el mundo parece moverse en cámara 
+lenta... y luego vuelve a la normalidad.
+
+**Efecto mecánico:** Ninguno. Es solo sabor narrativo.
+
+**Roleplay sugerido para jugadores:**
+El portador que causó la 5ta carga puede sentir náuseas momentáneas, o ver un 
+destello de un "futuro posible" durante un instante.
+
+
+────────────────────────────────────────────────────────────────────────────────
+10 CARGAS: EL CLÍMAX MECÁNICO
+────────────────────────────────────────────────────────────────────────────────
+
+Cuando las Cargas de Entropía llegan a 10, no es solo un número. Es el punto de 
+ruptura del sistema temporal que las armas representan.
+
+**Sugerencia narrativa:**
+Cuando la última habilidad lleve las Cargas a 10, el remolino dentro del núcleo 
+del reloj se vuelve visible a simple vista — un vórtice negro girando dentro del 
+cristal. Todos los portadores lo sienten simultáneamente, sin importar la distancia.
+
+**Descripción sugerida:**
+"El núcleo del reloj GRITA. No es un sonido audible, pero todos ustedes lo sienten 
+en sus huesos. El tejido del tiempo se retuerce, y algo está a punto de romperse."
+
+**Luego:** Tira el d20 del Vórtice sin revelar el número inmediatamente. Haz una 
+pausa dramática. Luego lee el resultado.
+
+
+────────────────────────────────────────────────────────────────────────────────
+DECISIÓN DE FORJAR: EL DILEMA ÉTICO
+────────────────────────────────────────────────────────────────────────────────
+
+Si tu grupo está en proceso de forjar las armas (Parte II del documento), el 
+momento de la decisión final puede convertirse en un punto de roleplay rico.
+
+**Contexto:**
+Las armas temporales no son objetos neutrales. Son herramientas que manipulan el 
+tejido del tiempo, y cada uso acumula entropía que puede desatar consecuencias 
+imprevisibles. Forjarlas es aceptar ese riesgo.
+
+**Sugerencia narrativa:**
+Cuando Séricar (o el forjador) esté a punto de completar el ritual final, detén 
+el proceso. Hazle al grupo una pregunta directa:
+
+"Séricar los mira con seriedad. 'Estas armas les darán poder. Pero ese poder tiene 
+un precio. Cada vez que las usen, el tiempo recordará. ¿Están seguros de que 
+quieren este don?'"
+
+**Roleplay sugerido:**
+Da espacio a los jugadores para debatir. Algunos pueden dudar. Otros pueden estar 
+desesperados (si están forjando las armas para enfrentar una amenaza existencial).
+
+**Resultado:** No hay respuesta "correcta". Pero el momento de duda añade peso a 
+la decisión.
+
+
+════════════════════════════════════════════════════════════════════════════════
+FIN DEL DOCUMENTO
 ════════════════════════════════════════════════════════════════════════════════
 FIN DEL DOCUMENTO
