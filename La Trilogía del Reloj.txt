@@ -321,7 +321,7 @@ lo requiere.
 
 
 ────────────────────────────────────────────────────────────────────────────────
-VII. VÍNCULO ETERNO: EL ARMA QUE ENVEJECE CONTIGO
+VII. LEGADO DE SEGUNDOS: EL ARMA QUE ENVEJECE CONTIGO
 ────────────────────────────────────────────────────────────────────────────────
 
 El tiempo no solo fluye a través de las espadas — fluye a través de TI también.
@@ -344,11 +344,11 @@ recompensa esa lealtad.
 
 
    ╔═══════════════════════════════════════════════════════════════╗
-   ║           NIVELES DE MADURACIÓN DEL VÍNCULO ETERNO            ║
+   ║          NIVELES DE MADURACIÓN DEL LEGADO DE SEGUNDOS         ║
    ╚═══════════════════════════════════════════════════════════════╝
 
    ┌───────────────────────────────────────────────────────────────┐
-   │  NIVEL 1: VÍNCULO NACIENTE                                    │
+   │  NIVEL 1: LEGADO NACIENTE                                     │
    │                                                               │
    │  Requisitos:                                                  │
    │  • Nivel mínimo 7                                             │
@@ -367,7 +367,7 @@ recompensa esa lealtad.
    └───────────────────────────────────────────────────────────────┘
 
    ┌───────────────────────────────────────────────────────────────┐
-   │  NIVEL 2: VÍNCULO MADURO                                      │
+   │  NIVEL 2: LEGADO MADURO                                       │
    │                                                               │
    │  Requisitos:                                                  │
    │  • Nivel mínimo 9                                             │
@@ -382,7 +382,7 @@ recompensa esa lealtad.
    │    hasta 100 pies de distancia. Si otro portador está         │
    │    sintonizado con ella, la invocación NO rompe su            │
    │    sintonización                                              │
-   │  • Reconocimiento del Vínculo (1/descanso largo): Si caes a   │
+   │  • Reconocimiento del Legado (1/descanso largo): Si caes a    │
    │    0 puntos de golpe mientras empuñas una espada, el núcleo   │
    │    emite un pulso temporal que te estabiliza automáticamente. │
    │    Quedas inconsciente pero no haces tiradas de muerte hasta  │
@@ -421,23 +421,23 @@ TIMING ESPERADO
 • Nivel 9 se alcanza típicamente después de 2-3 arcos adicionales 
   (25-30 sesiones totales)
 
-Resultado: El Vínculo Naciente aparece justo cuando el +1 del arma empieza a 
-quedarse atrás (nivel 7-8, cuando otros tienen +2). El Vínculo Maduro aparece 
+Resultado: El Legado Naciente aparece justo cuando el +1 del arma empieza a 
+quedarse atrás (nivel 7-8, cuando otros tienen +2). El Legado Maduro aparece 
 cuando el arma se ha vuelto verdaderamente icónica para el personaje (nivel 9+, 
 cuando el +2 la mantiene relevante frente a armas Very Rare o Legendary).
 
 COMPARTIR EL ARMA
-Cada portador sintonizado trackea su propio progreso de Vínculo Eterno de forma 
+Cada portador sintonizado trackea su propio progreso de Legado de Segundos de forma 
 independiente. Si tres jugadores sintonizan las tres espadas y las usan 
-consistentemente, los tres pueden alcanzar Vínculo Maduro con sus respectivas 
+consistentemente, los tres pueden alcanzar Legado Maduro con sus respectivas 
 armas.
 
 MUERTE DEL PORTADOR
-Si un portador con Vínculo muere pero es resucitado (revivify, raise dead, etc.), 
-el Vínculo permanece intacto — el núcleo lo recuerda. 
+Si un portador con Legado muere pero es resucitado (revivify, raise dead, etc.), 
+el Legado permanece intacto — el núcleo lo recuerda. 
 
 Si el portador muere permanentemente (el jugador retira al personaje, true death, 
-desintegración sin recuperación, etc.), el Vínculo se rompe. La próxima persona 
+desintegración sin recuperación, etc.), el Legado se rompe. La próxima persona 
 que sintonice el arma empieza desde cero.
 
 FLEXIBILIDAD DE CAMPAÑA
@@ -449,7 +449,7 @@ Este sistema se adapta automáticamente al ritmo de tu mesa:
 • Campañas balanceadas: Ambos requisitos se alinean naturalmente alrededor de 
   niveles 7-9
 
-El resultado: Vínculo Eterno activa cuando es apropiado narrativa Y mecánicamente, 
+El resultado: Legado de Segundos activa cuando es apropiado narrativa Y mecánicamente, 
 sin importar el estilo de juego.
 
 
