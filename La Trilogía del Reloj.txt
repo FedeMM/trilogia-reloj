@@ -566,8 +566,11 @@ Paradoja.
 
 Resultado:
 • Éxito: El núcleo se estabiliza correctamente. Continuar a Fase 2.
-• Fallo: El núcleo se vuelve temporalmente inestable. El forjador debe esperar 8 
-  horas para que se estabilice por sí solo. No se pierden materiales, solo tiempo.
+• Fallo: El núcleo se vuelve temporalmente inestable. El forjador puede:
+  - OPCIÓN A: Intentar estabilizarlo manualmente (Arcana DC 17). Si tiene éxito, 
+    continúa a Fase 2. Si falla, debe esperar 8 horas.
+  - OPCIÓN B: Esperar 8 horas para que se estabilice por sí solo (éxito automático).
+  No se pierden materiales en ningún caso, solo tiempo.
 
 FASE 2: FORJA DE LAS HOJAS (Día 3-5)
 Forjar cada espada requiere tres pruebas distintas que representan conocimiento 
