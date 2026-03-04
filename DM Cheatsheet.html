@@ -507,5 +507,89 @@
         </div>
 
     </div>
+
+    <!-- Menú Flotante -->
+    <button id="floatingMenuBtn" style="
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #8b0000 0%, #a52a2a 100%);
+        border: 2px solid #d4b896;
+        color: white;
+        font-size: 28px;
+        cursor: pointer;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        z-index: 1000;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    " onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 6px 16px rgba(0,0,0,0.4)'" 
+       onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.3)'">
+        ☰
+    </button>
+
+    <div id="floatingMenu" style="
+        position: fixed;
+        bottom: 100px;
+        right: 30px;
+        background: white;
+        border: 2px solid #8b0000;
+        border-radius: 8px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+        z-index: 999;
+        display: none;
+        min-width: 220px;
+        overflow: hidden;
+    ">
+        <div style="background: linear-gradient(135deg, #8b0000 0%, #a52a2a 100%); padding: 12px 20px; border-bottom: 2px solid #d4b896;">
+            <h3 style="margin: 0; color: #d4b896; font-size: 0.95em; font-family: 'Libre Baskerville', serif; text-transform: uppercase; letter-spacing: 1px;">🔧 Herramientas</h3>
+        </div>
+        <a href="index.html" style="
+            display: block;
+            padding: 14px 20px;
+            color: #2c2c2c;
+            text-decoration: none;
+            border-bottom: 1px solid #eee;
+            transition: all 0.2s ease;
+            font-size: 0.95em;
+        " onmouseover="this.style.background='#f9f9f9'; this.style.paddingLeft='25px'" 
+           onmouseout="this.style.background='white'; this.style.paddingLeft='20px'">
+            📖 Documento Principal
+        </a>
+        <a href="Reference Cards.html" style="
+            display: block;
+            padding: 14px 20px;
+            color: #2c2c2c;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            font-size: 0.95em;
+        " onmouseover="this.style.background='#f9f9f9'; this.style.paddingLeft='25px'" 
+           onmouseout="this.style.background='white'; this.style.paddingLeft='20px'">
+            📋 Reference Cards
+        </a>
+    </div>
+
+    <script>
+        const btn = document.getElementById('floatingMenuBtn');
+        const menu = document.getElementById('floatingMenu');
+        let isOpen = false;
+
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            isOpen = !isOpen;
+            menu.style.display = isOpen ? 'block' : 'none';
+        });
+
+        document.addEventListener('click', (e) => {
+            if (isOpen && !menu.contains(e.target)) {
+                isOpen = false;
+                menu.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>
