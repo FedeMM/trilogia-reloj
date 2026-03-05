@@ -328,6 +328,70 @@
             color: #bbb;
         }
 
+        /* Modo Oscuro: Índice de Contenidos */
+        body.dark-mode #indice {
+            background: linear-gradient(135deg, #2a2a2a 0%, #1e1e1e 100%) !important;
+            border-color: #ff6b6b !important;
+        }
+
+        body.dark-mode #indice h2 {
+            color: #ff6b6b !important;
+        }
+
+        body.dark-mode #indice > div > div,
+        body.dark-mode #indice > div[style*="background: white"] {
+            background: #252525 !important;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.5) !important;
+        }
+
+        body.dark-mode #indice h3 {
+            color: #ff6b6b !important;
+            border-bottom-color: #555 !important;
+        }
+
+        body.dark-mode #indice h3 a {
+            color: #ff6b6b !important;
+        }
+
+        body.dark-mode #indice a {
+            color: #ff8c8c !important;
+        }
+
+        body.dark-mode #indice a:hover {
+            color: #ffaaaa !important;
+        }
+
+        /* Modo Oscuro: Botón Volver al Índice */
+        body.dark-mode #backToIndexBtn {
+            background: linear-gradient(135deg, #ff6b6b 0%, #c41e3a 100%) !important;
+            border-color: #d4b896 !important;
+        }
+
+        /* Modo Oscuro: Caja Nivel Recomendado */
+        body.dark-mode .container > div > div[style*="border: 3px solid #8b0000"] {
+            background: linear-gradient(135deg, #2a2a2a 0%, #1e1e1e 100%) !important;
+            border-color: #ff6b6b !important;
+        }
+
+        body.dark-mode .container > div > div[style*="border: 3px solid #8b0000"] p {
+            color: #ff6b6b !important;
+        }
+
+        /* Modo Oscuro: Menú Flotante */
+        body.dark-mode #floatingMenu {
+            background: #1e1e1e !important;
+            border-color: #ff6b6b !important;
+        }
+
+        body.dark-mode #floatingMenu a {
+            color: #e0e0e0 !important;
+            border-bottom-color: #444 !important;
+        }
+
+        body.dark-mode #floatingMenu a:hover {
+            background: #2a2a2a !important;
+        }
+
         /* Estilos para imágenes */
         .sword-image {
             max-width: 100%;
@@ -983,8 +1047,61 @@
         <h1>La Trilogía del Reloj</h1>
         <div class="subtitle">Instrumentos de Dominación Temporal</div>
 
+        <!-- ÍNDICE DE CONTENIDOS -->
+        <div id="indice" style="background: linear-gradient(135deg, #fefbf5 0%, #f9f3e8 100%); border: 3px solid #8b0000; padding: 30px 40px; margin: 40px 0; border-radius: 8px; box-shadow: 0 6px 20px rgba(0,0,0,0.15);">
+            <h2 style="text-align: center; color: #8b0000; margin-top: 0; margin-bottom: 25px; font-size: 2em; letter-spacing: 2px;">📖 ÍNDICE DE CONTENIDOS</h2>
+            
+            <!-- PRÓLOGO -->
+            <div style="background: white; padding: 15px 20px; border-radius: 5px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-bottom: 25px;">
+                <h3 style="color: #8b0000; margin: 0; font-size: 1.2em;"><a href="#prologo" style="text-decoration: none; color: #8b0000;">📜 Prólogo: El instante que no volvió</a></h3>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 25px;">
+                <!-- PARTE I -->
+                <div style="background: white; padding: 20px; border-radius: 5px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <h3 style="color: #8b0000; margin-top: 0; font-size: 1.3em; border-bottom: 2px solid #d4b896; padding-bottom: 8px;"><a href="#parte-1" style="text-decoration: none; color: #8b0000;">PARTE I: EL ARMA</a></h3>
+                    <ul style="list-style: none; padding-left: 0; margin: 15px 0 0 0;">
+                        <li style="margin-bottom: 8px;"><a href="#parte-1-1" style="color: #c41e3a; text-decoration: none; transition: padding-left 0.2s;">I. Naturaleza del Conjunto</a></li>
+                        <li style="margin-bottom: 8px;"><a href="#parte-1-2" style="color: #c41e3a; text-decoration: none; transition: padding-left 0.2s;">II. Habilidades Individuales</a></li>
+                        <li style="margin-bottom: 8px;"><a href="#parte-1-3" style="color: #c41e3a; text-decoration: none; transition: padding-left 0.2s;">III. Sistema Global de Entropía</a></li>
+                        <li style="margin-bottom: 8px;"><a href="#parte-1-4" style="color: #c41e3a; text-decoration: none; transition: padding-left 0.2s;">IV. Poder Legendario</a></li>
+                        <li style="margin-bottom: 8px;"><a href="#parte-1-5" style="color: #c41e3a; text-decoration: none; transition: padding-left 0.2s;">V. Vórtice Temporal</a></li>
+                        <li style="margin-bottom: 8px;"><a href="#parte-1-6" style="color: #c41e3a; text-decoration: none; transition: padding-left 0.2s;">VI. Notas Finales</a></li>
+                        <li style="margin-bottom: 8px;"><a href="#parte-1-7" style="color: #c41e3a; text-decoration: none; transition: padding-left 0.2s;">VII. Legado de Segundos</a></li>
+                    </ul>
+                </div>
+
+                <!-- PARTE II -->
+                <div style="background: white; padding: 20px; border-radius: 5px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <h3 style="color: #8b0000; margin-top: 0; font-size: 1.3em; border-bottom: 2px solid #d4b896; padding-bottom: 8px;"><a href="#parte-2" style="text-decoration: none; color: #8b0000;">PARTE II: LA FORJA</a></h3>
+                    <ul style="list-style: none; padding-left: 0; margin: 15px 0 0 0;">
+                        <li style="margin-bottom: 8px;"><a href="#parte-2-1" style="color: #c41e3a; text-decoration: none; transition: padding-left 0.2s;">I. Conocimiento Requerido</a></li>
+                        <li style="margin-bottom: 8px;"><a href="#parte-2-2" style="color: #c41e3a; text-decoration: none; transition: padding-left 0.2s;">II. Materiales Base</a></li>
+                        <li style="margin-bottom: 8px;"><a href="#parte-2-3" style="color: #c41e3a; text-decoration: none; transition: padding-left 0.2s;">III. Componentes Temporales</a></li>
+                        <li style="margin-bottom: 8px;"><a href="#parte-2-4" style="color: #c41e3a; text-decoration: none; transition: padding-left 0.2s;">IV. Herramientas y Condiciones</a></li>
+                        <li style="margin-bottom: 8px;"><a href="#parte-2-5" style="color: #c41e3a; text-decoration: none; transition: padding-left 0.2s;">V. Proceso de Forja</a></li>
+                        <li style="margin-bottom: 8px;"><a href="#parte-2-6" style="color: #c41e3a; text-decoration: none; transition: padding-left 0.2s;">VI. Riesgos y Consecuencias</a></li>
+                        <li style="margin-bottom: 8px;"><a href="#parte-2-7" style="color: #c41e3a; text-decoration: none; transition: padding-left 0.2s;">VII. Notas para el DM</a></li>
+                        <li style="margin-bottom: 8px;"><a href="#parte-2-8" style="color: #c41e3a; text-decoration: none; transition: padding-left 0.2s;">VIII. Plot Hooks</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- APÉNDICES -->
+            <div style="background: white; padding: 20px; border-radius: 5px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                <h3 style="color: #8b0000; margin-top: 0; font-size: 1.3em; border-bottom: 2px solid #d4b896; padding-bottom: 8px;">APÉNDICES</h3>
+                <ul style="list-style: none; padding-left: 0; margin: 15px 0 0 0; column-count: 2; column-gap: 30px;">
+                    <li style="margin-bottom: 8px;"><a href="#apendice-experimentos" style="color: #c41e3a; text-decoration: none; transition: padding-left 0.2s;">• Primeros Experimentos de Séricar</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#apendice-cronosfera" style="color: #c41e3a; text-decoration: none; transition: padding-left 0.2s;">• Cronosfera: Ritual de Desanclaje</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#apendice-momentos" style="color: #c41e3a; text-decoration: none; transition: padding-left 0.2s;">• Momentos Narrativos Épicos</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="divider">
+
         <!-- Prólogo -->
-        <div class="prologue-section">
+        <div id="prologo" class="prologue-section">
             <h2 class="prologue-title">Prólogo</h2>
             <div class="prologue-subtitle">El instante que no volvió</div>
             
@@ -1111,13 +1228,11 @@ Si hubiera detenido aquel aliento un segundo más.</em></p>
             </div>
         </div>
 
-        <hr class="divider">
-
-        <h1>PARTE I: EL ARMA</h1>
+        <h1 id="parte-1">PARTE I: EL ARMA</h1>
 
         <hr class="divider">
 
-        <h2>I. Naturaleza del Conjunto</h2>
+        <h2 id="parte-1-1">I. Naturaleza del Conjunto</h2>
         
         <p style="font-style: italic; color: #555; margin-bottom: 20px; line-height: 1.8;">Tres hojas forjadas para desafiar lo inevitable. No cortan carne, cortan destinos. Quien las empuña no combate contra enemigos, sino contra la inmutabilidad del tiempo mismo. Cada golpe reescribe la historia de un instante. Cada activación arrastra a todos hacia un futuro incierto.</p>
         
@@ -1174,7 +1289,7 @@ Si hubiera detenido aquel aliento un segundo más.</em></p>
 
         <hr class="divider">
 
-        <h2>II. Habilidades Individuales de las Espadas</h2>
+        <h2 id="parte-1-2">II. Habilidades Individuales de las Espadas</h2>
 
         <div class="image-container">
             <img src="segundero.png" alt="Segundero - Rapier" class="sword-image">
@@ -1219,7 +1334,7 @@ Si hubiera detenido aquel aliento un segundo más.</em></p>
 
         <hr class="divider">
 
-        <h2>III. Sistema Global de Entropía</h2>
+        <h2 id="parte-1-3">III. Sistema Global de Entropía</h2>
 
         <p style="font-style: italic; color: #555; margin-bottom: 20px; line-height: 1.8;">Con cada uso tiras del hilo temporal. Con cada uso, el tejido se tensa. Eventualmente, algo debe romperse.</p>
 
@@ -1278,7 +1393,7 @@ Si hubiera detenido aquel aliento un segundo más.</em></p>
 
         <hr class="divider">
 
-        <h2>IV. Poder Legendario: Activación del Conjunto Completo</h2>
+        <h2 id="parte-1-4">IV. Poder Legendario: Activación del Conjunto Completo</h2>
 
         <p>Cuando las tres espadas están sintonizadas (sin importar por cuántos portadores), el Núcleo del Reloj puede configurarse para resonar en una Frecuencia específica al finalizar un Descanso Largo.</p>
 
@@ -1319,7 +1434,7 @@ Si hubiera detenido aquel aliento un segundo más.</em></p>
 
         <hr class="divider">
 
-        <h2>V. Vórtice Temporal</h2>
+        <h2 id="parte-1-5">V. Vórtice Temporal</h2>
 
         <img src="vortex_accion.png" alt="Vórtice Temporal en Acción" class="sword-image" style="display: block; margin: 25px auto;">
 
@@ -1425,7 +1540,7 @@ Si hubiera detenido aquel aliento un segundo más.</em></p>
 
         <hr class="divider">
 
-        <h2>VI. Notas Finales</h2>
+        <h2 id="parte-1-6">VI. Notas Finales</h2>
 
         <div class="note-box">
             <h4>Ventaja del Creador</h4>
@@ -1570,7 +1685,7 @@ Si hubiera detenido aquel aliento un segundo más.</em></p>
 
         <hr class="divider">
 
-        <h2>VII. Legado de Segundos: El Arma que Envejece Contigo</h2>
+        <h2 id="parte-1-7">VII. Legado de Segundos: El Arma que Envejece Contigo</h2>
 
         <p style="font-style: italic; color: #555; margin-top: 20px;">
             El tiempo no solo fluye a través de las espadas — fluye a través de TI también.
@@ -1716,12 +1831,12 @@ Si hubiera detenido aquel aliento un segundo más.</em></p>
 
         <hr class="section-divider" style="margin: 60px 0; border: none; border-top: 4px double #8b0000;">
 
-        <h1 style="margin-top: 60px;">PARTE II: LA FORJA</h1>
+        <h1 id="parte-2" style="margin-top: 60px;">PARTE II: LA FORJA</h1>
         <p class="subtitle">Este documento detalla los requisitos para que un artífice o forjador pueda crear las tres espadas temporales y el Núcleo del Reloj desde cero.</p>
 
         <hr class="divider">
 
-        <h2>I. Conocimiento Requerido</h2>
+        <h2 id="parte-2-1">I. Conocimiento Requerido</h2>
 
         <h3>Teoría Temporal Básica</h3>
         <ul>
@@ -1750,7 +1865,7 @@ Si hubiera detenido aquel aliento un segundo más.</em></p>
 
         <hr class="divider">
 
-        <h2>II. Materiales Base</h2>
+        <h2 id="parte-2-2">II. Materiales Base</h2>
 
         <h3>Metales Especiales (para las hojas)</h3>
 
@@ -1821,7 +1936,7 @@ Si hubiera detenido aquel aliento un segundo más.</em></p>
 
         <hr class="divider">
 
-        <h2>III. Componentes Temporales (Los Más Difíciles)</h2>
+        <h2 id="parte-2-3">III. Componentes Temporales (Los Más Difíciles)</h2>
 
         <p><em>Estos son los elementos "épicos" que requieren aventuras completas:</em></p>
 
@@ -1938,7 +2053,7 @@ Si hubiera detenido aquel aliento un segundo más.</em></p>
 
         <hr class="divider">
 
-        <h2>IV. Herramientas y Condiciones de Forja</h2>
+        <h2 id="parte-2-4">IV. Herramientas y Condiciones de Forja</h2>
 
         <h3>Forja Especial</h3>
         <p>No puede ser una forja ordinaria</p>
@@ -1968,7 +2083,7 @@ Si hubiera detenido aquel aliento un segundo más.</em></p>
 
         <hr class="divider">
 
-        <h2>V. Proceso de Forja (Sistema Graduado)</h2>
+        <h2 id="parte-2-5">V. Proceso de Forja (Sistema Graduado)</h2>
 
         <div class="note-box" style="margin-bottom: 25px;">
             <p><strong>FILOSOFÍA DE DISEÑO:</strong> Este sistema reemplaza los fallos catastróficos con consecuencias graduadas y manejables. Los errores crean imperfecciones reparables, no la pérdida total de materiales o tiempo. El objetivo es mantener la tensión sin frustrar a los jugadores.</p>
@@ -2155,7 +2270,7 @@ Si hubiera detenido aquel aliento un segundo más.</em></p>
 
         <hr class="divider">
 
-        <h2>VI. Riesgos y Consecuencias</h2>
+        <h2 id="parte-2-6">VI. Riesgos y Consecuencias</h2>
 
         <h3>Durante la Forja</h3>
         
@@ -2184,7 +2299,7 @@ Si hubiera detenido aquel aliento un segundo más.</em></p>
 
         <hr class="divider">
 
-        <h2>VII. Notas para el DM</h2>
+        <h2 id="parte-2-7">VII. Notas para el DM</h2>
 
         <h3>Escalabilidad</h3>
         <ul>
@@ -2212,7 +2327,7 @@ Si hubiera detenido aquel aliento un segundo más.</em></p>
 
         <hr class="divider">
 
-        <h2>VIII. Plot Hooks para Iniciar el Arco</h2>
+        <h2 id="parte-2-8">VIII. Plot Hooks para Iniciar el Arco</h2>
 
         <div class="ability-box">
             <h4>Hook 1: El Manuscrito Olvidado</h4>
@@ -2236,7 +2351,7 @@ Si hubiera detenido aquel aliento un segundo más.</em></p>
 
         <hr class="section-divider" style="margin: 60px 0; border: none; border-top: 4px double #8b0000;">
 
-        <h2 style="text-align: center;">APÉNDICE: Primeros Experimentos de Séricar</h2>
+        <h2 id="apendice-experimentos" style="text-align: center;">APÉNDICE: Primeros Experimentos de Séricar</h2>
 
         <p style="text-align: center; font-style: italic; margin-bottom: 30px;">Antes de crear la Trilogía del Reloj en su forma final, Séricar experimentó con múltiples variantes, buscando diferentes enfoques para manipular el tiempo. Estos prototipos fallidos revelaron verdades importantes sobre la cronurgia: no todo poder es útil, y la elegancia de un diseño reside en su eficiencia, no en su intensidad.</p>
 
@@ -2348,7 +2463,7 @@ Si hubiera detenido aquel aliento un segundo más.</em></p>
 
         <hr class="section-divider" style="margin: 60px 0; border: none; border-top: 4px double #8b0000;">
 
-        <h2 style="text-align: center;">Cronosfera: Ritual de Desanclaje Controlado</h2>
+        <h2 id="apendice-cronosfera" style="text-align: center;">Cronosfera: Ritual de Desanclaje Controlado</h2>
 
         <img src="cronosfera.png" alt="Cronosfera - Ritual de Desanclaje Controlado" class="sword-image" style="display: block; margin: 20px auto;">
 
@@ -2444,7 +2559,7 @@ Si hubiera detenido aquel aliento un segundo más.</em></p>
 
         <hr class="section-divider" style="margin: 60px 0; border: none; border-top: 4px double #8b0000;">
 
-        <h1 style="margin-top: 60px;">APÉNDICE: MOMENTOS NARRATIVOS ÉPICOS</h1>
+        <h1 id="apendice-momentos" style="margin-top: 60px;">APÉNDICE: MOMENTOS NARRATIVOS ÉPICOS</h1>
         <p class="subtitle" style="font-style: italic; color: #aaa;">(Opcional para DMs)</p>
 
         <p>
@@ -2589,6 +2704,32 @@ Si hubiera detenido aquel aliento un segundo más.</em></p>
 
     </div>
 
+    <!-- Botón Flotante: Volver al Índice -->
+    <button id="backToIndexBtn" style="
+        position: fixed;
+        bottom: 30px;
+        left: 30px;
+        padding: 12px 24px;
+        background: linear-gradient(135deg, #c41e3a 0%, #8b0000 100%);
+        border: 2px solid #d4b896;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        font-family: 'Open Sans', sans-serif;
+        cursor: pointer;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        z-index: 1000;
+        transition: all 0.3s ease;
+        border-radius: 8px;
+        display: none;
+        align-items: center;
+        gap: 8px;
+    " onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 16px rgba(0,0,0,0.4)'" 
+       onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.3)'"
+       onclick="document.getElementById('indice').scrollIntoView({ behavior: 'smooth', block: 'start' })">
+        ↑ Índice
+    </button>
+
     <!-- Menú Flotante -->
     <button id="floatingMenuBtn" style="
         position: fixed;
@@ -2655,6 +2796,7 @@ Si hubiera detenido aquel aliento un segundo más.</em></p>
     </div>
 
     <script>
+        // Menú hamburguesa
         const btn = document.getElementById('floatingMenuBtn');
         const menu = document.getElementById('floatingMenu');
         let isOpen = false;
@@ -2671,6 +2813,29 @@ Si hubiera detenido aquel aliento un segundo más.</em></p>
                 menu.style.display = 'none';
             }
         });
+
+        // Botón "Volver al índice"
+        const backToIndexBtn = document.getElementById('backToIndexBtn');
+        const indiceElement = document.getElementById('indice');
+
+        window.addEventListener('scroll', () => {
+            if (indiceElement) {
+                const indiceBottom = indiceElement.getBoundingClientRect().bottom;
+                // Mostrar el botón cuando el índice está fuera de vista
+                if (indiceBottom < 0) {
+                    backToIndexBtn.style.display = 'flex';
+                } else {
+                    backToIndexBtn.style.display = 'none';
+                }
+            }
+        });
     </script>
+
+    <!-- Copyright -->
+    <div style="text-align: center; padding: 20px; margin-top: 60px; border-top: 2px solid #d4b896; color: #666; font-size: 0.9em;">
+        <p style="margin: 5px 0;">© 2026 Federico Mejía Muñoz</p>
+        <p style="margin: 5px 0;">Contenido bajo licencia <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" style="color: #c41e3a; text-decoration: none;">CC BY-NC-SA 4.0</a></p>
+    </div>
+
 </body>
 </html>
